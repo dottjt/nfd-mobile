@@ -5,9 +5,24 @@ const lodash = require('lodash');
 const ARTICLES_URL = 'https://neverfapdeluxe.netlify.com/articles/index.json';
 const PRACTICES_URL = 'https://neverfapdeluxe.netlify.com/practices/index.json';
 
+// CLASSES
+const hr3 = 'class=\"hr3\"';
+const hr3__bottom = 'class=\"hr3__bottom\"';
+
+
+const generateClassReplacement = () => {
+
+};
 
 const generateReactNativeTemplate = (item, type) => {
+  const title = item.title;
+  const content = item.content;
 
+  // <Text>
+  // \n\n
+  // \u003c /p \u003e
+
+  // I will have to replace class with style={css``} which will be kept in a separate file
 };
 
 const generateFiles = (items, type) => {
