@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "gen": "node util/generateContent.js",
+    "ga": "node util/generateApi.js",
+    "gc": "node util/generateContent.js",
     "test": "jest"
   },
   "dependencies": {
