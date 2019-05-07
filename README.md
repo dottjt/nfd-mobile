@@ -1,5 +1,12 @@
 
+
+Setup Navigation.
+
 https://wix.github.io/react-native-navigation/#/docs/Installing
+https://github.com/wix/react-native-navigation/issues/1933
+
+https://github.com/wix/react-native-navigation/issues/4391
+
 
   Run instructions for iOS:
     • cd /Users/juliusreade/Code/PER/NfdMob && react-native run-ios
@@ -14,3 +21,10 @@ https://wix.github.io/react-native-navigation/#/docs/Installing
 
 yarn add react-native-navigation
 yarn add @emotion/native @emotion/core emotion-theming
+
+
+
+React-native init HelloWorld
+react-native run-ios
+
+https://wix.github.io/react-native-navigation/#/docs/Installing
