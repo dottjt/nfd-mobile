@@ -4,9 +4,16 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "gen": "node util/generateContent.js",
     "test": "jest"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/native": "^10.0.10",
+    "axios": "^0.18.0",
+    "emotion-theming": "^10.0.10",
+    "fs-extra": "^7.0.1",
+    "lodash": "^4.17.11",
     "react": "16.8.3",
     "react-native": "0.59.5",
     "react-native-navigation": "^2.18.4"

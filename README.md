@@ -22,7 +22,7 @@ https://github.com/wix/react-native-navigation/issues/4391
 yarn add react-native-navigation
 yarn add @emotion/native @emotion/core emotion-theming
 
-
+yarn add axois fs-extra lodash
 
 React-native init HelloWorld
 react-native run-ios
