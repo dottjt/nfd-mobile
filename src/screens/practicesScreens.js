@@ -1,0 +1,57 @@
+import FocusYourAttention from '../content/practices/FocusYourAttention';
+import SeparateYourSeeingFromYourFeeling from '../content/practices/SeparateYourSeeingFromYourFeeling';
+import SlowDownTime from '../content/practices/SlowDownTime';
+import StopAbsolutelyEverythingYoureDoing from '../content/practices/StopAbsolutelyEverythingYoureDoing';
+import ObserveYourSenses from '../content/practices/ObserveYourSenses';
+import DissolveYourVisualField from '../content/practices/DissolveYourVisualField';
+import RelaxEverything from '../content/practices/RelaxEverything';
+import CatchingTheOddJudgeOut from '../content/practices/CatchingTheOddJudgeOut';
+import IdentifyPointsOfAwarenessThroughoutYourDay from '../content/practices/IdentifyPointsOfAwarenessThroughoutYourDay';
+import PutYourselfInOtherPeoplesShoes from '../content/practices/PutYourselfInOtherPeoplesShoes';
+import UseYourOppositeHand from '../content/practices/UseYourOppositeHand';
+import WhereDoYouTouch from '../content/practices/WhereDoYouTouch';
+import BlindAttention from '../content/practices/BlindAttention';
+import CanYouLookThroughWalls from '../content/practices/CanYouLookThroughWalls';
+import FocusYourAttentionOnTheRightSideOfYourVision from '../content/practices/FocusYourAttentionOnTheRightSideOfYourVision';
+import WhatCanYourHandDo from '../content/practices/WhatCanYourHandDo';
+import FocusOnYourFingerAndYourBackground from '../content/practices/FocusOnYourFingerAndYourBackground';
+
+export const FOCUSYOURATTENTION_SCREEN = 'navigation.FocusYourAttentionScreen';
+export const SEPARATEYOURSEEINGFROMYOURFEELING_SCREEN = 'navigation.SeparateYourSeeingFromYourFeelingScreen';
+export const SLOWDOWNTIME_SCREEN = 'navigation.SlowDownTimeScreen';
+export const STOPABSOLUTELYEVERYTHINGYOUREDOING_SCREEN = 'navigation.StopAbsolutelyEverythingYoureDoingScreen';
+export const OBSERVEYOURSENSES_SCREEN = 'navigation.ObserveYourSensesScreen';
+export const DISSOLVEYOURVISUALFIELD_SCREEN = 'navigation.DissolveYourVisualFieldScreen';
+export const RELAXEVERYTHING_SCREEN = 'navigation.RelaxEverythingScreen';
+export const CATCHINGTHEODDJUDGEOUT_SCREEN = 'navigation.CatchingTheOddJudgeOutScreen';
+export const IDENTIFYPOINTSOFAWARENESSTHROUGHOUTYOURDAY_SCREEN = 'navigation.IdentifyPointsOfAwarenessThroughoutYourDayScreen';
+export const PUTYOURSELFINOTHERPEOPLESSHOES_SCREEN = 'navigation.PutYourselfInOtherPeoplesShoesScreen';
+export const USEYOUROPPOSITEHAND_SCREEN = 'navigation.UseYourOppositeHandScreen';
+export const WHEREDOYOUTOUCH_SCREEN = 'navigation.WhereDoYouTouchScreen';
+export const BLINDATTENTION_SCREEN = 'navigation.BlindAttentionScreen';
+export const CANYOULOOKTHROUGHWALLS_SCREEN = 'navigation.CanYouLookThroughWallsScreen';
+export const FOCUSYOURATTENTIONONTHERIGHTSIDEOFYOURVISION_SCREEN = 'navigation.FocusYourAttentionOnTheRightSideOfYourVisionScreen';
+export const WHATCANYOURHANDDO_SCREEN = 'navigation.WhatCanYourHandDoScreen';
+export const FOCUSONYOURFINGERANDYOURBACKGROUND_SCREEN = 'navigation.FocusOnYourFingerAndYourBackgroundScreen';
+
+const PracticesScreens = new Map();
+
+PracticesScreen.set(FOCUSYOURATTENTION_SCREEN, FocusYourAttention);
+PracticesScreen.set(SEPARATEYOURSEEINGFROMYOURFEELING_SCREEN, SeparateYourSeeingFromYourFeeling);
+PracticesScreen.set(SLOWDOWNTIME_SCREEN, SlowDownTime);
+PracticesScreen.set(STOPABSOLUTELYEVERYTHINGYOUREDOING_SCREEN, StopAbsolutelyEverythingYoureDoing);
+PracticesScreen.set(OBSERVEYOURSENSES_SCREEN, ObserveYourSenses);
+PracticesScreen.set(DISSOLVEYOURVISUALFIELD_SCREEN, DissolveYourVisualField);
+PracticesScreen.set(RELAXEVERYTHING_SCREEN, RelaxEverything);
+PracticesScreen.set(CATCHINGTHEODDJUDGEOUT_SCREEN, CatchingTheOddJudgeOut);
+PracticesScreen.set(IDENTIFYPOINTSOFAWARENESSTHROUGHOUTYOURDAY_SCREEN, IdentifyPointsOfAwarenessThroughoutYourDay);
+PracticesScreen.set(PUTYOURSELFINOTHERPEOPLESSHOES_SCREEN, PutYourselfInOtherPeoplesShoes);
+PracticesScreen.set(USEYOUROPPOSITEHAND_SCREEN, UseYourOppositeHand);
+PracticesScreen.set(WHEREDOYOUTOUCH_SCREEN, WhereDoYouTouch);
+PracticesScreen.set(BLINDATTENTION_SCREEN, BlindAttention);
+PracticesScreen.set(CANYOULOOKTHROUGHWALLS_SCREEN, CanYouLookThroughWalls);
+PracticesScreen.set(FOCUSYOURATTENTIONONTHERIGHTSIDEOFYOURVISION_SCREEN, FocusYourAttentionOnTheRightSideOfYourVision);
+PracticesScreen.set(WHATCANYOURHANDDO_SCREEN, WhatCanYourHandDo);
+PracticesScreen.set(FOCUSONYOURFINGERANDYOURBACKGROUND_SCREEN, FocusOnYourFingerAndYourBackground);
+
+export default PracticesScreens;

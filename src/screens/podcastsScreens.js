@@ -1,0 +1,15 @@
+import EP1MyPersonalNoFapPornRecoveryJourney from '../content/podcasts/EP1MyPersonalNoFapPornRecoveryJourney';
+import EP2WhatExactlyConstitutesAsRelapse from '../content/podcasts/EP2WhatExactlyConstitutesAsRelapse';
+import E03HowToBecomeComfortableWithYourEmotions from '../content/podcasts/E03HowToBecomeComfortableWithYourEmotions';
+
+export const EP1MYPERSONALNOFAPPORNRECOVERYJOURNEY_SCREEN = 'navigation.EP1MyPersonalNoFapPornRecoveryJourneyScreen';
+export const EP2WHATEXACTLYCONSTITUTESASRELAPSE_SCREEN = 'navigation.EP2WhatExactlyConstitutesAsRelapseScreen';
+export const E03HOWTOBECOMECOMFORTABLEWITHYOUREMOTIONS_SCREEN = 'navigation.E03HowToBecomeComfortableWithYourEmotionsScreen';
+
+const PodcastsScreens = new Map();
+
+PodcastsScreen.set(EP1MYPERSONALNOFAPPORNRECOVERYJOURNEY_SCREEN, EP1MyPersonalNoFapPornRecoveryJourney);
+PodcastsScreen.set(EP2WHATEXACTLYCONSTITUTESASRELAPSE_SCREEN, EP2WhatExactlyConstitutesAsRelapse);
+PodcastsScreen.set(E03HOWTOBECOMECOMFORTABLEWITHYOUREMOTIONS_SCREEN, E03HowToBecomeComfortableWithYourEmotions);
+
+export default PodcastsScreens;

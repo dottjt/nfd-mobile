@@ -1,56 +1,42 @@
-import React, {Component} from 'react';
-import {Platform, Text, View} from 'react-native';
-import styled, { css } from '@emotion/native'
+import React, { Component } from 'react';
+import { Platform, Text, View } from 'react-native';
+import { Navigation } from 'react-native-navigation'
+import { Container, Item, ItemTitle, ItemDate } from '../emotion/components';
 
-const Container = styled.View`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-`
-
-const Item = styled.View`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-`;
-
-const ItemTitle = styled.Text`
-  font-size: 1.2rem;
-`;
-
-const ItemDate = styled.Text`
-  font-size: 1.2rem;
-`;
-
-export default class ArticleItem extends Component {
-  // TODO: put a navigation event to go deeper into the stack. 
-
-  render() {
-    const { title, date } = this.props;
-    return (
-      <Item>
-        <ItemTitle>{title}</ItemTitle>
-        <ItemDate>{date}</ItemDate>
-      </Item>
-    );
-  }
-}
+import articlesJSON from '../content/api/articles';
+import { generateProperTitle } from '../util';
 
 export default class Articles extends Component {
+  navigateToContent = (properTitle) => {
+    Navigation.setRoot({
+      root: {
+        component: {
+          name: `navigation.${properTitle}`,
+        }
+      }
+    });
+  
+    // Navigation.push(this.props.componentId, {
+    //   component: {
+    //     name: `navigation.${properTitle}`,
+    //   }
+    // });
+  }
+
   render() {
     return (
       <Container>
-        <List>
-          {items.map(item => (
-            <ArticleItem
-              title={item.title}
-              date={}
-            />
-          ))}
-        </List>
+        <StatusBarMain/>
+        <Text>NeverFap Deluxe Articles</Text>
+        <FlatList
+          data={articlesJSON}
+          renderItem={item =>
+            <Item onPress={() => this.navigateToContent(generateProperTitle(properTitle))}>
+              <ItemTitle>{title}</ItemTitle>
+              <ItemDate>{date}</ItemDate>
+            </Item>
+          }
+        />
       </Container>
     );
   }

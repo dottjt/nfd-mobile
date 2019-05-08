@@ -1,22 +1,11 @@
-/**
- * @format
- */
-
-// import { Navigation } from 'react-native-navigation';
 import Home from './src/pages/Home';
-import { name as appName } from './app.json';
+// import { name as appName } from './app.json';
+import registerScreens from './src/screens';
+import { HOME_SCREEN } from './src/screens/pageScreens';
+import { navigationMain } from './src/navigation';
 
-// Navigation.registerComponent(`navigation.Home`, () => Home);
+registerScreens();
 
-// Navigation.events().registerAppLaunchedListener(() => {
-//   Navigation.setRoot({
-//     root: {
-//       component: {
-//         name: 'navigation.Home'
-//       }
-//     }
-//   });
-// });
-
-// import {AppRegistry} from 'react-native';
-// AppRegistry.registerComponent(appName, () => App);
+Navigation.events().registerAppLaunchedListener(() => {
+  navigationMain();
+});
