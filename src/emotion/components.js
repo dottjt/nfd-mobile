@@ -4,7 +4,8 @@ export const Container = styled.View`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  margin: 10px;
+  border: 4px solid black;
 `;
 
 export const Item = styled.View`
@@ -26,16 +27,20 @@ export const Item = styled.View`
 export const ItemTitle = styled.Text`
   font-size: 12px;
   line-height: 16px;
+  color: black;
 `;
 
 export const ItemDate = styled.Text`
   font-size: 12px;
   line-height: 16px;
+  color: black;
 `;
 
 export const StatusBar = styled.View`
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   height: 30px;
   border-bottom: 4px solid black;
+  align-items: stretch;
 `;

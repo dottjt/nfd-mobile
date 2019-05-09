@@ -1,20 +1,20 @@
 import Home from '../pages/Home';
-import Articles from '../pages/Articles';
-import Practices from '../pages/Practices';
-import Podcasts from '../pages/Podcasts';
-import About from '../pages/About';
+import Content from '../pages/Content';
+import Settings from '../modules/Settings';
 
 export const HOME_SCREEN = 'navigation.HomeScreen';
 export const ARTICLES_SCREEN = 'navigation.ArticlesScreen';
 export const PRACTICES_SCREEN = 'navigation.PracticesScreen';
 export const PODCASTS_SCREEN = 'navigation.PodcastsScreen';
-export const ABOUT_SCREEN = 'navigation.AboutScreen';
+export const SETTINGS_SCREEN = 'navigation.SettingsScreen';
+export const OTHER_SCREEN = 'navigation.OtherScreen';
 
 const PageScreens = new Map();
 PageScreens.set(HOME_SCREEN, Home);
-PageScreens.set(ARTICLES_SCREEN, Articles);
-PageScreens.set(PRACTICES_SCREEN, Practices);
-PageScreens.set(PODCASTS_SCREEN, Podcasts);
-PageScreens.set(ABOUT_SCREEN, About);
+PageScreens.set(ARTICLES_SCREEN, Content);
+PageScreens.set(PRACTICES_SCREEN, Content);
+PageScreens.set(PODCASTS_SCREEN, Content);
+PageScreens.set(SETTINGS_SCREEN, Settings);
+PageScreens.set(OTHER_SCREEN, Content);
 
 export default PageScreens;

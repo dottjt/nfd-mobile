@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import { Container } from '../emotion/components';
-import { PageTitle } from '../emotion/text';
+import { PageTitle, PageSubTitle } from '../emotion/text';
 
 import StatusBarMain from '../modules/StatusBarMain';
 
@@ -10,6 +10,12 @@ import { Query } from 'react-apollo';
 
 import { HOMEPAGE } from '../graphql/queries/homepage';
 import client from '../client';
+
+import articlesJSON from '../content/api/articles';
+import practicesJSON from '../content/api/practices';
+import podcastsJSON from '../content/api/podcasts';
+// import meditationsJSON from '../content/api/meditations';
+
 
 export default class Home extends Component {
   render() {
@@ -27,11 +33,26 @@ export default class Home extends Component {
     //         getAccountabilityMessagesStats,
     //         getAccountabilityReactsStats,
     //       } = data;
-
+    
           return (
             <Container>
               <StatusBarMain/>
               <PageTitle>NeverFap Deluxe</PageTitle>
+
+              <PageSubTitle>Latest Articles</PageSubTitle>
+                {map. }
+              articlesJSON
+practicesJSON
+podcastsJSON
+              <PageSubTitle>Latest Practices</PageSubTitle>
+
+              <PageSubTitle>Latest Meditations</PageSubTitle>
+
+              <PageSubTitle>Latest Podcast</PageSubTitle>
+              {/* latest articles */}
+              {/* latest practices */}
+              {/* latest podcast */}
+              
             </Container>
           );
     //     }};

@@ -5,7 +5,9 @@ import {
   ARTICLES_SCREEN,
   PRACTICES_SCREEN,
   PODCASTS_SCREEN,
-  ABOUT_SCREEN,
+  MEDITATIONS_SCREEN,
+  SETTINGS_SCREEN,
+  OTHER_SCREEN,
 } from './screens/pageScreens';
 
 export const navigationMain = () => Navigation.setRoot({
@@ -28,6 +30,9 @@ export const navigationMain = () => Navigation.setRoot({
         {
           component: {
             name: ARTICLES_SCREEN,
+            passProps: {
+              content_type: 'articles',
+            },
             options: {
               bottomTab: {
                 fontSize: 12,
@@ -40,6 +45,9 @@ export const navigationMain = () => Navigation.setRoot({
         {
           component: {
             name: PRACTICES_SCREEN,
+            passProps: {
+              content_type: 'practices',
+            },
             options: {
               bottomTab: {
                 fontSize: 12,
@@ -52,10 +60,43 @@ export const navigationMain = () => Navigation.setRoot({
         {
           component: {
             name: PODCASTS_SCREEN,
+            passProps: {
+              content_type: 'podcasts',
+            },
             options: {
               bottomTab: {
                 fontSize: 12,
                 text: 'Podcasts',
+                // icon: require('./signin.png')
+              }
+            }
+          },
+        },
+        // {
+        //   component: {
+        //     name: MEDITATIONS_SCREEN,
+        //     passProps: {
+        //       content_type: 'meditations',
+        //     },
+        //     options: {
+        //       bottomTab: {
+        //         fontSize: 12,
+        //         text: 'Meditations',
+        //         // icon: require('./signin.png')
+        //       }
+        //     }
+        //   },
+        // },
+        {
+          component: {
+            name: OTHER_SCREEN,
+            passProps: {
+              content_type: 'other',
+            },
+            options: {
+              bottomTab: {
+                fontSize: 12,
+                text: 'More',
                 // icon: require('./signin.png')
               }
             }
@@ -66,14 +107,47 @@ export const navigationMain = () => Navigation.setRoot({
   }
 });
 
-export const navigationAbout = () => Navigation.setRoot({
+// const sideMenu = {
+//   left: {
+//     component: {}
+//   },
+//   center: {
+//     stack: {
+//       options: {},
+//       children: [{
+//         component: {}
+//       }]
+//     }
+//   },
+//   right: {
+//     component: {}
+//   }
+// }
+
+
+export const navigationSettings = () => Navigation.setRoot({
   root: {
     stack: {
       id: 'AboutId',
       children: [
         {
           component: {
-            name: ABOUT_SCREEN,
+            name: SETTINGS_SCREEN,
+          }
+        }
+    ],
+    }
+  }
+});
+
+export const navigationLeftSideBar = () => Navigation.setRoot({
+  root: {
+    stack: {
+      id: 'AboutId',
+      children: [
+        {
+          component: {
+            name: SETTINGS_SCREEN,
           }
         }
     ],
