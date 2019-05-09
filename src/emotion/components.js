@@ -8,6 +8,7 @@ export const Container = styled.View`
 `;
 
 export const Item = styled.View`
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,6 +36,6 @@ export const ItemDate = styled.Text`
 export const StatusBar = styled.View`
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  height: 30px;
   border-bottom: 4px solid black;
 `;

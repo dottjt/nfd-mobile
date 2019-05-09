@@ -27,7 +27,7 @@ export default class Practices extends Component {
         <FlatList
           data={practicesJSON}
           renderItem={item =>
-            <Item onPress={() => this.navigateToContent(generateProperTitle(item.title))}>
+            <Item key={item.title} onPress={() => this.navigateToContent(generateProperTitle(item.title))}>
               <ItemTitle>{item.title}</ItemTitle>
               <ItemDate>{item.date}</ItemDate>
             </Item>

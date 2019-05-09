@@ -1,4 +1,5 @@
 import { Navigation } from 'react-native-navigation';
+
 import {
   HOME_SCREEN,
   ARTICLES_SCREEN,
