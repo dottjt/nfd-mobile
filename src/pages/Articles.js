@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Platform, Text, View } from 'react-native';
+import { Platform, Text, View, FlatList } from 'react-native';
 import { Navigation } from 'react-native-navigation';
 import { Container, Item, ItemTitle, ItemDate } from '../emotion/components';
+import StatusBarMain from '../modules/StatusBarMain';
 
 import articlesJSON from '../content/api/articles';
 import { generateProperTitle } from '../util';

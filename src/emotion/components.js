@@ -13,22 +13,22 @@ export const Item = styled.View`
   justify-content: center;
   align-items: center;
 
-  padding: 0.6rem;
+  padding: 8px;
   border: 4px solid rgba(255,46,182,1);
   box-shadow: -5px 5px 0px 0px cyan;
   color: black!important;
   transition: box-shadow .2s, border-bottom .1s;
-  margin-bottom: 1.5rem;
+  margin-bottom: 20px;
 `;
 
 export const ItemTitle = styled.Text`
-  font-size: 1.05rem;
-  line-height: 1.6rem;
+  font-size: 12px;
+  line-height: 16px;
 `;
 
 export const ItemDate = styled.Text`
-  font-size: 1.05rem;
-  line-height: 1.6rem;
+  font-size: 12px;
+  line-height: 16px;
 `;
 
 export const StatusBar = styled.View`

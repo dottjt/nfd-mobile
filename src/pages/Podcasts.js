@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import { PageTitle, PageText } from '../emotion/text';
-import { StatusBarMain } from '../modules/StatusBarMain';
+import StatusBarMain from '../modules/StatusBarMain';
 
 export default class Podcasts extends Component {
   render() {

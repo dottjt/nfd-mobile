@@ -11,6 +11,9 @@ https://github.com/oblador/react-native-vector-icons
 
 https://github.com/birkir/hekla/blob/master/src/screens/index.ts
 
+
+react-native link // very important to link libraries to the directories.
+
   Run instructions for iOS:
     • cd /Users/juliusreade/Code/PER/NfdMob && react-native run-ios
     - or -
@@ -33,5 +36,7 @@ react-native run-ios
 yarn add react-apollo apollo-cache-inmemory apollo-client apollo-link apollo-link-http apollo-link-state
 
 yarn add graphql-tag graphql
+
+yarn add react-native-linear-gradient
 
 https://wix.github.io/react-native-navigation/#/docs/Installing

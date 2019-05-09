@@ -5,7 +5,7 @@ export const HOMEPAGE = gql`{
     #   id
     #   email
     #   username
-    #   created_at    
+    #   created_at
     # }
 
     # getAllAccountabilityMessages {
@@ -22,17 +22,17 @@ export const HOMEPAGE = gql`{
     #   emoji_name
     #   created_at
     # }
-    
+
     getAccountabilityMessagesStats {
       total
       total24Hour
     }
-    
+
     getAccountabilityReactsStats {
       total
       total24Hour
     }
-    
+
     getDbUsersStats {
       total
       total24Hour
@@ -46,7 +46,7 @@ export const HOMEPAGE = gql`{
 //   id
 //   email
 //   username
-//   created_at    
+//   created_at
 // }
 
 // getAllAccountabilityMessages {
@@ -78,7 +78,7 @@ export const HOMEPAGE = gql`{
 //     id
 //     email
 //     username
-//     created_at    
+//     created_at
 //   }
 //   accountability_message {
 //     id

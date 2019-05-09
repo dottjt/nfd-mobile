@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Platform, Text, View } from 'react-native';
 import { Navigation } from 'react-native-navigation'
-import { Container, Item, ItemTitle, ItemDate } from '../emotion/components';
+import { Container, Item, ItemTitle, ItemDate, FlatList } from '../emotion/components';
 import { PageTitle } from '../emotion/text';
+import StatusBarMain from '../modules/StatusBarMain';
 
 import practicesJSON from '../content/api/practices';
 import { generateProperTitle } from '../util';
@@ -16,7 +17,7 @@ export default class Practices extends Component {
         }
       }
     });
-  
+
     // Navigation.push(this.props.componentId, {
     //   component: {
     //     name: `navigation.${properTitle}`,

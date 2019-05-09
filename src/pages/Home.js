@@ -6,34 +6,34 @@ import { PageTitle } from '../emotion/text';
 import { ApolloProvider } from 'react-apollo';
 import { Query } from 'react-apollo';
 
-import { HOMEPAGE_QUERY } from '../graphql/queries/homepage.js';
+import { HOMEPAGE } from '../graphql/queries/homepage';
 import client from '../client';
 
 export default class Home extends Component {
   render() {
-    return (
-      <ApolloProvider client={client}>
-        <Query 
-          query={HOMEPAGE_QUERY}
-          >
-        {({ loading, error, data, client }) => {
-          if (loading) return 'loading';
-          if (error) return `Error! ${error.message}`;
+    // return (
+    //   <ApolloProvider client={client}>
+    //     <Query
+    //       query={HOMEPAGE}
+    //       >
+    //     {({ loading, error, data, client }) => {
+    //       if (loading) return 'loading';
+    //       if (error) return `Error! ${error.message}`;
 
-          const {
-            getDbUsersStats,
-            getAccountabilityMessagesStats,
-            getAccountabilityReactsStats,
-          } = data;
+    //       const {
+    //         getDbUsersStats,
+    //         getAccountabilityMessagesStats,
+    //         getAccountabilityReactsStats,
+    //       } = data;
 
           return (
             <Container>
               <PageTitle>NeverFap Deluxe</PageTitle>
             </Container>
           );
-        }};
-        </Query>
-      </ApolloProvider>
-    );
+    //     }};
+    //     </Query>
+    //   </ApolloProvider>
+    // );
   }
 }
