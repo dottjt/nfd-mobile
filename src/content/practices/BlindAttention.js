@@ -122,18 +122,7 @@ export default class BlindAttention extends Component {
 
 <Text>By practicing these exercises everyday.</Text>
 
-<!-- 
-<View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 

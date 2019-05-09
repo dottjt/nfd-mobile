@@ -34,9 +34,9 @@ export default class PutYourselfInOtherPeoplesShoes extends Component {
 
 <Text>Essentially, it comes down to two different thing:</Text>
 
-<Text style={{fontWeight: "bold"}}>How you genuinely feel about others from their own individual point of view.</Text>
+<Text><Text style={{fontWeight: "bold"}}>How you genuinely feel about others from their own individual point of view.</Text></Text>
 
-<Text style={{fontWeight: "bold"}}>Observing and questioning the validity of those feelings.</Text>
+<Text><Text style={{fontWeight: "bold"}}>Observing and questioning the validity of those feelings.</Text></Text>
 
 <Text>And the benefits of this exercise are numerous.</Text>
 
@@ -84,18 +84,7 @@ export default class PutYourselfInOtherPeoplesShoes extends Component {
 
 <Text>Certainly, you may be surprised with what you discover.</Text>
 
-<!-- 
-<View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 

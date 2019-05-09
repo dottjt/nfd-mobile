@@ -75,7 +75,7 @@ export default class SlowDownTime extends Component {
 
 <Text>Because at that point, you&rsquo;ve already lost control.</Text>
 
-<Text>By practicing <u>Slow it down</u> you will learn how to slow down your mind on a regular basis.</Text>
+<Text>By practicing <Text style={{fontWeight: "bold"}}>Slow it down</Text> you will learn how to slow down your mind on a regular basis.</Text>
 
 <Text>In order to demonstrate control, and create those neural connections in your brain.</Text>
 
@@ -106,18 +106,7 @@ Mental and physical.</Text>
 
 <Text>An idea that will prove very important in following exercises.</Text>
 
-<!-- 
-<View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 

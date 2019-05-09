@@ -87,7 +87,7 @@ export default class YouAlwaysHaveTimeForYourMentalHealth extends Component {
 
 <Text>So a question worth asking is:</Text>
 
-<Text><u><b>What is time without your mental health?</b></u></Text>
+<Text><Text style={{textDecoration: "underline"}}><b>What is time without your mental health?</b></Text></Text>
 
 <Text>Without mental health, time becomes an uncontrollable struggle of judgement, self-criticism and depression.</Text>
 
@@ -145,20 +145,13 @@ export default class YouAlwaysHaveTimeForYourMentalHealth extends Component {
 
 <Text>And the true beauty of mental health is that everything you&rsquo;ve done up until now to negatively impact your mental health is completely irrelevant.</Text>
 
-<Text><b><u>For the only thing which truly matters is that which you do today.</b></u></Text>
+<Text><Text style={{textDecoration: "underline"}}><Text style={{fontWeight: "bold"}}>For the only thing which truly matters is that which you do today.</Text></Text></Text>
 
 <Text>Ultimately, it&rsquo;s about focusing on what you can do today, and this is the key to breaking this habit of never committing to your mental health.</Text>
 
 <Text>Realising that mental health isn&rsquo;t achieved by what you don&rsquo;t do, but rather by what you can do today.</Text>
 
-<!-- 
-The other thing which makes pursuing mental health so much more accessible than pursing obsession or addiction, is that it doesn't operate in the same way.
 
-Which is to say that you don't achieve good mental health by spending five hours a day meditating in an attempt to undo years of self-harm.
-
-That's not how it works at all. 
-
-The way mental health works is by commiting a bit of your time each day towards. -->
 
 <View style={hr3}/>
 
@@ -197,7 +190,7 @@ The way mental health works is by commiting a bit of your time each day towards.
 
 <Text>So in the overall scheme of things, 10 minutes, or even an hour a day spent working on your mental health is miniscule, compared to the benefits it will provide in helping you better understand yourself.</Text>
 
-<Text>Moving forward, I recommend checking out our list of <a class="link" href="">NeverFap Deluxe Practices</a> for a list of exercises you can do to develop awareness in your life.</Text>
+<Text>Moving forward, I recommend checking out our list of NeverFap Deluxe Practices for a list of exercises you can do to develop awareness in your life.</Text>
 
       </Container>
     );

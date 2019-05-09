@@ -121,23 +121,6 @@ export default class DissolveYourVisualField extends Component {
 
 <Text>While you can do this anywhere, I personally find it works best when I have a few minutes alone, where you can really explore this idea uninterupted.</Text>
 
-<!-- If you want to take it a step further, ask yourself this question: 
-
-
-<View style={hr4}/>
-
-<h4>Who or what is intepreting this vision? Does it exist within this cloud of sensation? </h4>
-
-<View style={hr4__bottom}/>
-
-
-
-Although I wouldn't worry about it too much for now. 
-
-Honestly, just focus on dissolving that visual field. It's hard enough on it's own.
-
-It's a more advanced concept we will explore in future once we've mastered these more simpler exercises.  -->
-
       </Container>
     );
   }

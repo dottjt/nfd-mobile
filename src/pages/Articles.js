@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Platform, Text, View } from 'react-native';
-import { Navigation } from 'react-native-navigation'
+import { Navigation } from 'react-native-navigation';
 import { Container, Item, ItemTitle, ItemDate } from '../emotion/components';
 
 import articlesJSON from '../content/api/articles';
@@ -15,7 +15,7 @@ export default class Articles extends Component {
         }
       }
     });
-  
+
     // Navigation.push(this.props.componentId, {
     //   component: {
     //     name: `navigation.${properTitle}`,

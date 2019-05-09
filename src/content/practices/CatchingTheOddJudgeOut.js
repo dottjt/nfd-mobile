@@ -12,17 +12,7 @@ export default class CatchingTheOddJudgeOut extends Component {
         <StatusBarStack/>
         <Text style={content__title}>Catching The Odd Judge Out</Text>
   
-        <!-- <View style={hr2}/>
-
-<h2>Context</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
- -->
+        
 
 <Text>A lot of people find this exercise super useful, because it can help us identify our biases much easier than trying to identify those biases directly.</Text>
 
@@ -78,18 +68,7 @@ export default class CatchingTheOddJudgeOut extends Component {
 
 <Text>We&rsquo;re all here to learn more about how our individual minds work.</Text>
 
-<!-- 
-<View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 

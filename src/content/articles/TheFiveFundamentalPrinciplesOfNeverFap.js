@@ -20,7 +20,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <Text>Without mastery of all five of these principles, we cannot hope to consistently manage the emotions, thoughts and  behaviours which may be contributing towards our porn addiction.</Text>
 
-<Text>For more of a relaxed introduction, I highly recommend reading my article <a class="link" href="/articles/the-five-principles-of-neverfap-as-they-relate-to-my-life">The Five Principles Of Neverfap As They Relate To My Life</a> which explains how they apply to my own life.</Text>
+<Text>For more of a relaxed introduction, I highly recommend reading my article The Five Principles Of Neverfap As They Relate To My Life which explains how they apply to my own life.</Text>
 
 <Text>Before we begin, we must ask ourselves a very important question:</Text>
 
@@ -61,9 +61,9 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hrul}/>
 
-<Text style={{fontWeight: "bold"}}>&ldquo;Well, my mind doesn&rsquo;t really work like that.&rdquo;</Text>
+<Text><Text style={{fontWeight: "bold"}}>&ldquo;Well, my mind doesn&rsquo;t really work like that.&rdquo;</Text></Text>
 
-<Text style={{fontWeight: "bold"}}>&ldquo;While that may be true, I don&rsquo;t personally allow it to affect me in that way.&rdquo;</Text>
+<Text><Text style={{fontWeight: "bold"}}>&ldquo;While that may be true, I don&rsquo;t personally allow it to affect me in that way.&rdquo;</Text></Text>
 
 <View style={hrul__bottom}/>
 
@@ -120,7 +120,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <Text>Or rather, it is a way of thinking and understanding which is completely foreign to most of us, and even those of us who do not have a porn addiction.</Text>
 
-<Text>What <u><em>Choice over mind</em></u> iterates is the fact that you have complete control over your mind.</Text>
+<Text>What <Text style={{fontWeight: "bold"}}>Choice over mind</Text> iterates is the fact that you have complete control over your mind.</Text>
 
 <Text>This is irrespective of whether you currently feel in control of your mind, whether you agree it&rsquo;s possible to have full control over your mind, or whether you&rsquo;ve even experienced having full control over your mind.</Text>
 
@@ -135,7 +135,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <Text>Certainly while practicing and exercising choice is important, understanding the extent to which we have choice will help us gain the confidence to truly feel comfortable dictating our thoughts, feelings, emotions and behaviour.</Text>
 
-<Text>By in large, the way this confidence is achieved is through controlled meditation and perspective training, which is covered extensively throughout the <a class="link" href="/practices">NeverFap Deluxe Practices</a> section.</Text>
+<Text>By in large, the way this confidence is achieved is through controlled meditation and perspective training, which is covered extensively throughout the NeverFap Deluxe Practices section.</Text>
 
 <Text>For example, a situation where many porn addicts believe they do not have control is in public.</Text>
 
@@ -153,7 +153,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <Text>In other words, denial.</Text>
 
-<Text>What <u><em>Balance over reward</em></u> maintains is this idea that we must prioritise balance over our immediate wants and goals.</Text>
+<Text>What <Text style={{fontWeight: "bold"}}>Balance over reward</Text> maintains is this idea that we must prioritise balance over our immediate wants and goals.</Text>
 
 <View style={hr3}/>
 
@@ -212,7 +212,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <Text>It is what allows us to identify and address the destructive patterns in our life, as well as serve as a stop-gap between our thoughts and our actions.</Text>
 
-<Text>What <u><em>Awareness over all</em></u> maintains is that having awareness over our actions is critical to not only understanding the impact those actions may have over our own lives, but also how we can learn to gain control over them.</Text>
+<Text>What <Text style={{fontWeight: "bold"}}>Awareness over all</Text> maintains is that having awareness over our actions is critical to not only understanding the impact those actions may have over our own lives, but also how we can learn to gain control over them.</Text>
 
 <Text>Without full awareness, we simply cannot hope to act with any amount of intention, nor understand the responsibility we have over them.</Text>
 
@@ -285,7 +285,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 <View style={hr3__bottom}/>
 
 
-<Text>Back to the principle itself, what <u><em>Struggle over none</em></u> relates to is this idea that if you&rsquo;re really struggling with someone, then you&rsquo;re probably not doing it right.</Text>
+<Text>Back to the principle itself, what <Text style={{textDecoration: "underline"}}><em>Struggle over none</em></Text> relates to is this idea that if you&rsquo;re really struggling with someone, then you&rsquo;re probably not doing it right.</Text>
 
 <Text>Which means either you&rsquo;re not understanding it intuitively, or you&rsquo;re fundamentally misunderstanding what you&rsquo;re trying to understand.</Text>
 
@@ -312,7 +312,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <Text>Much like Balance over reward, this is one of those principles that people tend to ignore, because they underestimate the ramifications of ignoring it.</Text>
 
-<Text><u>Uncondition over judgement</u> is about pursing acceptance over judgement.</Text>
+<Text><Text style={{textDecoration: "underline"}}>Uncondition over judgement</Text> is about pursing acceptance over judgement.</Text>
 
 <View style={hr3}/>
 
@@ -379,7 +379,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 <Text>Moving forward I recommend checking out the article index which contains further information in regards to the NeverFap method of overcoming porn addiction.</Text>
 
 <div class="button__wrapper">
-  <a class="button button__secondary" href="/articles">NeverFap Deluxe Article Index.</a>
+  NeverFap Deluxe Article Index.
 </div>
 
       </Container>

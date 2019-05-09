@@ -18,11 +18,11 @@ export default class FocusYourAttentionOnTheRightSideOfYourVision extends Compon
 
 <Text>I suppose what I like about this particular variation of awareness exercise, is that it really points out how subtle our focus and attention can be.</Text>
 
-<Text>While there are much more demanding awareness exercises such as <a class="link" href="/practices/observe-your-senses">Observe Your Senses</a> this exercise highlights that focus and attention can still be achieved in the day-to-day of our busy lives.</Text>
+<Text>While there are much more demanding awareness exercises such as Observe Your Senses this exercise highlights that focus and attention can still be achieved in the day-to-day of our busy lives.</Text>
 
 <Text>And that&rsquo;s really the beauty of focus and attention.</Text>
 
-<Text>As outlined in <a class="link" href="/practices/blind-attention">Blind Attention</a> it can be absolutely anything you want it to be, it simply comes down to your ability to conceptually think about it in everyday situations, and this exercise is designed to help you do that.</Text>
+<Text>As outlined in Blind Attention it can be absolutely anything you want it to be, it simply comes down to your ability to conceptually think about it in everyday situations, and this exercise is designed to help you do that.</Text>
 
 <Text>So without further ado, let&rsquo;s get to the meat of it.</Text>
 
@@ -58,18 +58,7 @@ export default class FocusYourAttentionOnTheRightSideOfYourVision extends Compon
 
 <Text>Certainly, as with all awareness exercises, the more you practice them the better you&rsquo;ll become at training your mind to think in those terms.</Text>
 
-<!-- 
-<View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 

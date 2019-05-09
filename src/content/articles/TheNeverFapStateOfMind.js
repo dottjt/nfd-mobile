@@ -96,7 +96,7 @@ export default class TheNeverFapStateOfMind extends Component {
 
 <Text>So what are you waiting for?</Text>
 
-<Text>I recommend checking out our list of <a class="link" href="">NeverFap Deluxe Practices</a> for a list of exercises you can do to develop calmness in your life.</Text>
+<Text>I recommend checking out our list of NeverFap Deluxe Practices for a list of exercises you can do to develop calmness in your life.</Text>
 
 
 

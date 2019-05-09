@@ -12,17 +12,7 @@ export default class SeparateYourSeeingFromYourFeeling extends Component {
         <StatusBarStack/>
         <Text style={content__title}>Separate Your Seeing From Your Feeling</Text>
   
-        <!-- <View style={hr2}/>
-
-<h2>Context</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
- -->
+        
 
 <Text>This is an exercise which porn addicts benefit from greatly, due to the way it changes your visual perception of reality.</Text>
 
@@ -94,11 +84,11 @@ export default class SeparateYourSeeingFromYourFeeling extends Component {
 
 <Text>Because currently we may have developed a habit of jumbling the two together, and not quite realising all the steps our mind makes internal when jumping to the conclusion of &ldquo;I really want to watch porn&rdquo;.</Text>
 
-<Text>One thing to notice is that this exercise may seem incredibly similar to <a class="link" href="/practices/dissolve-your-visual-perception-of-reality/">Dissolve Your Visual Perception Of Reality</a>.</Text>
+<Text>One thing to notice is that this exercise may seem incredibly similar to Dissolve Your Visual Perception Of Reality.</Text>
 
 <Text>Both exercises focus on manipulating our visual understanding in some way, however both exercises do completely different things.</Text>
 
-<Text style={{fontWeight: "bold"}}>Dissolve Your Visual Perception Of Reality attempts to completely absolve our understanding of reality, while this exercise attempts to rearrange our understanding of it.</Text>
+<Text><Text style={{fontWeight: "bold"}}>Dissolve Your Visual Perception Of Reality</Text> attempts to completely absolve our understanding of reality, while this exercise attempts to rearrange our understanding of it.</Text>
 
 <View style={hr2}/>
 
@@ -130,18 +120,7 @@ export default class SeparateYourSeeingFromYourFeeling extends Component {
 
 <Text>The world truly is your oyster ^^</Text>
 
-<!-- 
-<View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 

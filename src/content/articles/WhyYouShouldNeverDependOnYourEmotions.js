@@ -117,7 +117,7 @@ export default class WhyYouShouldNeverDependOnYourEmotions extends Component {
 
 <Text>Hopefully this article helps you better understand exactly what happens in our minds when we pursue this cycle of emotion.</Text>
 
-<Text>In terms of moving forward, I highly recommend checking out our range of comprehensive <a class="link" href="/practices">NeverFap Practices</a> which are designed to help you regain control over your mind.</Text>
+<Text>In terms of moving forward, I highly recommend checking out our range of comprehensive NeverFap Practices which are designed to help you regain control over your mind.</Text>
 
       </Container>
     );

@@ -14,17 +14,7 @@ export default class RelaxEverything extends Component {
   
         
 
-<!-- <View style={hr2}/>
 
-<h2>Context</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
- -->
 
 <Text>This exercise is incredibly effective, especially for those new to awareness.</Text>
 
@@ -32,13 +22,13 @@ export default class RelaxEverything extends Component {
 
 <Text>One thing you&rsquo;ll notice as you trawl this website, is that there are a range of different exercises which all seem quite similar to each other.</Text>
 
-<Text>This includes <a class="link" href="/practices/slow-it-down">Slow Down Time</a> where we attempt to slow down and speed up reality, as well as <a class="link" href="/practices/stop-absolutely-everything-you-are-doing">Stop Absolutely Everything You&rsquo;re Doing</a> where we attempt to shut down our mind completely, as if we&rsquo;ve consciously flicked off a switch at the back of our minds.</Text>
+<Text>This includes Slow Down Time where we attempt to slow down and speed up reality, as well as Stop Absolutely Everything You&rsquo;re Doing where we attempt to shut down our mind completely, as if we&rsquo;ve consciously flicked off a switch at the back of our minds.</Text>
 
 <Text>The idea is that with different perspectives, we can learn to understand ourselves and our conscious experience with a more open mind, as well as embrace different ways of thinking.</Text>
 
 <Text>So that we can effectively challenge the denial that comes with being an addict.</Text>
 
-<Text>With <strong>Relax Everything, what we&rsquo;re essentially trying to do is learn to relax and let go, as opposed to say, consciously manipulate our interpretation of reality or make judgements about how we&rsquo;re feeling.</Text>
+<Text>With <Text style={{fontWeight: "bold"}}>Relax Everything</Text>, what we&rsquo;re essentially trying to do is learn to relax and let go, as opposed to say, consciously manipulate our interpretation of reality or make judgements about how we&rsquo;re feeling.</Text>
 
 <Text>It&rsquo;s a skill which will allow us to effectively deal with our urges and uncomfortable feelings and emotions.</Text>
 
@@ -109,18 +99,7 @@ export default class RelaxEverything extends Component {
 
 <Text>In other words, relaxation is one of the many health coping mechanisms we will be developing in order to help us cope with life in a more effective way.</Text>
 
-<!-- 
-<View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 

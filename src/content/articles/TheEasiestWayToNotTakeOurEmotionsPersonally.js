@@ -67,17 +67,17 @@ export default class TheEasiestWayToNotTakeOurEmotionsPersonally extends Compone
 
 <Text>Mentally on some level we think:</Text>
 
-<Text style={{fontWeight: "bold"}}>&ldquo;If I can force guilt or negativity onto myself, then I might be able to push myself to react differently.&rdquo;</Text>
+<Text><Text style={{fontWeight: "bold"}}>&ldquo;If I can force guilt or negativity onto myself, then I might be able to push myself to react differently.&rdquo;</Text></Text>
 
 <Text>or</Text>
 
-<Text style={{fontWeight: "bold"}}>&ldquo;If I try really hard to distract myself, then I&rsquo;ll forget about these feelings and they won&rsquo;t be able to affect me.&rdquo;</Text>
+<Text><Text style={{fontWeight: "bold"}}>&ldquo;If I try really hard to distract myself, then I&rsquo;ll forget about these feelings and they won&rsquo;t be able to affect me.&rdquo;</Text></Text>
 
 <Text>Essentially, we attempt to manipulate ourselves in the hope that it will help us achieve a positive end result.</Text>
 
 <Text>A common example of this (in the case of anxiety, for example) is to talk ourselves up as a form of motivation.</Text>
 
-<Text style={{fontWeight: "bold"}}>&ldquo;I can do it! There&rsquo;s no reason to feel sad at all!&rdquo;</Text>
+<Text><Text style={{fontWeight: "bold"}}>&ldquo;I can do it! There&rsquo;s no reason to feel sad at all!&rdquo;</Text></Text>
 
 <Text>We tell ourselves that we&rsquo;re smart, confident and in-control - even though deep-down inside, our feelings are telling us otherwise.</Text>
 
@@ -85,7 +85,7 @@ export default class TheEasiestWayToNotTakeOurEmotionsPersonally extends Compone
 
 <Text>In other cases, this can even manifest from anger and frustration:</Text>
 
-<Text style={{fontWeight: "bold"}}>&ldquo;F*ck you PMO! I will conquer you!&rdquo;</Text>
+<Text><Text style={{fontWeight: "bold"}}>&ldquo;F*ck you PMO! I will conquer you!&rdquo;</Text></Text>
 
 <Text>And the funny thing, is that none of these strategies work. In the end, it merely exhausts us as deep-down inside it&rsquo;s not what we actually believe about ourselves.</Text>
 

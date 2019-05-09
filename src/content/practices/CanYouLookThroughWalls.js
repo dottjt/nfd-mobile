@@ -14,7 +14,7 @@ export default class CanYouLookThroughWalls extends Component {
   
         
 
-<!-- TODO: Maybe do similar exercises with other senses (hearing etc, about enhancing them etc.)  -->
+
 
 <Text>The idea behind this exercise is to teach you to think of your senses differently.</Text>
 
@@ -60,18 +60,7 @@ export default class CanYouLookThroughWalls extends Component {
 
 <Text>But also dissolve the self-limiting beliefs you may have about them.</Text>
 
-<!-- 
-<View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 

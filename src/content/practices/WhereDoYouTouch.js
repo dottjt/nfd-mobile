@@ -69,18 +69,7 @@ export default class WhereDoYouTouch extends Component {
 
 <Text>However it can help us to better control the experience itself once we become aware of our behaviours related to touch.</Text>
 
-<!-- 
-<View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 

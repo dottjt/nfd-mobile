@@ -18,7 +18,7 @@ export default class WhatMakesNeverFapSoDifferent extends Component {
 
 <Text>While there are many resources out there on the internet which accurately describe what porn addiction is and how it functions.</Text>
 
-<Text>I couldn&rsquo;t find a single resource that could accurately tell me <u>exactly what I needed to do</u> in order stop being a porn addict.</Text>
+<Text>I couldn&rsquo;t find a single resource that could accurately tell me <Text style={{textDecoration: "underline"}}>exactly what I needed to do</Text> in order stop being a porn addict.</Text>
 
 <Text>Which is a bit like saying: &ldquo;Hey buddy, you have a severe problem, but I won&rsquo;t actually tell you how to address it&rdquo;.</Text>
 
@@ -30,9 +30,9 @@ export default class WhatMakesNeverFapSoDifferent extends Component {
 
 <View style={hrul}/>
 
-<Text style={{fontWeight: "bold"}}>Incomplete advice from existing porn addicts, usually in the form of forum posts. Which were desperately hopeful at best.</Text>
+<Text><Text style={{fontWeight: "bold"}}>Incomplete advice from existing porn addicts, usually in the form of forum posts. Which were desperately hopeful at best.</Text></Text>
 
-<Text style={{fontWeight: "bold"}}>Scientific descriptions of porn addiction is and how it affects various aspects of our mind.</Text>
+<Text><Text style={{fontWeight: "bold"}}>Scientific descriptions of porn addiction is and how it affects various aspects of our mind.</Text></Text>
 
 <View style={hrul__bottom}/>
 
@@ -49,7 +49,7 @@ export default class WhatMakesNeverFapSoDifferent extends Component {
 
 <Text>NeverFap has one very clear purpose that other methods lack:</Text>
 
-<Text><u><b>To help you successfully overcome porn addiction.</b></u></Text>
+<Text><Text style={{textDecoration: "underline"}}><b>To help you successfully overcome porn addiction.</b></Text></Text>
 
 <Text>And thus easily overcome porn addiction.</Text>
 
@@ -87,7 +87,7 @@ export default class WhatMakesNeverFapSoDifferent extends Component {
 
 <Text>Sure. It&rsquo;s interesting to understand how porn addiction works, but it still doesn&rsquo;t quite explain why some people are absolutely obsessed with it.</Text>
 
-<Text><u>Which is to say that I don&rsquo;t believe porn is the underlying issue as to why we are addicted to porn</u>.</Text>
+<Text><Text style={{textDecoration: "underline"}}>Which is to say that I don&rsquo;t believe porn is the underlying issue as to why we are addicted to porn</Text>.</Text>
 
 <Text>Rather, I believe that porn addicts are addicted to porn because of some sort of fundamental misunderstanding that they have subscribed to, which they haven&rsquo;t yet figured out.</Text>
 
@@ -120,11 +120,7 @@ export default class WhatMakesNeverFapSoDifferent extends Component {
 
 
 <div class="button__wrapper">
-  <a
-    class="button button__secondary"
-    href="/articles/the-five-fundamental-principles-of-neverfap"
-    >Learn More About The Five Principles.</a
-  >
+  Learn More About The Five Principles.
 </div>
 
 <Text>Perhaps what I like most about NeverFap is how it&rsquo;s designed to always provide you with a path forward.</Text>

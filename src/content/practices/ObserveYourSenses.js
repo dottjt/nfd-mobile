@@ -14,17 +14,7 @@ export default class ObserveYourSenses extends Component {
   
         
 
-<!-- <View style={hr2}/>
 
-<h2>Context</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
- -->
 
 <Text>This exercise encompasses one of the most fundamental skills in regards to practicing meditation.</Text>
 
@@ -156,18 +146,7 @@ export default class ObserveYourSenses extends Component {
 
 <Text>There&rsquo;s always a first for everything.</Text>
 
-<!-- 
-<View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 

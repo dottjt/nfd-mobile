@@ -18,7 +18,7 @@ export default class FocusYourAttention extends Component {
 
 <Text>However, I would also argue that it&rsquo;s quite an advanced skill that should only be attempted once you feel more comfortable being aware in general.</Text>
 
-<Text>In fact, it&rsquo;s an exercise which builds upon <a class="link" href="/practices/observe-your-senses">Observe Your Senses</a> so it makes sense to master that first.</Text>
+<Text>In fact, it&rsquo;s an exercise which builds upon Observe Your Senses so it makes sense to master that first.</Text>
 
 <Text>Otherwise, we can truly struggle with this exercise, and more often than not when people attempt to learn this exercise first, it almost always leads to more confusion than clarity.</Text>
 
@@ -92,7 +92,7 @@ export default class FocusYourAttention extends Component {
 
 <Text>There are essentially two key steps towards performing this exercise.</Text>
 
-<Text>First, relax and put yourself into a state of unconditional awareness, as per the instructions in <a class="link" href="/practices/observe-your-senses">Observe Your Senses</a>.</Text>
+<Text>First, relax and put yourself into a state of unconditional awareness, as per the instructions in Observe Your Senses.</Text>
 
 <Text>In this state of mind, you should have completely emptied your mind and become fully attuned to your senses.</Text>
 
@@ -102,17 +102,7 @@ export default class FocusYourAttention extends Component {
 
 <Text>Play around with it and see where your mind takes you.</Text>
 
-<!--  <View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 

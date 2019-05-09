@@ -212,7 +212,7 @@ export default class MyPersonalPornRecoveryJourney extends Component {
 
 <Text>The information is all here.</Text>
 
-<Text><a class="link" href="/guide">Get started</a> today.</Text>
+<Text>Get started today.</Text>
 
       </Container>
     );

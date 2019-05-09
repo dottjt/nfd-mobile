@@ -1,9 +1,9 @@
-import { Navigation } from 'react-native-navigation'
-import { 
+import { Navigation } from 'react-native-navigation';
+import {
   HOME_SCREEN,
-  ARTICLES_SCREEN, 
-  PRACTICES_SCREEN, 
-  PODCASTS_SCREEN, 
+  ARTICLES_SCREEN,
+  PRACTICES_SCREEN,
+  PODCASTS_SCREEN,
 } from './screens/pageScreens';
 
 export const navigationMain = () => Navigation.setRoot({
@@ -23,7 +23,7 @@ export const navigationMain = () => Navigation.setRoot({
             }
           },
         },
-        { 
+        {
           component: {
             name: ARTICLES_SCREEN,
             options: {
@@ -35,7 +35,7 @@ export const navigationMain = () => Navigation.setRoot({
             }
           },
         },
-        { 
+        {
           component: {
             name: PRACTICES_SCREEN,
             options: {
@@ -47,7 +47,7 @@ export const navigationMain = () => Navigation.setRoot({
             }
           },
         },
-        { 
+        {
           component: {
             name: PODCASTS_SCREEN,
             options: {
@@ -90,7 +90,7 @@ export const navigationAbout = () => Navigation.setRoot({
 //             text: 'Articles',
 //             icon: require('./signin.png')
 //           }
-//         }    
+//         }
 //       },
 //       {
 //         name: CONTENT_SCREEN,
@@ -100,7 +100,7 @@ export const navigationAbout = () => Navigation.setRoot({
 //             text: 'Articles - Content',
 //             icon: require('./signin.png')
 //           }
-//         }    
+//         }
 //       },
 //     ]
 //   },

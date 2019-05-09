@@ -18,7 +18,7 @@ export default class TheFivePrinciplesOfNeverFapAsTheyRelateToMyLife extends Com
 
 <Text>Which is to say that they&rsquo;re meaningless until you develop a personal understanding of how they apply to your own life.</Text>
 
-<Text>While my article <a class="link" href="/articles/the-five-fundamental-principles-of-neverfap">The Five Fundamental Principles of NeverFap</a> is a good introduction into what they are, today I want to talk about what they actually mean in my own everyday life.</Text>
+<Text>While my article The Five Fundamental Principles of NeverFap is a good introduction into what they are, today I want to talk about what they actually mean in my own everyday life.</Text>
 
 <Text>Because theory is one thing, however you may derive additional benefit from understanding how this theory applies to everyday situations.</Text>
 
@@ -166,7 +166,7 @@ export default class TheFivePrinciplesOfNeverFapAsTheyRelateToMyLife extends Com
 
 <Text>Well, I hope that&rsquo;s helped you gain a better understanding of The Five Fundamental Principles of NeverFap and how they apply to my own life.</Text>
 
-<Text>If you&rsquo;d like to learn more, I&rsquo;d recommend going over my article <a class="link" href="/articles/the-five-fundamental-principles-of-neverfap">The Five Fundamental Principles of NeverFap</a> which does into more details from a theoretical perspective.</Text>
+<Text>If you&rsquo;d like to learn more, I&rsquo;d recommend going over my article The Five Fundamental Principles of NeverFap which does into more details from a theoretical perspective.</Text>
 
       </Container>
     );

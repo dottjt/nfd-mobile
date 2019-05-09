@@ -42,7 +42,7 @@ export default class CreatingYourFirstNeverFapSchedule extends Component {
 <View style={hr3__bottom}/>
 
 
-<Text>Specifically, the <a class="link" href="/practices/observe-your-senses">Observe Your Senses</a> practice which explains how to do this in the most simple way possible.</Text>
+<Text>Specifically, the Observe Your Senses practice which explains how to do this in the most simple way possible.</Text>
 
 <Text>Observation truly is the most fundamental practice you can do in terms of  developing your awarenes, and it is the practice we ask that you commit to every single day.</Text>
 
@@ -68,7 +68,7 @@ export default class CreatingYourFirstNeverFapSchedule extends Component {
 
 <Text>Certainly, while those other practices are incredibly useful in developing new perspectives, they are merely supplementary.</Text>
 
-<Text>The aim is that once you feel you have a grasp of <a class="link" href="/practices/observe-your-senses">Observe Your Senses</a>, you can start adding additional exercises to your routine.</Text>
+<Text>The aim is that once you feel you have a grasp of Observe Your Senses, you can start adding additional exercises to your routine.</Text>
 
 <View style={hr3}/>
 
@@ -77,7 +77,7 @@ export default class CreatingYourFirstNeverFapSchedule extends Component {
 <View style={hr3__bottom}/>
 
 
-<Text>Which is to say that an ideal routine will consist of doing <u>Observe Your Senses</u> along with one other additional exercise.</Text>
+<Text>Which is to say that an ideal routine will consist of doing <Text style={{textDecoration: "underline"}}>Observe Your Senses</Text> along with one other additional exercise.</Text>
 
 <Text>Usually it makes sense to commit to these additional exercises for a week, before switching to something else.</Text>
 
@@ -170,7 +170,7 @@ export default class CreatingYourFirstNeverFapSchedule extends Component {
 
 <Text>Remember, it&rsquo;s not how much you practice that counts, but what you practice that matters.</Text>
 
-<Text>In particular, if you feel as if you&rsquo;re struggling to find time to commit to your mental health, I highly recommend reading my article <a class="link" href="/articles/you-always-have-time-for-your-mental-health">You Always Have Time For Your Mental Health</a></Text>
+<Text>In particular, if you feel as if you&rsquo;re struggling to find time to commit to your mental health, I highly recommend reading my article You Always Have Time For Your Mental Health</Text>
 
 
 

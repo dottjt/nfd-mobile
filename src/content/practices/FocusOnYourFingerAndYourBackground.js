@@ -76,18 +76,7 @@ export default class FocusOnYourFingerAndYourBackground extends Component {
 
 
 
-<!--
-<View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 

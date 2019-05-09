@@ -152,7 +152,7 @@ export default class TheImportanceOfMeditationForPornAddiction extends Component
 
 <Text>These skills are broken into Five Fundamental Principles which allow us to focus on particular outcomes related to overcoming porn addiction.</Text>
 
-<Text>I recommend checking out our list of <a class="link" href="">NeverFap Deluxe Practices</a> for a list of exercises you can do to develop awareness in your life.</Text>
+<Text>I recommend checking out our list of NeverFap Deluxe Practices for a list of exercises you can do to develop awareness in your life.</Text>
 
       </Container>
     );

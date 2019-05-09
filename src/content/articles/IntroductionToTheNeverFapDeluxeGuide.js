@@ -82,7 +82,7 @@ export default class IntroductionToTheNeverFapDeluxeGuide extends Component {
 
 <Text>Perhaps you&rsquo;ve never developed a single healthy coping mechanism at all in your entire life.</Text>
 
-<Text>That&rsquo;s why I came up with <a class="link" href="/articles/the-five-fundamental-principles-of-neverfap">The Five Fundamental Principles of NeverFap</a> in order to help you better understand where you may be misunderstanding yourself.</Text>
+<Text>That&rsquo;s why I came up with The Five Fundamental Principles of NeverFap in order to help you better understand where you may be misunderstanding yourself.</Text>
 
 <View style={hr3}/>
 
@@ -114,7 +114,7 @@ export default class IntroductionToTheNeverFapDeluxeGuide extends Component {
 
 <Text>How it&rsquo;s actually an incredibly straight-forward process if you just follow the motions.</Text>
 
-<Text>I want to teach and explain all the core skills that I have come to learn over the past five years over <a class="link" href="/articles/my-personal-porn-recovery-journey">My Personal Porn Recovery Journey</a>, and I want to go into detail as to what these skills and understandings are.</Text>
+<Text>I want to teach and explain all the core skills that I have come to learn over the past five years over My Personal Porn Recovery Journey, and I want to go into detail as to what these skills and understandings are.</Text>
 
 <Text>As for a non-exhaustive list of these skills, here are some of the things which you will learn which will help you overcome porn addiction:</Text>
 

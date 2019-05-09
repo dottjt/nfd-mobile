@@ -16,7 +16,7 @@ export default class WhyamIAPornAddict extends Component {
 
 <Text>It&rsquo;s a question you&rsquo;ve probably been thinking about for a while.</Text>
 
-<Text style={{fontWeight: "bold"}}>“Why am I a porn addict?”</Text>
+<Text><Text style={{fontWeight: "bold"}}>“Why am I a porn addict?”</Text></Text>
 
 <Text>Questioning why we may have become porn addicts within the first place is a place where a lot of people start out with their porn recovery journey.</Text>
 
@@ -52,7 +52,7 @@ export default class WhyamIAPornAddict extends Component {
 
 <Text>It’s like trying to figure out your life purpose by asking the question:</Text>
 
-<Text style={{fontWeight: "bold"}}>“Why do I exist?”</Text>
+<Text><Text style={{fontWeight: "bold"}}>“Why do I exist?”</Text></Text>
 
 <Text>Well, I can tell you now that why you exist has no correlation to what purpose you have in life.</Text>
 
@@ -145,11 +145,11 @@ export default class WhyamIAPornAddict extends Component {
 
 <View style={hrul}/>
 
-<Text style={{fontWeight: "bold"}}>&ldquo;How am I a porn addict?&rdquo;</Text>
+<Text><Text style={{fontWeight: "bold"}}>&ldquo;How am I a porn addict?&rdquo;</Text></Text>
 
-<Text style={{fontWeight: "bold"}}>&ldquo;What do I on a daily basis which makes me a porn addict?&rdquo;</Text>
+<Text><Text style={{fontWeight: "bold"}}>&ldquo;What do I on a daily basis which makes me a porn addict?&rdquo;</Text></Text>
 
-<Text style={{fontWeight: "bold"}}>&ldquo;What do I have to do in order to avoid porn addiction?&rdquo;</Text>
+<Text><Text style={{fontWeight: "bold"}}>&ldquo;What do I have to do in order to avoid porn addiction?&rdquo;</Text></Text>
 
 <View style={hrul__bottom}/>
 
@@ -167,9 +167,9 @@ export default class WhyamIAPornAddict extends Component {
 
 <View style={hrul}/>
 
-<Text style={{fontWeight: "bold"}}>&ldquo;Why am I a porn addict?&rdquo;</Text>
+<Text><Text style={{fontWeight: "bold"}}>&ldquo;Why am I a porn addict?&rdquo;</Text></Text>
 
-<Text style={{fontWeight: "bold"}}>&ldquo;Why do I find overcoming porn addiction so difficult?&rdquo;</Text>
+<Text><Text style={{fontWeight: "bold"}}>&ldquo;Why do I find overcoming porn addiction so difficult?&rdquo;</Text></Text>
 
 <View style={hrul__bottom}/>
 
@@ -179,13 +179,13 @@ export default class WhyamIAPornAddict extends Component {
 
 <View style={hrul}/>
 
-<Text style={{fontWeight: "bold"}}>&ldquo;What can I do to influence my porn addiction?&rdquo;</Text>
+<Text><Text style={{fontWeight: "bold"}}>&ldquo;What can I do to influence my porn addiction?&rdquo;</Text></Text>
 
-<Text style={{fontWeight: "bold"}}>&ldquo;What are the steps leading up to when I watch porn?&rdquo;</Text>
+<Text><Text style={{fontWeight: "bold"}}>&ldquo;What are the steps leading up to when I watch porn?&rdquo;</Text></Text>
 
-<Text style={{fontWeight: "bold"}}>&ldquo;How do I think about women?&rdquo;</Text>
+<Text><Text style={{fontWeight: "bold"}}>&ldquo;How do I think about women?&rdquo;</Text></Text>
 
-<Text style={{fontWeight: "bold"}}>&ldquo;How do I fall into the trap of believing that it’s okay to watch porn?&rdquo;</Text>
+<Text><Text style={{fontWeight: "bold"}}>&ldquo;How do I fall into the trap of believing that it’s okay to watch porn?&rdquo;</Text></Text>
 
 <View style={hrul__bottom}/>
 

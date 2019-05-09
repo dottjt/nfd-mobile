@@ -14,21 +14,11 @@ export default class StopAbsolutelyEverythingYoureDoing extends Component {
   
         
 
-<!-- <View style={hr2}/>
 
-<h2>Context</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
- -->
 
 <Text>I love this exercise.</Text>
 
-<Text>I can&rsquo;t quite tell if this exercise is an analogue to <a class="link" href="/articles/slow-down-your-perception-of-time">Slow Down Your Perception Of Time</a> or a percursor to it, however they&rsquo;re both different approaches to the same concept of awareness.</Text>
+<Text>I can&rsquo;t quite tell if this exercise is an analogue to Slow Down Your Perception Of Time or a percursor to it, however they&rsquo;re both different approaches to the same concept of awareness.</Text>
 
 <Text>Usually you&rsquo;ll end up using both in conjunction, but it&rsquo;s arguably easier to learn them as separate, unique skills.</Text>
 
@@ -95,18 +85,7 @@ export default class StopAbsolutelyEverythingYoureDoing extends Component {
 
 <Text>&hellip;and obviously don&rsquo;t do this while crossing a road.</Text>
 
-<!-- 
-<View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 

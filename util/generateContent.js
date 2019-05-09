@@ -28,7 +28,7 @@ export default class ${properTitle} extends Component {
   }
 }
   `;
-  
+
   return component;
 };
 
@@ -36,22 +36,26 @@ const generateClassReplacement = (content) => {
   const contentClassReplace = content.replace(/<hr class=\"/g, '<View style={');
   const contentClassEndReplace = contentClassReplace.replace(/\"\/\u003e/g, '}/>');
   return contentClassEndReplace;
-}; 
+};
 
 const generateTitle = (title) => {
   return `<Text style={content__title}>${title}</Text>`;
 };
 
 const generateContentReplacement = (content) => {
-  const newContent1 = generateClassReplacement(content); 
+  const newContent1 = generateClassReplacement(content);
   const newContent2 = newContent1.replace(/\u003cp\u003e/g, '<Text>'); // <p>
   const newContent3 = newContent2.replace(/\u003c\/p\u003e/g, '</Text>'); // </p>
-  const newContent4 = newContent3.replace(/<!--[a-zA-Z,=.-/\n;~:{}<>'"?!^ ]*-->/g, ''); // <!-- -->
-  const newContent5 = newContent4.replace(/<Text><strong>/g, '<Text style={{fontWeight: "bold"}}>'); // <Text><strong>
-  const newContent6 = newContent5.replace(/<\/strong>/g, ''); // </strong>
+  const newContent4 = newContent3.replace(/(?=<!--)([\s\S]*?)-->/g, ''); // <!-- -->
+  const newContent5 = newContent4.replace(/<u>/g, '<Text style={{textDecoration: "underline"}}>'); // </u>
+  const newContent6 = newContent5.replace(/<strong>/g, '<Text style={{fontWeight: "bold"}}>'); // </ a tag references>
+  const newContent7 = newContent6.replace(/<\/u>/g, '</Text>'); // </ a tag references>
+  const newContent8 = newContent7.replace(/<\/strong>/g, '</Text>'); // </ a tag references>
+  const newContent9 = newContent8.replace(/<\/?a[^>]*>/g, ''); // </ a tag references>
 
-  return newContent6;
+  return newContent9;
 };
+
 
 const generateReactNativeTemplate = (item, properTitle) => {
   const title = item.title;
@@ -83,7 +87,7 @@ export default class ${properTitle} extends Component {
   }
 }
   `;
-  
+
   return `${libraryHeader}${componentStart}${componentEnd}`;
   // \n\n
 

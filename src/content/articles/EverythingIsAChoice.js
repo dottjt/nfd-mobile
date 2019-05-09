@@ -18,7 +18,7 @@ export default class EverythingIsAChoice extends Component {
 
 <Text>Specifically, how it relates to the Five Fundamental Principles of NeverFap.</Text>
 
-<Text>The first principle that I almost always introduce to people is <u>Choice over mind</u>, because it is the one principle that most porn addicts (usually) find the most profound.</Text>
+<Text>The first principle that I almost always introduce to people is <Text style={{textDecoration: "underline"}}>Choice over mind</Text>, because it is the one principle that most porn addicts (usually) find the most profound.</Text>
 
 <View style={hr3}/>
 
@@ -94,7 +94,7 @@ export default class EverythingIsAChoice extends Component {
 
 <Text>Perhaps you&rsquo;re misinterpretating what having this choice allows you to do, so let&rsquo;s explore that idea.</Text>
 
-<Text>When you truly understand what <u>Choice over mind</u> means, it completely changes the way you look at things.</Text>
+<Text>When you truly understand what <Text style={{textDecoration: "underline"}}>Choice over mind</Text> means, it completely changes the way you look at things.</Text>
 
 <Text>You no longer become victim, or rather you realise that you never were victim, over that which you cannot choose.</Text>
 
@@ -191,7 +191,7 @@ export default class EverythingIsAChoice extends Component {
 <View style={hr3__bottom}/>
 
 
-<Text>Moving forward, I recommend checking out our list of <a class="link" href="">NeverFap Deluxe Practices</a> for a list of exercises you can do to develop awareness in your life.</Text>
+<Text>Moving forward, I recommend checking out our list of NeverFap Deluxe Practices for a list of exercises you can do to develop awareness in your life.</Text>
 
       </Container>
     );

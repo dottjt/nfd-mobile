@@ -23,12 +23,12 @@ export default class IdentifyPointsOfAwarenessThroughoutYourDay extends Componen
 <View style={hrul}/>
 
 <ul>
-<li><strong>When we wake up.</li>
-<li><strong>When we shower.</li>
-<li><strong>When we travel to work.</li>
-<li><strong>During our lunch break.</li>
-<li><strong>At dinner.</li>
-<li><strong>Before bed.</li>
+<li><Text style={{fontWeight: "bold"}}>When we wake up.</Text></li>
+<li><Text style={{fontWeight: "bold"}}>When we shower.</Text></li>
+<li><Text style={{fontWeight: "bold"}}>When we travel to work.</Text></li>
+<li><Text style={{fontWeight: "bold"}}>During our lunch break.</Text></li>
+<li><Text style={{fontWeight: "bold"}}>At dinner.</Text></li>
+<li><Text style={{fontWeight: "bold"}}>Before bed.</Text></li>
 </ul>
 
 <View style={hrul__bottom}/>
@@ -98,18 +98,7 @@ export default class IdentifyPointsOfAwarenessThroughoutYourDay extends Componen
 
 <Text>You engage your awareness from the very moment you wake up, and it just gives you such a strong foothold over how you feel throughout the day.</Text>
 
-<!-- 
-<View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 

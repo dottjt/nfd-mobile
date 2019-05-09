@@ -27,10 +27,10 @@ const createScreens = (items, type) => {
 
   for (item of items) {
     const title = generateProperTitle(item.title);
-    
+
     header += `import ${title} from '../content/${type}/${title}';\n`;
     screenNames += `export const ${title.toUpperCase()}_SCREEN = 'navigation.${title}Screen';\n`;
-    screenSet += `${capitalize(type)}Screen.set(${title.toUpperCase()}_SCREEN, ${title});\n`;
+    screenSet += `${capitalize(type)}Screens.set(${title.toUpperCase()}_SCREEN, ${title});\n`;
   }
   const arrayEnd = `export default ${capitalize(type)}Screens;`;
   const finalText = `${header}\n${screenNames}\n${screenStart}\n${screenSet}\n${arrayEnd}`;

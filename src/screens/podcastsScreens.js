@@ -8,8 +8,8 @@ export const E03HOWTOBECOMECOMFORTABLEWITHYOUREMOTIONS_SCREEN = 'navigation.E03H
 
 const PodcastsScreens = new Map();
 
-PodcastsScreen.set(EP1MYPERSONALNOFAPPORNRECOVERYJOURNEY_SCREEN, EP1MyPersonalNoFapPornRecoveryJourney);
-PodcastsScreen.set(EP2WHATEXACTLYCONSTITUTESASRELAPSE_SCREEN, EP2WhatExactlyConstitutesAsRelapse);
-PodcastsScreen.set(E03HOWTOBECOMECOMFORTABLEWITHYOUREMOTIONS_SCREEN, E03HowToBecomeComfortableWithYourEmotions);
+PodcastsScreens.set(EP1MYPERSONALNOFAPPORNRECOVERYJOURNEY_SCREEN, EP1MyPersonalNoFapPornRecoveryJourney);
+PodcastsScreens.set(EP2WHATEXACTLYCONSTITUTESASRELAPSE_SCREEN, EP2WhatExactlyConstitutesAsRelapse);
+PodcastsScreens.set(E03HOWTOBECOMECOMFORTABLEWITHYOUREMOTIONS_SCREEN, E03HowToBecomeComfortableWithYourEmotions);
 
 export default PodcastsScreens;

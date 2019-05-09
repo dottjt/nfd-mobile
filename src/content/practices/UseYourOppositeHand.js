@@ -74,18 +74,7 @@ export default class UseYourOppositeHand extends Component {
 
 <Text>Open your mind and the rest will follow.</Text>
 
-<!--
-<View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 

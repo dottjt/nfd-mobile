@@ -153,7 +153,7 @@ export default class WhatIsNeverFap extends Component {
 
 <Text>And furthermore, developing observation is easy.</Text>
 
-<Text>For further information of the exercises and practices on this website, please head to our <a class="link" href="/practices">Practices</a> section.</Text>
+<Text>For further information of the exercises and practices on this website, please head to our Practices section.</Text>
 
 <Text>From there you can learn more about the various ways in which teach you self-control through meditation and various perspective exercises.</Text>
 

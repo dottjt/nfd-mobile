@@ -73,18 +73,7 @@ export default class WhatCanYourHandDo extends Component {
 
 <Text>No different to your recovery if you&rsquo;re just starting out.</Text>
 
-<!-- 
-<View style={hr2}/>
 
-<h2>Additional Resources</h2>
-
-<View style={hr2__bottom}/>
-
-
-
-
-
-  -->
 
 
 
