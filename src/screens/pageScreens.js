@@ -14,7 +14,7 @@ const PageScreens = new Map();
 PageScreens.set(HOME_SCREEN, Home);
 PageScreens.set(ARTICLES_SCREEN, Articles);
 PageScreens.set(PRACTICES_SCREEN, Practices);
-PageScreens.set(PRACTICES_SCREEN, Podcasts);
+PageScreens.set(PODCASTS_SCREEN, Podcasts);
 PageScreens.set(ABOUT_SCREEN, About);
 
 export default PageScreens;

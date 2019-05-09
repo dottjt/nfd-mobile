@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Platform, Text, View, FlatList } from 'react-native';
 import { Navigation } from 'react-native-navigation';
 import { Container, Item, ItemTitle, ItemDate } from '../emotion/components';
+import { PageTitle, PageText } from '../emotion/text';
 import StatusBarMain from '../modules/StatusBarMain';
 
 import articlesJSON from '../content/api/articles';
@@ -28,13 +29,13 @@ export default class Articles extends Component {
     return (
       <Container>
         <StatusBarMain/>
-        <Text>NeverFap Deluxe Articles</Text>
+        <PageTitle>NeverFap Deluxe Articles</PageTitle>
         <FlatList
           data={articlesJSON}
           renderItem={item =>
-            <Item onPress={() => this.navigateToContent(generateProperTitle(properTitle))}>
-              <ItemTitle>{title}</ItemTitle>
-              <ItemDate>{date}</ItemDate>
+            <Item onPress={() => this.navigateToContent(generateProperTitle(item.title))}>
+              <ItemTitle>{item.title}</ItemTitle>
+              <ItemDate>{item.date}</ItemDate>
             </Item>
           }
         />

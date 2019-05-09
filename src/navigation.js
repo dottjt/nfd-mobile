@@ -4,6 +4,7 @@ import {
   ARTICLES_SCREEN,
   PRACTICES_SCREEN,
   PODCASTS_SCREEN,
+  ABOUT_SCREEN,
 } from './screens/pageScreens';
 
 export const navigationMain = () => Navigation.setRoot({

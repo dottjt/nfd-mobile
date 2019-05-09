@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
+import { Container } from '../../emotion/components';
 import { StatusBarStack } from '../../modules/StatusBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
 import { content__title } from '../styles/contentStyles';

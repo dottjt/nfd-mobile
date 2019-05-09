@@ -38,5 +38,5 @@ yarn add react-apollo apollo-cache-inmemory apollo-client apollo-link apollo-lin
 yarn add graphql-tag graphql
 
 yarn add react-native-linear-gradient
-
-https://wix.github.io/react-native-navigation/#/docs/Installing
+https://github.com/react-native-community/react-native-linear-gradient
+// may have to do it manually, have tried linking first. 
