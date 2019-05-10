@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { Text, FlatList } from 'react-native';
 import { Container } from '../emotion/components';
 import { PageTitle, PageSubTitle } from '../emotion/text';
 
 import StatusBarMain from './StatusBarMain';
-import { ContentListItem } from 'ContentListItem';
+import ContentListItem from './ContentListItem';
+
 import { ApolloProvider } from 'react-apollo';
 import { Query } from 'react-apollo';
 
@@ -15,7 +16,6 @@ import articlesLatestJSON from '../content/api/articlesLatest';
 import practicesLatestJSON from '../content/api/practicesLatest';
 import podcastsLatestJSON from '../content/api/podcastsLatest';
 // import meditationsJSON from '../content/api/meditations';
-
 
 export default class HomePage extends Component {
   render() {
@@ -34,43 +34,40 @@ export default class HomePage extends Component {
     //         getAccountabilityReactsStats,
     //       } = data;
 
-          return (
-            <Container>
-              <StatusBarMain/>
-              <PageTitle>NeverFap Deluxe</PageTitle>
-              <Text>Daddy Reade is here to help, baby.</Text>
+    return (
+      <Container>
+        <StatusBarMain />
+        <PageTitle>NeverFap Deluxe</PageTitle>
+        <Text>Daddy Reade is here to help, baby.</Text>
 
-              <PageSubTitle>Latest Articles</PageSubTitle>
-              <FlatList
-                data={articlesLatestJSON}
-                renderItem={item => <ContentItem item={item} content_type={content_type} />}
-                keyExtractor={(item, index) => item.title + index}
+        <PageSubTitle>Latest Articles</PageSubTitle>
+        <FlatList
+          data={articlesLatestJSON}
+          renderItem={(item) => (
+            <ContentListItem item={item} contentType={'articles'} />
+          )}
+          keyExtractor={(item, index) => item.title + index}
+        />
 
-              />
-                {articlesLatestJSON.map(item => {
+        <PageSubTitle>Latest Practices</PageSubTitle>
+        <FlatList
+          data={practicesLatestJSON}
+          renderItem={(item) => (
+            <ContentListItem item={item} contentType={'practices'} />
+          )}
+          keyExtractor={(item, index) => item.title + index}
+        />
 
-                })}
-
-              <PageSubTitle>Latest Practices</PageSubTitle>
-              <FlatList
-
-              />
-                {practicesLatestJSON.map(item => {
-
-                })}
-
-
-              <PageSubTitle>Latest Podcast</PageSubTitle>
-              <FlatList
-
-              />
-                {podcastsLatestJSON.map(item => {
-
-                })}
-
-
-            </Container>
-          );
+        <PageSubTitle>Latest Podcast</PageSubTitle>
+        <FlatList
+          data={podcastsLatestJSON}
+          renderItem={(item) => (
+            <ContentListItem item={item} contentType={'podcasts'} />
+          )}
+          keyExtractor={(item, index) => item.title + index}
+        />
+      </Container>
+    );
     //     }};
     //     </Query>
     //   </ApolloProvider>

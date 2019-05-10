@@ -18,3 +18,14 @@ export const setRoot = (properTitle, props = {}) => {
     }
   });
 }
+
+export const pushNavigation = (properTitle, props = {}) => {
+  Navigation.push(properTitle, {
+    component: {
+      name: `navigation.${properTitle}`,
+      passProps: {
+        ...props,
+      }
+    },
+  });
+}

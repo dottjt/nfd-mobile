@@ -12,167 +12,169 @@ import {
   CONTENT_SCREEN,
 } from './screens/pageScreens';
 
-export const navigationMain = () => Navigation.setRoot({
-  root: {
-    bottomTabs: {
-      id: 'BottomTabsId',
-      children: [
-        {
-          component: {
-            name: HOME_SCREEN,
-            options: {
-              bottomTab: {
-                fontSize: 12,
-                text: 'Home',
-                // icon: require('./signin.png')
-              }
-            }
+export const navigationMain = () =>
+  Navigation.setRoot({
+    root: {
+      bottomTabs: {
+        id: 'BottomTabsId',
+        children: [
+          {
+            component: {
+              name: HOME_SCREEN,
+              options: {
+                bottomTab: {
+                  fontSize: 12,
+                  text: 'Home',
+                  // icon: require('./signin.png')
+                },
+              },
+            },
           },
-        },
-        {
-        stack: {
-          children: [
-            {
+          {
+            // stack: {
+            //   children: [
+            //     {
+            //       name: ARTICLES_SCREEN,
+            //       options: {
+            //         bottomTab: {
+            //           fontSize: 12,
+            //           text: 'Articles',
+            //           // icon: require('./signin.png')
+            //         }
+            //       }
+            //     },
+            //     {
+            //       name: CONTENT_SCREEN,
+            //       options: {
+            //         bottomTab: {
+            //           fontSize: 12,
+            //           text: 'Articles - Content',
+            //           // icon: require('./signin.png')
+            //         }
+            //       }
+            //     },
+            //   ]
+            // },
+
+            component: {
               name: ARTICLES_SCREEN,
+              passProps: {
+                contentType: 'articles',
+              },
               options: {
                 bottomTab: {
                   fontSize: 12,
                   text: 'Articles',
                   // icon: require('./signin.png')
-                }
-              }
+                },
+              },
             },
-            {
-              name: CONTENT_SCREEN,
+          },
+          {
+            component: {
+              name: PRACTICES_SCREEN,
+              passProps: {
+                contentType: 'practices',
+              },
               options: {
                 bottomTab: {
                   fontSize: 12,
-                  text: 'Articles - Content',
+                  text: 'Practices',
                   // icon: require('./signin.png')
-                }
-              }
+                },
+              },
             },
-          ]
-        },
-
-          // component: {
-          //   name: ARTICLES_SCREEN,
-          //   passProps: {
-          //     content_type: 'articles',
-          //   },
-          //   options: {
-          //     bottomTab: {
-          //       fontSize: 12,
-          //       text: 'Articles',
-          //       // icon: require('./signin.png')
+          },
+          {
+            component: {
+              name: PODCASTS_SCREEN,
+              passProps: {
+                contentType: 'podcasts',
+              },
+              options: {
+                bottomTab: {
+                  fontSize: 12,
+                  text: 'Podcasts',
+                  // icon: require('./signin.png')
+                },
+              },
+            },
+          },
+          // {
+          //   component: {
+          //     name: MEDITATIONS_SCREEN,
+          //     passProps: {
+          //       contentType: 'meditations',
+          //     },
+          //     options: {
+          //       bottomTab: {
+          //         fontSize: 12,
+          //         text: 'Meditations',
+          //         // icon: require('./signin.png')
+          //       }
           //     }
-          //   }
+          //   },
           // },
-        },
-        {
-          component: {
-            name: PRACTICES_SCREEN,
-            passProps: {
-              content_type: 'practices',
+          {
+            component: {
+              name: OTHER_SCREEN,
+              passProps: {
+                contentType: 'other',
+              },
+              options: {
+                bottomTab: {
+                  fontSize: 12,
+                  text: 'More',
+                  // icon: require('./signin.png')
+                },
+              },
             },
-            options: {
-              bottomTab: {
-                fontSize: 12,
-                text: 'Practices',
-                // icon: require('./signin.png')
-              }
-            }
           },
-        },
-        {
-          component: {
-            name: PODCASTS_SCREEN,
-            passProps: {
-              content_type: 'podcasts',
+        ],
+      },
+    },
+  });
+
+export const navigationSettings = () =>
+  Navigation.setRoot({
+    root: {
+      stack: {
+        id: 'AboutId',
+        children: [
+          {
+            component: {
+              name: SETTINGS_SCREEN,
             },
-            options: {
-              bottomTab: {
-                fontSize: 12,
-                text: 'Podcasts',
-                // icon: require('./signin.png')
-              }
-            }
           },
-        },
-        // {
-        //   component: {
-        //     name: MEDITATIONS_SCREEN,
-        //     passProps: {
-        //       content_type: 'meditations',
-        //     },
-        //     options: {
-        //       bottomTab: {
-        //         fontSize: 12,
-        //         text: 'Meditations',
-        //         // icon: require('./signin.png')
-        //       }
-        //     }
-        //   },
-        // },
-        {
-          component: {
-            name: OTHER_SCREEN,
-            passProps: {
-              content_type: 'other',
+        ],
+      },
+    },
+  });
+
+export const navigationLeftSideBar = () =>
+  Navigation.setRoot({
+    root: {
+      stack: {
+        id: 'AboutId',
+        children: [
+          {
+            component: {
+              name: SETTINGS_SCREEN,
             },
-            options: {
-              bottomTab: {
-                fontSize: 12,
-                text: 'More',
-                // icon: require('./signin.png')
-              }
-            }
           },
-        },
-      ],
-    }
-  }
-});
+        ],
+      },
+    },
+  });
 
-
-export const navigationSettings = () => Navigation.setRoot({
-  root: {
-    stack: {
-      id: 'AboutId',
-      children: [
-        {
-          component: {
-            name: SETTINGS_SCREEN,
-          }
-        }
-    ],
-    }
-  }
-});
-
-export const navigationLeftSideBar = () => Navigation.setRoot({
-  root: {
-    stack: {
-      id: 'AboutId',
-      children: [
-        {
-          component: {
-            name: SETTINGS_SCREEN,
-          }
-        }
-    ],
-    }
-  }
-});
-
-export const navigationInitialisation = () => Navigation.setRoot({
-  root: {
-    component: {
-      name: INITIALISATION_SCREEN,
-    }
-  }
-});
-
+export const navigationInitialisation = () =>
+  Navigation.setRoot({
+    root: {
+      component: {
+        name: INITIALISATION_SCREEN,
+      },
+    },
+  });
 
 //   stack: {
 //     children: [
@@ -198,8 +200,6 @@ export const navigationInitialisation = () => Navigation.setRoot({
 //       },
 //     ]
 //   },
-
-
 
 // const sideMenu = {
 //   left: {

@@ -1,5 +1,6 @@
 const fse = require('fs-extra');
 const _ = require('lodash');
+const { generateProperTitle } = require('./generateUtil');
 
 const capitalize = (s) => {
   if (typeof s !== 'string') return '';
@@ -18,15 +19,15 @@ const saveList = (items, type, number) => {
 };
 
 const generateImportStatements = (items, type) => (
-  items.map(item => `import ${item.title} from '../content/${type}/${item.title}';\n`).join('')
+  items.map(item => `import ${generateProperTitle(item.title)} from '../content/${type}/${generateProperTitle(item.title)}';\n`).join('')
 );
 
 const generateScreenStatements = (items) => (
-  items.map(item => `export const ${item.title.toUpperCase()}_SCREEN = 'navigation.${item.title}Screen';\n`).join('')
+  items.map(item => `export const ${generateProperTitle(item.title).toUpperCase()}_SCREEN = 'navigation.${generateProperTitle(item.title)}Screen';\n`).join('')
 );
 
 const generateSetScreenStatements = (items, type) => (
-  items.map(item => `${capitalize(type)}Screens.set(${item.title.toUpperCase()}_SCREEN, ${item.title});\n`).join('')
+  items.map(item => `${capitalize(type)}Screens.set(${generateProperTitle(item.title).toUpperCase()}_SCREEN, ${generateProperTitle(item.title)});\n`).join('')
 );
 
 const createScreens = (items, type) => {

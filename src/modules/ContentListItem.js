@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
+import { TouchableOpacity } from 'react-native';
 import { Item, ItemTitle, ItemDate } from '../emotion/components';
 
-import { generateProperTitle, setRoot } from '../util';
+import { generateProperTitle, setRoot, pushNavigation } from '../util';
 import { CONTENT_SCREEN } from '../screens/pageScreens';
 
 export default class ContentListItem extends Component {
-  navigateToContent = (properTitle) => {
-    setRoot(properTitle);
-  }
-
   render() {
-    const { item, content_type } = this.props;
+    const { item, contentType } = this.props;
     const properTitle = generateProperTitle(item.item.title);
-    switch(content_type) {
+    switch (contentType) {
       case 'other':
         return (
           <Item onPress={() => setRoot(properTitle)}>
@@ -21,24 +18,32 @@ export default class ContentListItem extends Component {
         );
       case 'articles':
         return (
-          <Item onPress={() => setRoot(CONTENT_SCREEN, { contentTitle: properTitle })}>
-            <ItemTitle>{item.item.title}</ItemTitle>
-            <ItemDate>{item.item.date}</ItemDate>
-          </Item>
+          <TouchableOpacity onPress={() =>
+            pushNavigation(CONTENT_SCREEN, {
+              contentTitle: properTitle,
+              contentType: 'articles',
+            })}>
+            <Item>
+              <ItemTitle>{item.item.title}</ItemTitle>
+              <ItemDate>{item.item.date}</ItemDate>
+            </Item>
+          </TouchableOpacity>
+
         );
 
       case 'meditations':
       case 'podcasts':
       case 'practices':
         return (
-          <Item onPress={() => setRoot(properTitle)}>
-            <ItemTitle>{item.item.title}</ItemTitle>
-            <ItemDate>{item.item.date}</ItemDate>
-          </Item>
+          <TouchableOpacity onPress={() => setRoot(properTitle)}>
+            <Item>
+              <ItemTitle>{item.item.title}</ItemTitle>
+              <ItemDate>{item.item.date}</ItemDate>
+            </Item>
+          </TouchableOpacity>
         );
       default:
         throw new Error('incorrect type - ContentListItem render()');
     }
-
   }
 }
