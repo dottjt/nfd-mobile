@@ -5,14 +5,14 @@ import { Container } from '../../emotion/components';
 import { StatusBarStack } from '../../modules/StatusBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
 import { content__title } from '../styles/contentStyles';
-  
+
+ 
 export default class WhyamIAPornAddict extends Component {
   render() {
     return (
       <Container>
         <StatusBarStack/>
         <Text style={content__title}>"Why am I A Porn Addict?"</Text>
-  
         
 
 <Text>It&rsquo;s a question you&rsquo;ve probably been thinking about for a while.</Text>
@@ -198,4 +198,3 @@ export default class WhyamIAPornAddict extends Component {
     );
   }
 }
-  

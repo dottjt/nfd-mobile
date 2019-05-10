@@ -5,14 +5,14 @@ import { Container } from '../../emotion/components';
 import { StatusBarStack } from '../../modules/StatusBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
 import { content__title } from '../styles/contentStyles';
-  
+
+ 
 export default class FocusOnYourFingerAndYourBackground extends Component {
   render() {
     return (
       <Container>
         <StatusBarStack/>
         <Text style={content__title}>Focus On Your Finger And Your Background</Text>
-  
         <Text>This is a simple exercise most people can benefit from straight-away without too much effort.</Text>
 
 <Text>Certainly, it was one of the first awareness exercises I learnt when I was starting out with my own mental health journey, and it&rsquo;s one that has stuck with me since.</Text>
@@ -85,4 +85,3 @@ export default class FocusOnYourFingerAndYourBackground extends Component {
     );
   }
 }
-  

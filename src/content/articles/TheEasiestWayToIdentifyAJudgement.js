@@ -5,14 +5,14 @@ import { Container } from '../../emotion/components';
 import { StatusBarStack } from '../../modules/StatusBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
 import { content__title } from '../styles/contentStyles';
-  
+
+ 
 export default class TheEasiestWayToIdentifyAJudgement extends Component {
   render() {
     return (
       <Container>
         <StatusBarStack/>
         <Text style={content__title}>The Easiest Way To Identify A Judgement</Text>
-  
         <Text>Some people have a hard time identifying the judgements they make on a daily basis.</Text>
 
 <Text>It could be because they judge out of habit and therefore are doing it subsciously without realising it, or perhaps because they&rsquo;re simply unable to recognise a judgement once they&rsquo;ve made one.</Text>
@@ -145,4 +145,3 @@ export default class TheEasiestWayToIdentifyAJudgement extends Component {
     );
   }
 }
-  

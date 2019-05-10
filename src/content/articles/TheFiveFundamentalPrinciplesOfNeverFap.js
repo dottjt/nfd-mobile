@@ -5,14 +5,14 @@ import { Container } from '../../emotion/components';
 import { StatusBarStack } from '../../modules/StatusBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
 import { content__title } from '../styles/contentStyles';
-  
+
+ 
 export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
   render() {
     return (
       <Container>
         <StatusBarStack/>
         <Text style={content__title}>The Five Fundamental Principles Of NeverFap</Text>
-  
         
 
 <Text>The NeverFap method of addressing porn addiction comprises of five core principles.</Text>
@@ -387,4 +387,3 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
     );
   }
 }
-  

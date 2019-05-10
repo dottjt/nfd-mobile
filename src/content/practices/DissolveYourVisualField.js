@@ -5,14 +5,14 @@ import { Container } from '../../emotion/components';
 import { StatusBarStack } from '../../modules/StatusBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
 import { content__title } from '../styles/contentStyles';
-  
+
+ 
 export default class DissolveYourVisualField extends Component {
   render() {
     return (
       <Container>
         <StatusBarStack/>
         <Text style={content__title}>Dissolve Your Visual Field</Text>
-  
         
 
 <Text>This exercise is designed to help dissolve your ego.</Text>
@@ -126,4 +126,3 @@ export default class DissolveYourVisualField extends Component {
     );
   }
 }
-  

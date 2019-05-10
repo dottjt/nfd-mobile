@@ -5,14 +5,14 @@ import { Container } from '../../emotion/components';
 import { StatusBarStack } from '../../modules/StatusBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
 import { content__title } from '../styles/contentStyles';
-  
+
+ 
 export default class TheImportanceOfMeditationForPornAddiction extends Component {
   render() {
     return (
       <Container>
         <StatusBarStack/>
         <Text style={content__title}>The Importance Of Meditation For Porn Addiction</Text>
-  
         
 
 <Text>Meditation is the single most important thing you can do for your porn addiction.</Text>
@@ -159,4 +159,3 @@ export default class TheImportanceOfMeditationForPornAddiction extends Component
     );
   }
 }
-  

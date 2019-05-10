@@ -4,7 +4,7 @@ const lodash = require('lodash');
 
 const { ARTICLES_URL, PRACTICES_URL, PODCASTS_URL, MEDITATIONS_URL } = require('./const');
 
-const { saveList, saveListLatest, createScreens } = require('./util/generateApiUtil');
+const { saveList, createScreens } = require('./util/generateApiUtil');
 
 const saveListApiArticles = async () => {
   try {
@@ -12,7 +12,7 @@ const saveListApiArticles = async () => {
     const items = response.data.data.articles;
 
     saveList(items, 'articles');
-    saveListLatest(items, 'articles');
+    saveList(items, 'articles', 5);
     createScreens(items, 'articles');
 
   } catch(error) {
@@ -26,7 +26,7 @@ const saveListApiPractices = async () => {
     const items = response.data.data.practices;
 
     saveList(items, 'practices');
-    saveListLatest(items, 'practices');
+    saveList(items, 'practices', 5);
     createScreens(items, 'practices');
 
   } catch(error) {
@@ -40,7 +40,7 @@ const saveListApiMeditations = async () => {
     const items = response.data.data.meditations;
 
     saveList(items, 'meditations');
-    saveListLatest(items, 'meditations');
+    saveList(items, 'meditations', 5);
     createScreens(items, 'meditations');
 
   } catch(error) {
@@ -54,7 +54,7 @@ const saveListApiPodcasts = async () => {
     const items = response.data.data.podcasts;
 
     saveList(items, 'podcasts');
-    saveListLatest(items, 'podcasts');
+    saveList(items, 'podcasts', 5);
     createScreens(items, 'podcasts');
 
   } catch(error) {

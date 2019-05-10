@@ -1,9 +1,13 @@
+import { Dimensions } from 'react-native';
 import styled, { css } from '@emotion/native';
 
 export const Container = styled.View`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: ${Dimensions.get('window').width};
+
   margin: 10px;
   border: 4px solid black;
 `;
@@ -14,6 +18,9 @@ export const Item = styled.View`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  width: ${Dimensions.get('window').width};
+  height: 40px;
 
   padding: 8px;
   border: 4px solid rgba(255, 46, 182, 1);
@@ -40,7 +47,9 @@ export const StatusBar = styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
   height: 30px;
+  width: ${Dimensions.get('window').width};
+
   border-bottom: 4px solid black;
-  align-items: stretch;
 `;

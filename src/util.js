@@ -6,12 +6,15 @@ export const generateProperTitle = (title) => {
   return title2;
 }
 
-export const setRoot = (properTitle) => {
+export const setRoot = (properTitle, props = {}) => {
   Navigation.setRoot({
     root: {
       component: {
         name: `navigation.${properTitle}`,
-      }
+        passProps: {
+          ...props,
+        }
+      },
     }
-  });  
+  });
 }

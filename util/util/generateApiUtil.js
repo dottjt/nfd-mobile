@@ -1,19 +1,20 @@
-const fse = require("fs-extra");
+const fse = require('fs-extra');
+const _ = require('lodash');
 
 const capitalize = (s) => {
   if (typeof s !== 'string') return '';
   return s.charAt(0).toUpperCase() + s.slice(1);
 };
 
-const saveList = (items, type) => {
-  const itemsComplete = `const items = ${JSON.stringify(items)}\nexport default items`;
-  fse.outputFileSync(`src/content/api/${type}.js`, itemsComplete, [{}]);
-};
+const saveList = (items, type, number) => {
+  const finalItems = number ? _.take(items, number) : items;
+  const itemsComplete = `const items = ${JSON.stringify(finalItems)}\nexport default items`;
 
-const saveListLatest = (items, type) => {
-  // take five.
-  const itemsComplete = `const items = ${JSON.stringify(items)}\nexport default items`;
-  fse.outputFileSync(`src/content/api/${type}Latest.js`, itemsComplete, [{}]);
+  if (number) {
+    fse.outputFileSync(`src/content/api/${type}Latest.js`, itemsComplete, [{}]);
+  } else {
+    fse.outputFileSync(`src/content/api/${type}.js`, itemsComplete, [{}]);
+  }
 };
 
 const generateImportStatements = (items, type) => (
@@ -29,7 +30,7 @@ const generateSetScreenStatements = (items, type) => (
 );
 
 const createScreens = (items, type) => {
-  const template = 
+  const template =
   `
   ${generateImportStatements(items, type)}
   const ${capitalize(type)}Screens = new Map();\n
@@ -37,12 +38,11 @@ const createScreens = (items, type) => {
   ${generateSetScreenStatements(items, type)}
   export default ${capitalize(type)}Screens;\n
   `;
-  
+
   fse.outputFileSync(`src/screens/${type}Screens.js`, template, [{}]);
 };
 
 module.exports = {
   saveList,
-  saveListLatest,
   createScreens,
 };

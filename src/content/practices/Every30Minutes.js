@@ -5,14 +5,14 @@ import { Container } from '../../emotion/components';
 import { StatusBarStack } from '../../modules/StatusBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
 import { content__title } from '../styles/contentStyles';
-  
+
+ 
 export default class Every30Minutes extends Component {
   render() {
     return (
       <Container>
         <StatusBarStack/>
         <Text style={content__title}>Every 30 Minutes</Text>
-  
         <Text>The idea behind this exercise is to help you develop awareness throughout your day on an interval basis.</Text>
 
 <Text>Essentially, the intention behind <Text style={{fontWeight: "bold"}}>Every 30 Minutes</Text> is to help keep a constant gauge of what you&rsquo;re doing.</Text>
@@ -71,4 +71,3 @@ export default class Every30Minutes extends Component {
     );
   }
 }
-  

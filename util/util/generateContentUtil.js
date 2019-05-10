@@ -12,7 +12,7 @@ const generateDate = (date) => (
 const generateClassReplacement = (content) => (
   content
     .replace(/<hr class=\"/g, '<View style={')
-    .replace(/\"\/\u003e/g, '}/>');
+    .replace(/\"\/\u003e/g, '}/>')
 );
 
 const generateContentReplacement = (content) => (
@@ -27,7 +27,11 @@ const generateContentReplacement = (content) => (
     .replace(/<\/?a[^>]*>/g, '') // </ a tag references>
 );
 
-const generateReactNativeTemplate = (item, properTitle) => (
+const generateFinalExportStatement = (allContentNamesExport) => (
+  `export default { ${allContentNamesExport} }`
+);
+
+const generateContentHeader = () => (
 `
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
@@ -35,8 +39,12 @@ import { Container } from '../../emotion/components';
 import { StatusBarStack } from '../../modules/StatusBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
 import { content__title } from '../styles/contentStyles';
+`
+);
 
-export default class ${properTitle} extends Component {
+const generateContent = (item, properTitle, type) => (
+`
+${type === 'all' ? '' : 'export default'} class ${properTitle} extends Component {
   render() {
     return (
       <Container>
@@ -53,22 +61,40 @@ export default class ${properTitle} extends Component {
 const generateFiles = (items, type) => {
   for (const item of items) {
     const properTitle = generateProperTitle(item.title);
-    const template = generateReactNativeTemplate(item, properTitle);
+    const template = `${generateContentHeader()}\n ${generateContent(item, properTitle, 'single')}`;
     fse.outputFileSync(`src/content/${type}/${properTitle}.js`, template, [{}]);
   }
 };
 
+const generateFilesAll = (items, type) => {
+  let allContent = '';
+  let allContentNamesExport = '';
+
+  for (const item of items) {
+    const properTitle = generateProperTitle(item.title);
+    allContentNamesExport += `${properTitle},`
+    allContent += generateContent(item, properTitle, 'all');
+  }
+
+  const template = `${generateContentHeader()}\n${allContent}\n${generateFinalExportStatement(allContentNamesExport)}\n`;
+  fse.outputFileSync(`src/content/${type}/index.js`, template, [{}]);
+};
 
 
 // GENERATE PODCAST TEMPLATE
 
-const generatePodcastTemplate = (item, properTitle) => (
+const generatePodcastContentHeader = () => (
 `
-  import React, { Component } from 'react';
-  import { Text, View } from 'react-native';
-  import { StatusBarStack } from '../../modules/StatusBarStack';
-  
-  export default class ${properTitle} extends Component {
+import React, { Component } from 'react';
+import { Text, View } from 'react-native';
+import { StatusBarStack } from '../../modules/StatusBarStack';
+import { content__title } from '../styles/contentStyles';
+`
+);
+
+const generatePodcastContent = (item, properTitle, type) => (
+`
+${type === 'all' ? '' : 'export default'} class ${properTitle} extends Component {
     render() {
       return (
         <Container>
@@ -86,12 +112,29 @@ const generatePodcastTemplate = (item, properTitle) => (
 const generatePodcastFiles = (items, type) => {
   for (const item of items) {
     const properTitle = generateProperTitle(item.title);
-    const template = generatePodcastTemplate(item, properTitle);
+    const template = `${generatePodcastContentHeader()}${generatePodcastContent(item, properTitle, 'single')}`;
     fse.outputFileSync(`src/content/${type}/${properTitle}.js`, template, [{}]);
   }
 };
 
+const generatePodcastFilesAll = (items, type) => {
+  let allContent = '';
+  let allContentNamesExport = '';
+
+  for (const item of items) {
+    const properTitle = generateProperTitle(item.title);
+    allContentNamesExport += `${properTitle},`
+    allContent += generateContent(item, properTitle, 'all');
+  }
+
+  const template = `${generatePodcastContentHeader()}\n${allContent}\n${generateFinalExportStatement(allContentNamesExport)}\n`;
+  fse.outputFileSync(`src/content/${type}/index.js`, template, [{}]);
+};
+
+
 module.exports = {
+  generateFilesAll,
   generateFiles,
+  generatePodcastFilesAll,
   generatePodcastFiles,
 }

@@ -5,9 +5,11 @@ import {
   ARTICLES_SCREEN,
   PRACTICES_SCREEN,
   PODCASTS_SCREEN,
-  MEDITATIONS_SCREEN,
+  // MEDITATIONS_SCREEN,
+  INITIALISATION_SCREEN,
   SETTINGS_SCREEN,
   OTHER_SCREEN,
+  CONTENT_SCREEN,
 } from './screens/pageScreens';
 
 export const navigationMain = () => Navigation.setRoot({
@@ -28,19 +30,44 @@ export const navigationMain = () => Navigation.setRoot({
           },
         },
         {
-          component: {
-            name: ARTICLES_SCREEN,
-            passProps: {
-              content_type: 'articles',
-            },
-            options: {
-              bottomTab: {
-                fontSize: 12,
-                text: 'Articles',
-                // icon: require('./signin.png')
+        stack: {
+          children: [
+            {
+              name: ARTICLES_SCREEN,
+              options: {
+                bottomTab: {
+                  fontSize: 12,
+                  text: 'Articles',
+                  // icon: require('./signin.png')
+                }
               }
-            }
-          },
+            },
+            {
+              name: CONTENT_SCREEN,
+              options: {
+                bottomTab: {
+                  fontSize: 12,
+                  text: 'Articles - Content',
+                  // icon: require('./signin.png')
+                }
+              }
+            },
+          ]
+        },
+
+          // component: {
+          //   name: ARTICLES_SCREEN,
+          //   passProps: {
+          //     content_type: 'articles',
+          //   },
+          //   options: {
+          //     bottomTab: {
+          //       fontSize: 12,
+          //       text: 'Articles',
+          //       // icon: require('./signin.png')
+          //     }
+          //   }
+          // },
         },
         {
           component: {
@@ -107,23 +134,6 @@ export const navigationMain = () => Navigation.setRoot({
   }
 });
 
-// const sideMenu = {
-//   left: {
-//     component: {}
-//   },
-//   center: {
-//     stack: {
-//       options: {},
-//       children: [{
-//         component: {}
-//       }]
-//     }
-//   },
-//   right: {
-//     component: {}
-//   }
-// }
-
 
 export const navigationSettings = () => Navigation.setRoot({
   root: {
@@ -155,6 +165,14 @@ export const navigationLeftSideBar = () => Navigation.setRoot({
   }
 });
 
+export const navigationInitialisation = () => Navigation.setRoot({
+  root: {
+    component: {
+      name: INITIALISATION_SCREEN,
+    }
+  }
+});
+
 
 //   stack: {
 //     children: [
@@ -180,3 +198,22 @@ export const navigationLeftSideBar = () => Navigation.setRoot({
 //       },
 //     ]
 //   },
+
+
+
+// const sideMenu = {
+//   left: {
+//     component: {}
+//   },
+//   center: {
+//     stack: {
+//       options: {},
+//       children: [{
+//         component: {}
+//       }]
+//     }
+//   },
+//   right: {
+//     component: {}
+//   }
+// }

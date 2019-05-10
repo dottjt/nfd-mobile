@@ -5,14 +5,14 @@ import { Container } from '../../emotion/components';
 import { StatusBarStack } from '../../modules/StatusBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
 import { content__title } from '../styles/contentStyles';
-  
+
+ 
 export default class TheFivePrinciplesOfNeverFapAsTheyRelateToMyLife extends Component {
   render() {
     return (
       <Container>
         <StatusBarStack/>
         <Text style={content__title}>The Five Principles Of NeverFap As They Relate To My Life</Text>
-  
         
 
 <Text>To be quite honest, the five principles are quite arbitrary.</Text>
@@ -173,4 +173,3 @@ export default class TheFivePrinciplesOfNeverFapAsTheyRelateToMyLife extends Com
     );
   }
 }
-  

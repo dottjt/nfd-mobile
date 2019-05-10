@@ -5,14 +5,14 @@ import { Container } from '../../emotion/components';
 import { StatusBarStack } from '../../modules/StatusBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
 import { content__title } from '../styles/contentStyles';
-  
+
+ 
 export default class TheEasiestWayToNotTakeOurEmotionsPersonally extends Component {
   render() {
     return (
       <Container>
         <StatusBarStack/>
         <Text style={content__title}>The Easiest Way To Not Take Our Emotions Personally</Text>
-  
         <Text>There are times when our emotions can feel unmanagable.</Text>
 
 <Text>For example, we may be feeling intensely anxious about a date we have planned for that night, or we may even be feeling trapped and under the pressure to perform well at school or in our jobs.</Text>
@@ -165,4 +165,3 @@ export default class TheEasiestWayToNotTakeOurEmotionsPersonally extends Compone
     );
   }
 }
-  

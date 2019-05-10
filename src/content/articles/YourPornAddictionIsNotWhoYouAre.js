@@ -5,14 +5,14 @@ import { Container } from '../../emotion/components';
 import { StatusBarStack } from '../../modules/StatusBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
 import { content__title } from '../styles/contentStyles';
-  
+
+ 
 export default class YourPornAddictionIsNotWhoYouAre extends Component {
   render() {
     return (
       <Container>
         <StatusBarStack/>
         <Text style={content__title}>Your Porn Addiction Is Not Who You Are</Text>
-  
         
 
 
@@ -127,4 +127,3 @@ export default class YourPornAddictionIsNotWhoYouAre extends Component {
     );
   }
 }
-  
