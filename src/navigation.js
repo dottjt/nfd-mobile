@@ -30,65 +30,64 @@ export const navigationMain = () =>
               },
             },
           },
-          {
-            stack: {
-              children: [
-                {
-                  component: {
-                    name: CONTENT_SCREEN,
-                    passProps: {
-                      contentType: 'articles',
-                    },
-                  }
-                },
-                {
-                  component: {
-                    name: ARTICLES_SCREEN,
-                    options: {
-                      bottomTab: {
-                        fontSize: 12,
-                        text: 'Articles',
-                        // icon: require('./signin.png')
-                      }
-                    },
-                    passProps: {
-                      contentType: 'articles',
-                    },
-                  }
-                },
-              ]
-            },
-          },
-          {
-            stack: {
-              children: [
-                {
-                  component: {
-                    name: CONTENT_SCREEN,
-                    passProps: {
-                      contentType: 'practices',
-                    },
-                  }
-                },
-                {
-                  component: {
-                    name: PRACTICES_SCREEN,
-                    options: {
-                      bottomTab: {
-                        fontSize: 12,
-                        text: 'Practices',
-                        // icon: require('./signin.png')
-                      }
-                    },
-                    passProps: {
-                      contentType: 'practices',
-                    },
-                  }
-                },
-              ]
-            },
-
-          },
+          // {
+          //   stack: {
+          //     children: [
+          //       {
+          //         component: {
+          //           name: CONTENT_SCREEN,
+          //           passProps: {
+          //             contentType: 'articles',
+          //           },
+          //         }
+          //       },
+          //       {
+          //         component: {
+          //           name: ARTICLES_SCREEN,
+          //           options: {
+          //             bottomTab: {
+          //               fontSize: 12,
+          //               text: 'Articles',
+          //               // icon: require('./signin.png')
+          //             }
+          //           },
+          //           passProps: {
+          //             contentType: 'articles',
+          //           },
+          //         }
+          //       },
+          //     ]
+          //   },
+          // },
+          // {
+          //   stack: {
+          //     children: [
+          //       {
+          //         component: {
+          //           name: CONTENT_SCREEN,
+          //           passProps: {
+          //             contentType: 'practices',
+          //           },
+          //         }
+          //       },
+          //       {
+          //         component: {
+          //           name: PRACTICES_SCREEN,
+          //           options: {
+          //             bottomTab: {
+          //               fontSize: 12,
+          //               text: 'Practices',
+          //               // icon: require('./signin.png')
+          //             }
+          //           },
+          //           passProps: {
+          //             contentType: 'practices',
+          //           },
+          //         }
+          //       },
+          //     ]
+          //   },
+          // },
 
           // {
           //   stack: {
@@ -135,21 +134,21 @@ export const navigationMain = () =>
           //     }
           //   },
           // },
-          {
-            component: {
-              name: OTHER_SCREEN,
-              passProps: {
-                contentType: 'other',
-              },
-              options: {
-                bottomTab: {
-                  fontSize: 12,
-                  text: 'More',
-                  // icon: require('./signin.png')
-                },
-              },
-            },
-          },
+          // {
+          //   component: {
+          //     name: OTHER_SCREEN,
+          //     passProps: {
+          //       contentType: 'other',
+          //     },
+          //     options: {
+          //       bottomTab: {
+          //         fontSize: 12,
+          //         text: 'More',
+          //         // icon: require('./signin.png')
+          //       },
+          //     },
+          //   },
+          // },
         ],
       },
     },

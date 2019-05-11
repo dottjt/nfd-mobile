@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class PayingTheNeverFapMaintenanceTax extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Paying The NeverFap Maintenance Tax</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Paying The NeverFap Maintenance Tax</Text>
+          
 
 <Text>What exactly is the NeverFap Maintenance Tax?</Text>
 
@@ -33,7 +35,7 @@ export default class PayingTheNeverFapMaintenanceTax extends Component {
 
 <View style={hr3}/>
 
-<h3>In doing this, we make significant compromises to our ability to function.</h3>
+<Text style={h3}>In doing this, we make significant compromises to our ability to function.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -46,7 +48,7 @@ export default class PayingTheNeverFapMaintenanceTax extends Component {
 
 <View style={hr2}/>
 
-<h2>In other words, if you’re struggling with your porn addiction it may be because you’re not paying your maintenance tax in full.</h2>
+<Text style={h2}>In other words, if you’re struggling with your porn addiction it may be because you’re not paying your maintenance tax in full.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -64,7 +66,7 @@ export default class PayingTheNeverFapMaintenanceTax extends Component {
 
 <View style={hr3}/>
 
-<h3>Facing the consequences of imbalance</h3>
+<Text style={h3}>Facing the consequences of imbalance</Text>
 
 <View style={hr3__bottom}/>
 
@@ -95,7 +97,7 @@ export default class PayingTheNeverFapMaintenanceTax extends Component {
 
 <View style={hr2}/>
 
-<h2>Change in attitude</h2>
+<Text style={h2}>Change in attitude</Text>
 
 <View style={hr2__bottom}/>
 
@@ -119,7 +121,7 @@ export default class PayingTheNeverFapMaintenanceTax extends Component {
 
 <View style={hr3}/>
 
-<h3>By respecting balance in our life, we can have everything we want without the compromise.</h3>
+<Text style={h3}>By respecting balance in our life, we can have everything we want without the compromise.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -134,7 +136,8 @@ export default class PayingTheNeverFapMaintenanceTax extends Component {
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

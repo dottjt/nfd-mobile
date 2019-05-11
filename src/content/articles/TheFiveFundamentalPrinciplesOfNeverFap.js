@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>The Five Fundamental Principles Of NeverFap</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>The Five Fundamental Principles Of NeverFap</Text>
+          
 
 <Text>The NeverFap method of addressing porn addiction comprises of five core principles.</Text>
 
@@ -27,7 +29,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>What is a fundamental principle and what makes it fundamental?</h3>
+<Text style={h3}>What is a fundamental principle and what makes it fundamental?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -46,7 +48,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr2}/>
 
-<h2>Ground rules</h2>
+<Text style={h2}>Ground rules</Text>
 
 <View style={hr2__bottom}/>
 
@@ -76,7 +78,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>It's called denial.</h3>
+<Text style={h3}>It's called denial.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -93,7 +95,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr2}/>
 
-<h2>The Five Fundamental Principles of NeverFap</h2>
+<Text style={h2}>The Five Fundamental Principles of NeverFap</Text>
 
 <View style={hr2__bottom}/>
 
@@ -127,7 +129,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>What's important to understand is that your mind is fundamentally capable of being controlled.</h3>
+<Text style={h3}>What's important to understand is that your mind is fundamentally capable of being controlled.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -158,7 +160,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>Often we become so affixated with something, either through obsession or neglect, we fail to consider the wider ramifications of our actions.</h3>
+<Text style={h3}>Often we become so affixated with something, either through obsession or neglect, we fail to consider the wider ramifications of our actions.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -173,7 +175,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>And yet, we're so focused on the outcome that we don't quite realise what we're even doing wrong.</h3>
+<Text style={h3}>And yet, we're so focused on the outcome that we don't quite realise what we're even doing wrong.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -188,7 +190,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>They think they can somehow "cheat" the system and come out ahead.</h3>
+<Text style={h3}>They think they can somehow "cheat" the system and come out ahead.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -219,7 +221,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>Instead, we allow our habitual thoughts, emotions and beliefs to take over and continue their self-destructive patterns.</h3>
+<Text style={h3}>Instead, we allow our habitual thoughts, emotions and beliefs to take over and continue their self-destructive patterns.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -234,7 +236,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>Awareness is your ability to sense the world around you.</h3>
+<Text style={h3}>Awareness is your ability to sense the world around you.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -247,7 +249,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>It is simply being present with your senses.</h3>
+<Text style={h3}>It is simply being present with your senses.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -268,7 +270,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>Therefore, solutions which are simple by design are going to be more effective than solutions which are convoluted.</h3>
+<Text style={h3}>Therefore, solutions which are simple by design are going to be more effective than solutions which are convoluted.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -281,7 +283,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>Certainly, part of the reason why we're addicted to porn in the first place is because it's the easy thing to do.</h3>
+<Text style={h3}>Certainly, part of the reason why we're addicted to porn in the first place is because it's the easy thing to do.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -296,7 +298,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>Because life without porn isn't a struggle.</h3>
+<Text style={h3}>Because life without porn isn't a struggle.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -317,7 +319,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>What a lot of people don't realise is that judgement is a mental trap.</h3>
+<Text style={h3}>What a lot of people don't realise is that judgement is a mental trap.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -334,7 +336,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>After all, how can you be aware of what's going on in your mind, if your mind is in a constant state of habitual thinking?</h3>
+<Text style={h3}>After all, how can you be aware of what's going on in your mind, if your mind is in a constant state of habitual thinking?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -351,7 +353,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>You end up having no capacity to address the problems in your life which actually has meaning, like your porn addiction.</h3>
+<Text style={h3}>You end up having no capacity to address the problems in your life which actually has meaning, like your porn addiction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -370,7 +372,7 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>Because at the end of the day, overcoming porn addiction is completely within your reach.</h3>
+<Text style={h3}>Because at the end of the day, overcoming porn addiction is completely within your reach.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -383,7 +385,8 @@ export default class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
   NeverFap Deluxe Article Index.
 </div>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

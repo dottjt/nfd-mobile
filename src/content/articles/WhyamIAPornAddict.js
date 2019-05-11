@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class WhyamIAPornAddict extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>"Why am I A Porn Addict?"</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>"Why am I A Porn Addict?"</Text>
+          
 
 <Text>It&rsquo;s a question you&rsquo;ve probably been thinking about for a while.</Text>
 
@@ -25,7 +27,7 @@ export default class WhyamIAPornAddict extends Component {
 
 <View style={hr3}/>
 
-<h3>After all, it seems like an incredibly logical and reliable thing to do.</h3>
+<Text style={h3}>After all, it seems like an incredibly logical and reliable thing to do.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -44,7 +46,7 @@ export default class WhyamIAPornAddict extends Component {
 
 <View style={hr3}/>
 
-<h3>In fact, trying to understand why we are porn addicts at all, is one of the biggest traps that recovering porn addicts fall into.</h3>
+<Text style={h3}>In fact, trying to understand why we are porn addicts at all, is one of the biggest traps that recovering porn addicts fall into.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -63,7 +65,7 @@ export default class WhyamIAPornAddict extends Component {
 
 <View style={hr3}/>
 
-<h3>You see, you don't figure out what you want in life by thinking about it.</h3>
+<Text style={h3}>You see, you don't figure out what you want in life by thinking about it.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -82,7 +84,7 @@ export default class WhyamIAPornAddict extends Component {
 
 <View style={hr3}/>
 
-<h3>The great thing about NeverFap Deluxe is that you no longer have to waste your time doing things that do not work.</h3>
+<Text style={h3}>The great thing about NeverFap Deluxe is that you no longer have to waste your time doing things that do not work.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -97,7 +99,7 @@ export default class WhyamIAPornAddict extends Component {
 
 <View style={hr3}/>
 
-<h3>It’s called rumination.</h3>
+<Text style={h3}>It’s called rumination.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -112,7 +114,7 @@ export default class WhyamIAPornAddict extends Component {
 
 <View style={hr3}/>
 
-<h3>Which is to say that asking why is great for creating an initial assessment, however beyond that it becomes nothing more than a harmful burden.</h3>
+<Text style={h3}>Which is to say that asking why is great for creating an initial assessment, however beyond that it becomes nothing more than a harmful burden.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -131,7 +133,7 @@ export default class WhyamIAPornAddict extends Component {
 
 <View style={hr3}/>
 
-<h3>Another way of putting it is that we must focus on the how, rather than the why.</h3>
+<Text style={h3}>Another way of putting it is that we must focus on the how, rather than the why.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -194,7 +196,8 @@ export default class WhyamIAPornAddict extends Component {
 
 <Text>Hopefully this article clarifies the change of thinking that needs to take place, in order for us to overcome our porn addiction.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

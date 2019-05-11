@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class StopAbsolutelyEverythingYoureDoing extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Stop Absolutely Everything You're Doing</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Stop Absolutely Everything You're Doing</Text>
+          
 
 
 
@@ -35,7 +37,7 @@ export default class StopAbsolutelyEverythingYoureDoing extends Component {
 
 <View style={hr4}/>
 
-<h4>What this exercise attempts to do is help you better disassociate yourself from this persona.</h4>
+<Text style={h4}>What this exercise attempts to do is help you better disassociate yourself from this persona.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -52,7 +54,7 @@ export default class StopAbsolutelyEverythingYoureDoing extends Component {
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -90,7 +92,8 @@ export default class StopAbsolutelyEverythingYoureDoing extends Component {
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class WhyYouShouldNeverDependOnYourEmotions extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Why You Should Never Depend On Your Emotions</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Why You Should Never Depend On Your Emotions</Text>
+          
 
 <Text>One thing that porn addicts are more-than familiar with is this concept of hope and despair.</Text>
 
@@ -25,7 +27,7 @@ export default class WhyYouShouldNeverDependOnYourEmotions extends Component {
 
 <View style={hr3}/>
 
-<h3>What I want to do in this article is explain the dynamics of this cycle.</h3>
+<Text style={h3}>What I want to do in this article is explain the dynamics of this cycle.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -40,7 +42,7 @@ export default class WhyYouShouldNeverDependOnYourEmotions extends Component {
 
 <View style={hr3}/>
 
-<h3>After all, positive emotions never lie, right?</h3>
+<Text style={h3}>After all, positive emotions never lie, right?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -55,7 +57,7 @@ export default class WhyYouShouldNeverDependOnYourEmotions extends Component {
 
 <View style={hr3}/>
 
-<h3>We feel as if we're already there.</h3>
+<Text style={h3}>We feel as if we're already there.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -70,7 +72,7 @@ export default class WhyYouShouldNeverDependOnYourEmotions extends Component {
 
 <View style={hr2}/>
 
-<h2>And then we relapse and start and whole charade again.</h2>
+<Text style={h2}>And then we relapse and start and whole charade again.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -90,7 +92,7 @@ export default class WhyYouShouldNeverDependOnYourEmotions extends Component {
 
 <View style={hr3}/>
 
-<h3>The alternative is to develop proper self-control over our mind.</h3>
+<Text style={h3}>The alternative is to develop proper self-control over our mind.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -105,7 +107,7 @@ export default class WhyYouShouldNeverDependOnYourEmotions extends Component {
 
 <View style={hr3}/>
 
-<h3>Self-control is not reliant on how we feel in any way.</h3>
+<Text style={h3}>Self-control is not reliant on how we feel in any way.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -120,7 +122,8 @@ export default class WhyYouShouldNeverDependOnYourEmotions extends Component {
 
 <Text>In terms of moving forward, I highly recommend checking out our range of comprehensive NeverFap Practices which are designed to help you regain control over your mind.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

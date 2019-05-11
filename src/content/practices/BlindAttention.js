@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class BlindAttention extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Blind Attention</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Blind Attention</Text>
+          
 
 <Text>This is a great exercise in terms of being able to understand what it means to truly focus our minds and train our attention.</Text>
 
@@ -25,7 +27,7 @@ export default class BlindAttention extends Component {
 
 <View style={hr3}/>
 
-<h3>In actual fact, focus and attention are largely conceptual ideas which have no rigid implementation.</h3>
+<Text style={h3}>In actual fact, focus and attention are largely conceptual ideas which have no rigid implementation.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -44,7 +46,7 @@ export default class BlindAttention extends Component {
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -68,7 +70,7 @@ export default class BlindAttention extends Component {
 
 <View style={hr3}/>
 
-<h3>Now, with your attention remained on this object, I want you to close your eyes.</h3>
+<Text style={h3}>Now, with your attention remained on this object, I want you to close your eyes.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -83,7 +85,7 @@ export default class BlindAttention extends Component {
 
 <View style={hr3}/>
 
-<h3>Use your imagination and see what you can do with this object.</h3>
+<Text style={h3}>Use your imagination and see what you can do with this object.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -104,7 +106,7 @@ export default class BlindAttention extends Component {
 
 <View style={hr3}/>
 
-<h3>It really is as simple as practicing these exercises on a consistent basis, in order to develop the skill of focus.</h3>
+<Text style={h3}>It really is as simple as practicing these exercises on a consistent basis, in order to develop the skill of focus.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -127,7 +129,8 @@ export default class BlindAttention extends Component {
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

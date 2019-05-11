@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class CatchingTheOddJudgeOut extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Catching The Odd Judge Out</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Catching The Odd Judge Out</Text>
+          
 
 <Text>A lot of people find this exercise super useful, because it can help us identify our biases much easier than trying to identify those biases directly.</Text>
 
@@ -37,7 +39,7 @@ export default class CatchingTheOddJudgeOut extends Component {
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -73,7 +75,8 @@ export default class CatchingTheOddJudgeOut extends Component {
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

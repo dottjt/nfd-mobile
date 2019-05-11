@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class TheOneRuleOfNeverFap extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>The One Rule Of NeverFap</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>The One Rule Of NeverFap</Text>
+          
 
 <Text>Let&rsquo;s discuss a NeverFap best case scenario.</Text>
 
@@ -21,22 +23,22 @@ export default class TheOneRuleOfNeverFap extends Component {
 
 <View style={hrul}/>
 
-<ul>
-<li>You no longer watch porn.</li>
-<li>You no longer crave watching porn.</li>
-<li>Pornography isn’t something you ever think about, at all.</li>
-<li>You no longer stare at women in public. You don’t even notice them.</li>
-<li>You see women as other human beings, no more special than you.</li>
-<li>You no longer judge other human beings, including yourself.</li>
-<li>You have control over your mind and thoughts.</li>
-<li>You’re conscious of your feelings and emotions.</li>
-<li>You’re happy with yourself and accept every single aspect of who you are.</li>
-<li>You’re comfortable with your emotions, both positive and negative.</li>
-<li>You’re confident because you understand yourself.</li>
-<li>You don’t engage in self-harm of any kind.</li>
-<li>You’re motivated and ambitious.</li>
-<li>You’re committed to your mental health.</li>
-</ul>
+<View style={ul}>
+<Text style={li}>You no longer watch porn.</Text>
+<Text style={li}>You no longer crave watching porn.</Text>
+<Text style={li}>Pornography isn’t something you ever think about, at all.</Text>
+<Text style={li}>You no longer stare at women in public. You don’t even notice them.</Text>
+<Text style={li}>You see women as other human beings, no more special than you.</Text>
+<Text style={li}>You no longer judge other human beings, including yourself.</Text>
+<Text style={li}>You have control over your mind and thoughts.</Text>
+<Text style={li}>You’re conscious of your feelings and emotions.</Text>
+<Text style={li}>You’re happy with yourself and accept every single aspect of who you are.</Text>
+<Text style={li}>You’re comfortable with your emotions, both positive and negative.</Text>
+<Text style={li}>You’re confident because you understand yourself.</Text>
+<Text style={li}>You don’t engage in self-harm of any kind.</Text>
+<Text style={li}>You’re motivated and ambitious.</Text>
+<Text style={li}>You’re committed to your mental health.</Text>
+</View>
 
 <View style={hrul__bottom}/>
 
@@ -48,7 +50,7 @@ export default class TheOneRuleOfNeverFap extends Component {
 
 <View style={hr4}/>
 
-<h4>If it weren't for the fact that lists like these are utterly meaningless.</h4>
+<Text style={h4}>If it weren't for the fact that lists like these are utterly meaningless.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -61,7 +63,7 @@ export default class TheOneRuleOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>We're going to focus on the things we can do everyday in order to improve as a person.</h3>
+<Text style={h3}>We're going to focus on the things we can do everyday in order to improve as a person.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -76,7 +78,7 @@ export default class TheOneRuleOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>Actions which since you were born, have defined who you are today.</h3>
+<Text style={h3}>Actions which since you were born, have defined who you are today.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -93,7 +95,7 @@ export default class TheOneRuleOfNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>Practice. Practice. Practice.</h3>
+<Text style={h3}>Practice. Practice. Practice.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -110,7 +112,7 @@ export default class TheOneRuleOfNeverFap extends Component {
 
 <View style={hr4}/>
 
-<h4>Everything just appears to work and come together, without you even having to worry about it.</h4>
+<Text style={h4}>Everything just appears to work and come together, without you even having to worry about it.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -123,7 +125,8 @@ export default class TheOneRuleOfNeverFap extends Component {
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

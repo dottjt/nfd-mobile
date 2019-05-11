@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class WhatMakesNeverFapSoDifferent extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>What Makes NeverFap So Different</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>What Makes NeverFap So Different</Text>
+          
 
 <Text>NeverFap Deluxe aims to be a comprehensive solution towards addressing your porn addiction.</Text>
 
@@ -43,7 +45,7 @@ export default class WhatMakesNeverFapSoDifferent extends Component {
 
 <View style={hr3}/>
 
-<h3>So lieu of all this, I decided to create NeverFap Deluxe.</h3>
+<Text style={h3}>So lieu of all this, I decided to create NeverFap Deluxe.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -64,7 +66,7 @@ export default class WhatMakesNeverFapSoDifferent extends Component {
 
 <View style={hr2}/>
 
-<h2>Porn is not the problem</h2>
+<Text style={h2}>Porn is not the problem</Text>
 
 <View style={hr2__bottom}/>
 
@@ -96,7 +98,7 @@ export default class WhatMakesNeverFapSoDifferent extends Component {
 
 <View style={hr3}/>
 
-<h3>What are we misunderstanding?</h3>
+<Text style={h3}>What are we misunderstanding?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -115,7 +117,7 @@ export default class WhatMakesNeverFapSoDifferent extends Component {
 
 <View style={hr3}/>
 
-<h3>This is why I came up with the Five Fundamental Principles of NeverFap, to help guide people towards understanding exactly where they may be going wrong.</h3>
+<Text style={h3}>This is why I came up with the Five Fundamental Principles of NeverFap, to help guide people towards understanding exactly where they may be going wrong.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -140,7 +142,8 @@ export default class WhatMakesNeverFapSoDifferent extends Component {
 
 <Text>That&rsquo;s my guarantee.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

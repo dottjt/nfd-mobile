@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class IntroductionToTheNeverFapDeluxeGuide extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Introduction To The NeverFap Deluxe Guide</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Introduction To The NeverFap Deluxe Guide</Text>
+          
 
 <Text>Today I’m here to talk to you about porn addiction.</Text>
 
@@ -27,7 +29,7 @@ export default class IntroductionToTheNeverFapDeluxeGuide extends Component {
 
 <View style={hr3}/>
 
-<h3>From a process point of view, I spend around 40 minutes each day practicing meditation.</h3>
+<Text style={h3}>From a process point of view, I spend around 40 minutes each day practicing meditation.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -44,7 +46,7 @@ export default class IntroductionToTheNeverFapDeluxeGuide extends Component {
 
 <View style={hr3}/>
 
-<h3>The point is that overcoming porn addiction is totally achievable.</h3>
+<Text style={h3}>The point is that overcoming porn addiction is totally achievable.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -55,7 +57,7 @@ export default class IntroductionToTheNeverFapDeluxeGuide extends Component {
 
 <View style={hr3}/>
 
-<h3>Practice. Practice. Practice.</h3>
+<Text style={h3}>Practice. Practice. Practice.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -70,7 +72,7 @@ export default class IntroductionToTheNeverFapDeluxeGuide extends Component {
 
 <View style={hr3}/>
 
-<h3>Cravings. Fear. Doubt. Anxiety. Addiction.</h3>
+<Text style={h3}>Cravings. Fear. Doubt. Anxiety. Addiction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -87,7 +89,7 @@ export default class IntroductionToTheNeverFapDeluxeGuide extends Component {
 
 <View style={hr3}/>
 
-<h3>Otherwise, known as denial.</h3>
+<Text style={h3}>Otherwise, known as denial.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -104,7 +106,7 @@ export default class IntroductionToTheNeverFapDeluxeGuide extends Component {
 
 <View style={hr3}/>
 
-<h3>Well, that’s why I decided to create NeverFap Deluxe.</h3>
+<Text style={h3}>Well, that’s why I decided to create NeverFap Deluxe.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -121,17 +123,17 @@ export default class IntroductionToTheNeverFapDeluxeGuide extends Component {
 
 <View style={hrul}/>
 
-<ul>
-<li>Learn to focus on the how, not the why.</li>
-<li>Learn to value your mental health above all.</li>
-<li>Develop the ability to quiet and focus your mind.</li>
-<li>Learn to love and accept yourself and others unconditionally.</li>
-<li>Learn to invest in yourself.</li>
-<li>Change the way you think about sex and women.</li>
-<li>Value commitment and long-term thinking.</li>
-<li>Identify and understanding any potential mental disorders.</li>
-<li>Properly understand how to live life without porn.</li>
-</ul>
+<View style={ul}>
+<Text style={li}>Learn to focus on the how, not the why.</Text>
+<Text style={li}>Learn to value your mental health above all.</Text>
+<Text style={li}>Develop the ability to quiet and focus your mind.</Text>
+<Text style={li}>Learn to love and accept yourself and others unconditionally.</Text>
+<Text style={li}>Learn to invest in yourself.</Text>
+<Text style={li}>Change the way you think about sex and women.</Text>
+<Text style={li}>Value commitment and long-term thinking.</Text>
+<Text style={li}>Identify and understanding any potential mental disorders.</Text>
+<Text style={li}>Properly understand how to live life without porn.</Text>
+</View>
 
 <View style={hrul__bottom}/>
 
@@ -139,7 +141,7 @@ export default class IntroductionToTheNeverFapDeluxeGuide extends Component {
 
 <View style={hr4}/>
 
-<h4>Personally speaking it took me around 5 years of trial and error before everything finally clicked in my head.</h4>
+<Text style={h4}>Personally speaking it took me around 5 years of trial and error before everything finally clicked in my head.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -158,7 +160,8 @@ export default class IntroductionToTheNeverFapDeluxeGuide extends Component {
 
 <Text>We’re here to understand who we are, what we have to do to change, as well as understand how we can improve as people.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

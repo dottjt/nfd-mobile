@@ -1,23 +1,25 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class WhatItFeelsLikeNotToBeAddictedToPorn extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>What It Feels Like Not To Be Addicted To Porn</Text>
-        <Text>One thing which people often ask me is:</Text>
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>What It Feels Like Not To Be Addicted To Porn</Text>
+          <Text>One thing which people often ask me is:</Text>
 
 <View style={hr3}/>
 
-<h3>What does it feel like not to be addicted to porn?</h3>
+<Text style={h3}>What does it feel like not to be addicted to porn?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -36,7 +38,7 @@ export default class WhatItFeelsLikeNotToBeAddictedToPorn extends Component {
 
 <View style={hr3}/>
 
-<h3>Well, that memory kind of sums up how I also feel about my previous porn addiction.</h3>
+<Text style={h3}>Well, that memory kind of sums up how I also feel about my previous porn addiction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -51,7 +53,7 @@ export default class WhatItFeelsLikeNotToBeAddictedToPorn extends Component {
 
 <View style={hr3}/>
 
-<h3>From a process point of view, it's actually quite astounding to understand why it's all a distant memory to me.</h3>
+<Text style={h3}>From a process point of view, it's actually quite astounding to understand why it's all a distant memory to me.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -70,7 +72,7 @@ export default class WhatItFeelsLikeNotToBeAddictedToPorn extends Component {
 
 <View style={hr3}/>
 
-<h3>At it's worst, it was completely controlling my behaviour to a point of absolute obsession.</h3>
+<Text style={h3}>At it's worst, it was completely controlling my behaviour to a point of absolute obsession.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -85,7 +87,7 @@ export default class WhatItFeelsLikeNotToBeAddictedToPorn extends Component {
 
 <View style={hr3}/>
 
-<h3>Certainly, the biggest thing that's changed is my mental state.</h3>
+<Text style={h3}>Certainly, the biggest thing that's changed is my mental state.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -102,7 +104,7 @@ export default class WhatItFeelsLikeNotToBeAddictedToPorn extends Component {
 
 <View style={hr3}/>
 
-<h3>I distinctly remember that feeling of calm I felt when I first started meditating.</h3>
+<Text style={h3}>I distinctly remember that feeling of calm I felt when I first started meditating.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -117,7 +119,7 @@ export default class WhatItFeelsLikeNotToBeAddictedToPorn extends Component {
 
 <View style={hr3}/>
 
-<h3>Like, not obsessive happy or manic happy, but just genuinely happy.</h3>
+<Text style={h3}>Like, not obsessive happy or manic happy, but just genuinely happy.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -136,7 +138,8 @@ export default class WhatItFeelsLikeNotToBeAddictedToPorn extends Component {
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

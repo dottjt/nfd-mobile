@@ -11,6 +11,9 @@ https://github.com/oblador/react-native-vector-icons
 
 https://github.com/birkir/hekla/blob/master/src/screens/index.ts
 
+"react-native-linear-gradient": "^2.5.4",
+
+
     "react-native-track-player": "^1.1.4",
 
 react-native link // very important to link libraries to the directories.

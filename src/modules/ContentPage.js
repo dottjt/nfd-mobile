@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, Text } from 'react-native';
+import { SafeAreaView } from 'react-native-navigation';
 import { Container } from '../emotion/components';
 
-import StatusBarMain from './StatusBarMain';
+import TopBarMain from './TopBarMain';
 import ContentListItem from './ContentListItem';
 
 import Articles from '../content/articles';
@@ -17,18 +18,21 @@ export default class ContentPage extends Component {
       case 'podcasts': return Podcasts[contentTitle];
       // case 'meditations': return meditationsJSON[contentTitle];
       case 'other': return otherJSON[contentTitle];
-      default: throw new Error('incorrect type - selectJSON');
+      default: <Text>cake</Text>;
     }
   }
 
   render() {
     const { contentType, contentTitle } = this.props;
     const Content = this.selectContent(contentType, contentTitle);
+    console.log(Content);
     return (
-      <Container>
-        <StatusBarMain/>
-        <Content/>
-      </Container>
+      <SafeAreaView>
+        <Container>
+          <TopBarMain/>
+          {/* {Content && <Content/>} */}
+        </Container>
+      </SafeAreaView>
     );
   }
 }

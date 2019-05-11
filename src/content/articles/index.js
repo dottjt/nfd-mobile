@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
 
  class IntroductionToTheNeverFapDeluxeGuide extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Introduction To The NeverFap Deluxe Guide</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Introduction To The NeverFap Deluxe Guide</Text>
+          
 
 <Text>Today I’m here to talk to you about porn addiction.</Text>
 
@@ -27,7 +29,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>From a process point of view, I spend around 40 minutes each day practicing meditation.</h3>
+<Text style={h3}>From a process point of view, I spend around 40 minutes each day practicing meditation.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -44,7 +46,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>The point is that overcoming porn addiction is totally achievable.</h3>
+<Text style={h3}>The point is that overcoming porn addiction is totally achievable.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -55,7 +57,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Practice. Practice. Practice.</h3>
+<Text style={h3}>Practice. Practice. Practice.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -70,7 +72,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Cravings. Fear. Doubt. Anxiety. Addiction.</h3>
+<Text style={h3}>Cravings. Fear. Doubt. Anxiety. Addiction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -87,7 +89,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Otherwise, known as denial.</h3>
+<Text style={h3}>Otherwise, known as denial.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -104,7 +106,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Well, that’s why I decided to create NeverFap Deluxe.</h3>
+<Text style={h3}>Well, that’s why I decided to create NeverFap Deluxe.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -121,17 +123,17 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hrul}/>
 
-<ul>
-<li>Learn to focus on the how, not the why.</li>
-<li>Learn to value your mental health above all.</li>
-<li>Develop the ability to quiet and focus your mind.</li>
-<li>Learn to love and accept yourself and others unconditionally.</li>
-<li>Learn to invest in yourself.</li>
-<li>Change the way you think about sex and women.</li>
-<li>Value commitment and long-term thinking.</li>
-<li>Identify and understanding any potential mental disorders.</li>
-<li>Properly understand how to live life without porn.</li>
-</ul>
+<View style={ul}>
+<Text style={li}>Learn to focus on the how, not the why.</Text>
+<Text style={li}>Learn to value your mental health above all.</Text>
+<Text style={li}>Develop the ability to quiet and focus your mind.</Text>
+<Text style={li}>Learn to love and accept yourself and others unconditionally.</Text>
+<Text style={li}>Learn to invest in yourself.</Text>
+<Text style={li}>Change the way you think about sex and women.</Text>
+<Text style={li}>Value commitment and long-term thinking.</Text>
+<Text style={li}>Identify and understanding any potential mental disorders.</Text>
+<Text style={li}>Properly understand how to live life without porn.</Text>
+</View>
 
 <View style={hrul__bottom}/>
 
@@ -139,7 +141,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr4}/>
 
-<h4>Personally speaking it took me around 5 years of trial and error before everything finally clicked in my head.</h4>
+<Text style={h4}>Personally speaking it took me around 5 years of trial and error before everything finally clicked in my head.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -158,7 +160,8 @@ import { content__title } from '../styles/contentStyles';
 
 <Text>We’re here to understand who we are, what we have to do to change, as well as understand how we can improve as people.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -166,10 +169,11 @@ import { content__title } from '../styles/contentStyles';
  class MyPersonalPornRecoveryJourney extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>My Personal Porn Recovery Journey</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>My Personal Porn Recovery Journey</Text>
+          
 
 <Text>I came across porn at a very young age.</Text>
 
@@ -197,7 +201,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Age 25. October 20th 2018.</h3>
+<Text style={h3}>Age 25. October 20th 2018.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -220,15 +224,15 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hrul}/>
 
-<ul>
-<li>Done the whole Paleo diet thing</li>
-<li>Studied various books and perspective course on mental health</li>
-<li>Took cold showers everyday before bed</li>
-<li>Ate only one meal a day (via intermittent fasting)</li>
-<li>Was doing Leangains and lifting weights three times a week</li>
-<li>Was in an amazing, supportive relationship</li>
-<li>Worked obscenely hard to get a job as a programmer</li>
-</ul>
+<View style={ul}>
+<Text style={li}>Done the whole Paleo diet thing</Text>
+<Text style={li}>Studied various books and perspective course on mental health</Text>
+<Text style={li}>Took cold showers everyday before bed</Text>
+<Text style={li}>Ate only one meal a day (via intermittent fasting)</Text>
+<Text style={li}>Was doing Leangains and lifting weights three times a week</Text>
+<Text style={li}>Was in an amazing, supportive relationship</Text>
+<Text style={li}>Worked obscenely hard to get a job as a programmer</Text>
+</View>
 
 <View style={hrul__bottom}/>
 
@@ -244,7 +248,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>For starters I had a breakdown.</h3>
+<Text style={h3}>For starters I had a breakdown.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -257,7 +261,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>It's impossible to do it alone.</h3>
+<Text style={h3}>It's impossible to do it alone.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -274,7 +278,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Which as a result, gave me this surreal confidence to actually address my porn addiction.</h3>
+<Text style={h3}>Which as a result, gave me this surreal confidence to actually address my porn addiction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -291,7 +295,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>I finally felt free to just move on with my life.</h3>
+<Text style={h3}>I finally felt free to just move on with my life.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -302,7 +306,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Essentially, I'd discovered this thing called meditation.</h3>
+<Text style={h3}>Essentially, I'd discovered this thing called meditation.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -321,7 +325,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>I can happily say that within two weeks of meditating I'd learnt more about how to manage my porn addiction than in absolutely everything I've done in the past five years to try and curb my addiction.</h3>
+<Text style={h3}>I can happily say that within two weeks of meditating I'd learnt more about how to manage my porn addiction than in absolutely everything I've done in the past five years to try and curb my addiction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -338,7 +342,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>If I had one piece of advice to anyone wanting to seriously overcome their porn addiction, it would be to start meditating today.</h3>
+<Text style={h3}>If I had one piece of advice to anyone wanting to seriously overcome their porn addiction, it would be to start meditating today.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -351,7 +355,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>The next steps in my journey</h2>
+<Text style={h2}>The next steps in my journey</Text>
 
 <View style={hr2__bottom}/>
 
@@ -371,7 +375,8 @@ import { content__title } from '../styles/contentStyles';
 
 <Text>Get started today.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -379,10 +384,11 @@ import { content__title } from '../styles/contentStyles';
  class TheFiveFundamentalPrinciplesOfNeverFap extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>The Five Fundamental Principles Of NeverFap</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>The Five Fundamental Principles Of NeverFap</Text>
+          
 
 <Text>The NeverFap method of addressing porn addiction comprises of five core principles.</Text>
 
@@ -396,7 +402,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>What is a fundamental principle and what makes it fundamental?</h3>
+<Text style={h3}>What is a fundamental principle and what makes it fundamental?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -415,7 +421,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>Ground rules</h2>
+<Text style={h2}>Ground rules</Text>
 
 <View style={hr2__bottom}/>
 
@@ -445,7 +451,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>It's called denial.</h3>
+<Text style={h3}>It's called denial.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -462,7 +468,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>The Five Fundamental Principles of NeverFap</h2>
+<Text style={h2}>The Five Fundamental Principles of NeverFap</Text>
 
 <View style={hr2__bottom}/>
 
@@ -496,7 +502,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>What's important to understand is that your mind is fundamentally capable of being controlled.</h3>
+<Text style={h3}>What's important to understand is that your mind is fundamentally capable of being controlled.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -527,7 +533,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Often we become so affixated with something, either through obsession or neglect, we fail to consider the wider ramifications of our actions.</h3>
+<Text style={h3}>Often we become so affixated with something, either through obsession or neglect, we fail to consider the wider ramifications of our actions.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -542,7 +548,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>And yet, we're so focused on the outcome that we don't quite realise what we're even doing wrong.</h3>
+<Text style={h3}>And yet, we're so focused on the outcome that we don't quite realise what we're even doing wrong.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -557,7 +563,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>They think they can somehow "cheat" the system and come out ahead.</h3>
+<Text style={h3}>They think they can somehow "cheat" the system and come out ahead.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -588,7 +594,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Instead, we allow our habitual thoughts, emotions and beliefs to take over and continue their self-destructive patterns.</h3>
+<Text style={h3}>Instead, we allow our habitual thoughts, emotions and beliefs to take over and continue their self-destructive patterns.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -603,7 +609,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Awareness is your ability to sense the world around you.</h3>
+<Text style={h3}>Awareness is your ability to sense the world around you.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -616,7 +622,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>It is simply being present with your senses.</h3>
+<Text style={h3}>It is simply being present with your senses.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -637,7 +643,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Therefore, solutions which are simple by design are going to be more effective than solutions which are convoluted.</h3>
+<Text style={h3}>Therefore, solutions which are simple by design are going to be more effective than solutions which are convoluted.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -650,7 +656,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Certainly, part of the reason why we're addicted to porn in the first place is because it's the easy thing to do.</h3>
+<Text style={h3}>Certainly, part of the reason why we're addicted to porn in the first place is because it's the easy thing to do.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -665,7 +671,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Because life without porn isn't a struggle.</h3>
+<Text style={h3}>Because life without porn isn't a struggle.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -686,7 +692,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>What a lot of people don't realise is that judgement is a mental trap.</h3>
+<Text style={h3}>What a lot of people don't realise is that judgement is a mental trap.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -703,7 +709,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>After all, how can you be aware of what's going on in your mind, if your mind is in a constant state of habitual thinking?</h3>
+<Text style={h3}>After all, how can you be aware of what's going on in your mind, if your mind is in a constant state of habitual thinking?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -720,7 +726,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>You end up having no capacity to address the problems in your life which actually has meaning, like your porn addiction.</h3>
+<Text style={h3}>You end up having no capacity to address the problems in your life which actually has meaning, like your porn addiction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -739,7 +745,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Because at the end of the day, overcoming porn addiction is completely within your reach.</h3>
+<Text style={h3}>Because at the end of the day, overcoming porn addiction is completely within your reach.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -752,7 +758,8 @@ import { content__title } from '../styles/contentStyles';
   NeverFap Deluxe Article Index.
 </div>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -760,10 +767,11 @@ import { content__title } from '../styles/contentStyles';
  class TheOneRuleOfNeverFap extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>The One Rule Of NeverFap</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>The One Rule Of NeverFap</Text>
+          
 
 <Text>Let&rsquo;s discuss a NeverFap best case scenario.</Text>
 
@@ -771,22 +779,22 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hrul}/>
 
-<ul>
-<li>You no longer watch porn.</li>
-<li>You no longer crave watching porn.</li>
-<li>Pornography isn’t something you ever think about, at all.</li>
-<li>You no longer stare at women in public. You don’t even notice them.</li>
-<li>You see women as other human beings, no more special than you.</li>
-<li>You no longer judge other human beings, including yourself.</li>
-<li>You have control over your mind and thoughts.</li>
-<li>You’re conscious of your feelings and emotions.</li>
-<li>You’re happy with yourself and accept every single aspect of who you are.</li>
-<li>You’re comfortable with your emotions, both positive and negative.</li>
-<li>You’re confident because you understand yourself.</li>
-<li>You don’t engage in self-harm of any kind.</li>
-<li>You’re motivated and ambitious.</li>
-<li>You’re committed to your mental health.</li>
-</ul>
+<View style={ul}>
+<Text style={li}>You no longer watch porn.</Text>
+<Text style={li}>You no longer crave watching porn.</Text>
+<Text style={li}>Pornography isn’t something you ever think about, at all.</Text>
+<Text style={li}>You no longer stare at women in public. You don’t even notice them.</Text>
+<Text style={li}>You see women as other human beings, no more special than you.</Text>
+<Text style={li}>You no longer judge other human beings, including yourself.</Text>
+<Text style={li}>You have control over your mind and thoughts.</Text>
+<Text style={li}>You’re conscious of your feelings and emotions.</Text>
+<Text style={li}>You’re happy with yourself and accept every single aspect of who you are.</Text>
+<Text style={li}>You’re comfortable with your emotions, both positive and negative.</Text>
+<Text style={li}>You’re confident because you understand yourself.</Text>
+<Text style={li}>You don’t engage in self-harm of any kind.</Text>
+<Text style={li}>You’re motivated and ambitious.</Text>
+<Text style={li}>You’re committed to your mental health.</Text>
+</View>
 
 <View style={hrul__bottom}/>
 
@@ -798,7 +806,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr4}/>
 
-<h4>If it weren't for the fact that lists like these are utterly meaningless.</h4>
+<Text style={h4}>If it weren't for the fact that lists like these are utterly meaningless.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -811,7 +819,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>We're going to focus on the things we can do everyday in order to improve as a person.</h3>
+<Text style={h3}>We're going to focus on the things we can do everyday in order to improve as a person.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -826,7 +834,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Actions which since you were born, have defined who you are today.</h3>
+<Text style={h3}>Actions which since you were born, have defined who you are today.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -843,7 +851,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Practice. Practice. Practice.</h3>
+<Text style={h3}>Practice. Practice. Practice.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -860,7 +868,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr4}/>
 
-<h4>Everything just appears to work and come together, without you even having to worry about it.</h4>
+<Text style={h4}>Everything just appears to work and come together, without you even having to worry about it.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -873,7 +881,8 @@ import { content__title } from '../styles/contentStyles';
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -881,10 +890,11 @@ import { content__title } from '../styles/contentStyles';
  class WhyamIAPornAddict extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>"Why am I A Porn Addict?"</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>"Why am I A Porn Addict?"</Text>
+          
 
 <Text>It&rsquo;s a question you&rsquo;ve probably been thinking about for a while.</Text>
 
@@ -896,7 +906,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>After all, it seems like an incredibly logical and reliable thing to do.</h3>
+<Text style={h3}>After all, it seems like an incredibly logical and reliable thing to do.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -915,7 +925,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>In fact, trying to understand why we are porn addicts at all, is one of the biggest traps that recovering porn addicts fall into.</h3>
+<Text style={h3}>In fact, trying to understand why we are porn addicts at all, is one of the biggest traps that recovering porn addicts fall into.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -934,7 +944,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>You see, you don't figure out what you want in life by thinking about it.</h3>
+<Text style={h3}>You see, you don't figure out what you want in life by thinking about it.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -953,7 +963,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>The great thing about NeverFap Deluxe is that you no longer have to waste your time doing things that do not work.</h3>
+<Text style={h3}>The great thing about NeverFap Deluxe is that you no longer have to waste your time doing things that do not work.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -968,7 +978,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>It’s called rumination.</h3>
+<Text style={h3}>It’s called rumination.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -983,7 +993,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Which is to say that asking why is great for creating an initial assessment, however beyond that it becomes nothing more than a harmful burden.</h3>
+<Text style={h3}>Which is to say that asking why is great for creating an initial assessment, however beyond that it becomes nothing more than a harmful burden.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1002,7 +1012,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Another way of putting it is that we must focus on the how, rather than the why.</h3>
+<Text style={h3}>Another way of putting it is that we must focus on the how, rather than the why.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1065,7 +1075,8 @@ import { content__title } from '../styles/contentStyles';
 
 <Text>Hopefully this article clarifies the change of thinking that needs to take place, in order for us to overcome our porn addiction.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -1073,10 +1084,11 @@ import { content__title } from '../styles/contentStyles';
  class WhatMakesNeverFapSoDifferent extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>What Makes NeverFap So Different</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>What Makes NeverFap So Different</Text>
+          
 
 <Text>NeverFap Deluxe aims to be a comprehensive solution towards addressing your porn addiction.</Text>
 
@@ -1106,7 +1118,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>So lieu of all this, I decided to create NeverFap Deluxe.</h3>
+<Text style={h3}>So lieu of all this, I decided to create NeverFap Deluxe.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1127,7 +1139,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>Porn is not the problem</h2>
+<Text style={h2}>Porn is not the problem</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1159,7 +1171,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>What are we misunderstanding?</h3>
+<Text style={h3}>What are we misunderstanding?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1178,7 +1190,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>This is why I came up with the Five Fundamental Principles of NeverFap, to help guide people towards understanding exactly where they may be going wrong.</h3>
+<Text style={h3}>This is why I came up with the Five Fundamental Principles of NeverFap, to help guide people towards understanding exactly where they may be going wrong.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1203,7 +1215,8 @@ import { content__title } from '../styles/contentStyles';
 
 <Text>That&rsquo;s my guarantee.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -1211,10 +1224,11 @@ import { content__title } from '../styles/contentStyles';
  class PayingTheNeverFapMaintenanceTax extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Paying The NeverFap Maintenance Tax</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Paying The NeverFap Maintenance Tax</Text>
+          
 
 <Text>What exactly is the NeverFap Maintenance Tax?</Text>
 
@@ -1234,7 +1248,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>In doing this, we make significant compromises to our ability to function.</h3>
+<Text style={h3}>In doing this, we make significant compromises to our ability to function.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1247,7 +1261,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>In other words, if you’re struggling with your porn addiction it may be because you’re not paying your maintenance tax in full.</h2>
+<Text style={h2}>In other words, if you’re struggling with your porn addiction it may be because you’re not paying your maintenance tax in full.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1265,7 +1279,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Facing the consequences of imbalance</h3>
+<Text style={h3}>Facing the consequences of imbalance</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1296,7 +1310,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>Change in attitude</h2>
+<Text style={h2}>Change in attitude</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1320,7 +1334,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>By respecting balance in our life, we can have everything we want without the compromise.</h3>
+<Text style={h3}>By respecting balance in our life, we can have everything we want without the compromise.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1335,7 +1349,8 @@ import { content__title } from '../styles/contentStyles';
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -1343,16 +1358,17 @@ import { content__title } from '../styles/contentStyles';
  class TheImportanceOfMeditationForPornAddiction extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>The Importance Of Meditation For Porn Addiction</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>The Importance Of Meditation For Porn Addiction</Text>
+          
 
 <Text>Meditation is the single most important thing you can do for your porn addiction.</Text>
 
 <View style={hr4}/>
 
-<h4>In fact, ten minutes of meditation each day is probably enough for most porn addicts to overcome their addiction.</h4>
+<Text style={h4}>In fact, ten minutes of meditation each day is probably enough for most porn addicts to overcome their addiction.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -1369,7 +1385,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>Why meditation?</h2>
+<Text style={h2}>Why meditation?</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1393,7 +1409,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>What meditation allows you to do is develop the ability to maintain control over your mind.</h3>
+<Text style={h3}>What meditation allows you to do is develop the ability to maintain control over your mind.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1408,7 +1424,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>Meditation and Porn addiction</h2>
+<Text style={h2}>Meditation and Porn addiction</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1428,7 +1444,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr4}/>
 
-<h4>If you can manage those two things, you'll more-or-less be 90% of the way there to overcoming your porn addiction.</h4>
+<Text style={h4}>If you can manage those two things, you'll more-or-less be 90% of the way there to overcoming your porn addiction.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -1445,7 +1461,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>When you have control over your emotions, it makes situations where you don't necessarily feel in control manageable.</h3>
+<Text style={h3}>When you have control over your emotions, it makes situations where you don't necessarily feel in control manageable.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1464,7 +1480,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>Observation is perhaps the most fundamental skill you can learn in regards to developing your awareness.</h2>
+<Text style={h2}>Observation is perhaps the most fundamental skill you can learn in regards to developing your awareness.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1488,7 +1504,8 @@ import { content__title } from '../styles/contentStyles';
 
 <Text>I recommend checking out our list of NeverFap Deluxe Practices for a list of exercises you can do to develop awareness in your life.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -1496,10 +1513,11 @@ import { content__title } from '../styles/contentStyles';
  class EverythingIsAChoice extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Everything Is A Choice</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Everything Is A Choice</Text>
+          
 
 <Text>I want to talk about choice.</Text>
 
@@ -1509,7 +1527,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Choice over mind relates to this idea that we have full control over how we react in life.</h3>
+<Text style={h3}>Choice over mind relates to this idea that we have full control over how we react in life.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1526,7 +1544,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>What is choice?</h2>
+<Text style={h2}>What is choice?</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1550,7 +1568,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Because I'm here to tell you that none of this matters.</h3>
+<Text style={h3}>Because I'm here to tell you that none of this matters.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1563,7 +1581,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>You get to choose how you want to respond.</h2>
+<Text style={h2}>You get to choose how you want to respond.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1589,7 +1607,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Put simply, your ability to respond is the most powerful choice you have, because it is the only choice you as an individual can actually make.</h3>
+<Text style={h3}>Put simply, your ability to respond is the most powerful choice you have, because it is the only choice you as an individual can actually make.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1604,7 +1622,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr4}/>
 
-<h4>Which really is to say that you have full control over who you want to become.</h4>
+<Text style={h4}>Which really is to say that you have full control over who you want to become.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -1621,7 +1639,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>The only difference between you and me is in the actions that we've taken over time.</h3>
+<Text style={h3}>The only difference between you and me is in the actions that we've taken over time.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1630,7 +1648,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>Success and your actions</h2>
+<Text style={h2}>Success and your actions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1658,7 +1676,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr4}/>
 
-<h4>The only difference between someone who has successfully overcome porn addiction and someone who continually fails, is that the person who overcame porn addiction took the right actions to get there.</h4>
+<Text style={h4}>The only difference between someone who has successfully overcome porn addiction and someone who continually fails, is that the person who overcame porn addiction took the right actions to get there.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -1673,14 +1691,15 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>However, what I am suggesting is that with the right guidance and practice, you can develop the ability to be able to.</h3>
+<Text style={h3}>However, what I am suggesting is that with the right guidance and practice, you can develop the ability to be able to.</Text>
 
 <View style={hr3__bottom}/>
 
 
 <Text>Moving forward, I recommend checking out our list of NeverFap Deluxe Practices for a list of exercises you can do to develop awareness in your life.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -1688,10 +1707,11 @@ import { content__title } from '../styles/contentStyles';
  class TheFivePrinciplesOfNeverFapAsTheyRelateToMyLife extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>The Five Principles Of NeverFap As They Relate To My Life</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>The Five Principles Of NeverFap As They Relate To My Life</Text>
+          
 
 <Text>To be quite honest, the five principles are quite arbitrary.</Text>
 
@@ -1847,7 +1867,8 @@ import { content__title } from '../styles/contentStyles';
 
 <Text>If you&rsquo;d like to learn more, I&rsquo;d recommend going over my article The Five Fundamental Principles of NeverFap which does into more details from a theoretical perspective.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -1855,16 +1876,17 @@ import { content__title } from '../styles/contentStyles';
  class YouAlwaysHaveTimeForYourMentalHealth extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>You Always Have Time For Your Mental Health</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>You Always Have Time For Your Mental Health</Text>
+          
 
 <Text>There&rsquo;s one excuse that I often see porn addicts come up with in regards to their addiction.</Text>
 
 <View style={hr3}/>
 
-<h3>I don't have enough time.</h3>
+<Text style={h3}>I don't have enough time.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1879,7 +1901,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Because if you did have enough time to spend towards addressing your porn addiction, you simply wouldn't be a porn addict.</h3>
+<Text style={h3}>Because if you did have enough time to spend towards addressing your porn addiction, you simply wouldn't be a porn addict.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1902,7 +1924,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>If you believe that you do not have enough time for your mental health then you have a mental disorder.</h2>
+<Text style={h2}>If you believe that you do not have enough time for your mental health then you have a mental disorder.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1924,7 +1946,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Again, ask yourself how this mentality isn't a sign of having a disorder.</h3>
+<Text style={h3}>Again, ask yourself how this mentality isn't a sign of having a disorder.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1945,7 +1967,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr4}/>
 
-<h4>Of course, there's a reason why poor mental health is often described as a self-repeating cycle.</h4>
+<Text style={h4}>Of course, there's a reason why poor mental health is often described as a self-repeating cycle.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -1960,7 +1982,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>And to be honest, it's a bit shit.</h2>
+<Text style={h2}>And to be honest, it's a bit shit.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1982,7 +2004,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr4}/>
 
-<h4>But let me say that there's never a bad time to commit to your mental health.</h4>
+<Text style={h4}>But let me say that there's never a bad time to commit to your mental health.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -2001,7 +2023,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Honestly, spending ten minutes at night before bed meditating is all most people need.</h3>
+<Text style={h3}>Honestly, spending ten minutes at night before bed meditating is all most people need.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2020,7 +2042,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>From this point of view, you have nothing to gain from neglecting your mental health.</h2>
+<Text style={h2}>From this point of view, you have nothing to gain from neglecting your mental health.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -2038,7 +2060,8 @@ import { content__title } from '../styles/contentStyles';
 
 <Text>Moving forward, I recommend checking out our list of NeverFap Deluxe Practices for a list of exercises you can do to develop awareness in your life.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -2046,10 +2069,11 @@ import { content__title } from '../styles/contentStyles';
  class CreatingYourFirstNeverFapSchedule extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Creating Your First NeverFap Schedule</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Creating Your First NeverFap Schedule</Text>
+          
 
 <Text>Everything in life revolves around practice.</Text>
 
@@ -2057,7 +2081,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Practice is what will allow us to overcome porn addiction.</h3>
+<Text style={h3}>Practice is what will allow us to overcome porn addiction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2074,7 +2098,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>To start out, I recommend spending approximately 10 minutes per day practicing observation.</h3>
+<Text style={h3}>To start out, I recommend spending approximately 10 minutes per day practicing observation.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2089,7 +2113,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>It's more-or-less the only exercise I personally do.</h2>
+<Text style={h2}>It's more-or-less the only exercise I personally do.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -2109,7 +2133,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Personally speaking, I don't recommend doing more than one additional exercise at a time.</h3>
+<Text style={h3}>Personally speaking, I don't recommend doing more than one additional exercise at a time.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2124,7 +2148,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>My Personal NeverFap Routine</h2>
+<Text style={h2}>My Personal NeverFap Routine</Text>
 
 <View style={hr2__bottom}/>
 
@@ -2144,11 +2168,11 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hrul}/>
 
-<ul>
-<li><b>15 minutes of meditation as I walk to the train station in the morning for work.</b></li>
-<li><b>15 minutes of meditation as I walk to the train station in the morning for work.</b></li>
-<li><b>10 minutes of meditation while sitting down in a room, around 15 minutes before bed.</b></li>
-</ul>
+<View style={ul}>
+<Text style={li}><b>15 minutes of meditation as I walk to the train station in the morning for work.</b></Text>
+<Text style={li}><b>15 minutes of meditation as I walk to the train station in the morning for work.</b></Text>
+<Text style={li}><b>10 minutes of meditation while sitting down in a room, around 15 minutes before bed.</b></Text>
+</View>
 
 <View style={hrul__bottom}/>
 
@@ -2164,7 +2188,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Regardless, I keep it super simple and that's why it works.</h3>
+<Text style={h3}>Regardless, I keep it super simple and that's why it works.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2181,17 +2205,17 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hrul}/>
 
-<ul>
-<li>I eat paleo.</li>
-<li>I do cardio and lift weights three times a week.</li>
-<li>I have a consistent sleep routine.</li>
-<li>I work on my hobbies and ambitions in my spare time.</li>
-<li>I play video games and watch TV to relax.</li>
-<li>I meditate approximately three times a day.</li>
-<li>I work a typical nine-to-five job.</li>
-<li>I brush my teeth in the morning and at night.</li>
-<li>I have a cold shower every night.</li>
-</ul>
+<View style={ul}>
+<Text style={li}>I eat paleo.</Text>
+<Text style={li}>I do cardio and lift weights three times a week.</Text>
+<Text style={li}>I have a consistent sleep routine.</Text>
+<Text style={li}>I work on my hobbies and ambitions in my spare time.</Text>
+<Text style={li}>I play video games and watch TV to relax.</Text>
+<Text style={li}>I meditate approximately three times a day.</Text>
+<Text style={li}>I work a typical nine-to-five job.</Text>
+<Text style={li}>I brush my teeth in the morning and at night.</Text>
+<Text style={li}>I have a cold shower every night.</Text>
+</View>
 
 <View style={hrul__bottom}/>
 
@@ -2213,7 +2237,8 @@ import { content__title } from '../styles/contentStyles';
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -2221,10 +2246,11 @@ import { content__title } from '../styles/contentStyles';
  class TheNeverFapStateOfMind extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>The NeverFap State Of Mind</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>The NeverFap State Of Mind</Text>
+          
 
 <Text>This article aims to explore the idea of what it means to have the mindset of someone who does NeverFap.</Text>
 
@@ -2244,7 +2270,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Calm.</h3>
+<Text style={h3}>Calm.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2263,7 +2289,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr4}/>
 
-<h4>Because you know that you have a strategy in place, and you know exactly what to expect from your ability to address your addiction.</h4>
+<Text style={h4}>Because you know that you have a strategy in place, and you know exactly what to expect from your ability to address your addiction.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -2276,7 +2302,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Because remaining calm doesn't require any effort.</h3>
+<Text style={h3}>Because remaining calm doesn't require any effort.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2295,7 +2321,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>It's simply a matter of following your daily routine of NeverFap Deluxe Practices.</h3>
+<Text style={h3}>It's simply a matter of following your daily routine of NeverFap Deluxe Practices.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2312,7 +2338,8 @@ import { content__title } from '../styles/contentStyles';
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -2320,10 +2347,11 @@ import { content__title } from '../styles/contentStyles';
  class YourPornAddictionIsNotWhoYouAre extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Your Porn Addiction Is Not Who You Are</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Your Porn Addiction Is Not Who You Are</Text>
+          
 
 
 
@@ -2333,7 +2361,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Otherwise known as attraction.</h3>
+<Text style={h3}>Otherwise known as attraction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2350,7 +2378,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>I am here to tell you that this is purely your addiction trying to convince you otherwise.</h2>
+<Text style={h2}>I am here to tell you that this is purely your addiction trying to convince you otherwise.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -2372,7 +2400,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Instead, what we're going to do is focus on developing this ability.</h3>
+<Text style={h3}>Instead, what we're going to do is focus on developing this ability.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2387,7 +2415,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>You simply won't need to.</h2>
+<Text style={h2}>You simply won't need to.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -2409,7 +2437,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>There is only your ability and your commitment towards developing it.</h3>
+<Text style={h3}>There is only your ability and your commitment towards developing it.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2424,7 +2452,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr4}/>
 
-<h4>Sure, you can claim that you're a porn addict due to x, y and z.</h4>
+<Text style={h4}>Sure, you can claim that you're a porn addict due to x, y and z.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -2433,7 +2461,8 @@ import { content__title } from '../styles/contentStyles';
 
 <Text>Because porn addiction is a process, not a retrospective idea based in any number of infinite possibilities.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -2441,10 +2470,11 @@ import { content__title } from '../styles/contentStyles';
  class TheEasiestWayToIdentifyAJudgement extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>The Easiest Way To Identify A Judgement</Text>
-        <Text>Some people have a hard time identifying the judgements they make on a daily basis.</Text>
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>The Easiest Way To Identify A Judgement</Text>
+          <Text>Some people have a hard time identifying the judgements they make on a daily basis.</Text>
 
 <Text>It could be because they judge out of habit and therefore are doing it subsciously without realising it, or perhaps because they&rsquo;re simply unable to recognise a judgement once they&rsquo;ve made one.</Text>
 
@@ -2458,7 +2488,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>The technique is to pay attention to your emotional reactions.</h3>
+<Text style={h3}>The technique is to pay attention to your emotional reactions.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2473,7 +2503,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>You see, judgements are much more than mere thoughts.</h3>
+<Text style={h3}>You see, judgements are much more than mere thoughts.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2492,7 +2522,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>And when we make these judgements, we dictate how we're going to react on an emotional level.</h3>
+<Text style={h3}>And when we make these judgements, we dictate how we're going to react on an emotional level.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2515,7 +2545,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Yet from the perspective of our emotional reactions, they are never hidden.</h3>
+<Text style={h3}>Yet from the perspective of our emotional reactions, they are never hidden.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2538,7 +2568,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Well, the great thing is that we don't need to go any further than simple acknowledgement.</h3>
+<Text style={h3}>Well, the great thing is that we don't need to go any further than simple acknowledgement.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2553,7 +2583,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>This in part signifies the extent to which a lot of the judgements are simply subconscious habit.</h3>
+<Text style={h3}>This in part signifies the extent to which a lot of the judgements are simply subconscious habit.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2572,7 +2602,8 @@ import { content__title } from '../styles/contentStyles';
 
 <Text>And by using healthy coping mechanisms such as meditation and awareness exercises, we can go a long way towards developing control over our judgements and emotions.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -2580,10 +2611,11 @@ import { content__title } from '../styles/contentStyles';
  class TheUltimateAimOfNeverFapDeluxePractices extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>The Ultimate Aim Of NeverFap Deluxe Practices</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>The Ultimate Aim Of NeverFap Deluxe Practices</Text>
+          
 
 <Text>NeverFap Deluxe consists of a range of exercises which are designed to help you develop the skills in order to help you overcome porn addiction.</Text>
 
@@ -2591,7 +2623,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>To help you develop healthy coping mechanisms in order to help you deal with your porn addiction.</h3>
+<Text style={h3}>To help you develop healthy coping mechanisms in order to help you deal with your porn addiction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2606,7 +2638,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Essentially, what this means is developing a new set of understandings and behaviours so you don't need to watch porn anymore to cope with these difficult situations.</h3>
+<Text style={h3}>Essentially, what this means is developing a new set of understandings and behaviours so you don't need to watch porn anymore to cope with these difficult situations.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2617,7 +2649,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>Encouraging self-discovery</h2>
+<Text style={h2}>Encouraging self-discovery</Text>
 
 <View style={hr2__bottom}/>
 
@@ -2639,7 +2671,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Helping ourselves</h3>
+<Text style={h3}>Helping ourselves</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2652,7 +2684,8 @@ import { content__title } from '../styles/contentStyles';
 
 <Text>The aim is to overcome our porn addiction, and there&rsquo;s no better way I know how than through calmness and awareness.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -2660,10 +2693,11 @@ import { content__title } from '../styles/contentStyles';
  class WhyYouShouldNeverDependOnYourEmotions extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Why You Should Never Depend On Your Emotions</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Why You Should Never Depend On Your Emotions</Text>
+          
 
 <Text>One thing that porn addicts are more-than familiar with is this concept of hope and despair.</Text>
 
@@ -2675,7 +2709,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>What I want to do in this article is explain the dynamics of this cycle.</h3>
+<Text style={h3}>What I want to do in this article is explain the dynamics of this cycle.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2690,7 +2724,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>After all, positive emotions never lie, right?</h3>
+<Text style={h3}>After all, positive emotions never lie, right?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2705,7 +2739,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>We feel as if we're already there.</h3>
+<Text style={h3}>We feel as if we're already there.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2720,7 +2754,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>And then we relapse and start and whole charade again.</h2>
+<Text style={h2}>And then we relapse and start and whole charade again.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -2740,7 +2774,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>The alternative is to develop proper self-control over our mind.</h3>
+<Text style={h3}>The alternative is to develop proper self-control over our mind.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2755,7 +2789,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Self-control is not reliant on how we feel in any way.</h3>
+<Text style={h3}>Self-control is not reliant on how we feel in any way.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2770,7 +2804,8 @@ import { content__title } from '../styles/contentStyles';
 
 <Text>In terms of moving forward, I highly recommend checking out our range of comprehensive NeverFap Practices which are designed to help you regain control over your mind.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -2778,10 +2813,11 @@ import { content__title } from '../styles/contentStyles';
  class TheEasiestWayToNotTakeOurEmotionsPersonally extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>The Easiest Way To Not Take Our Emotions Personally</Text>
-        <Text>There are times when our emotions can feel unmanagable.</Text>
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>The Easiest Way To Not Take Our Emotions Personally</Text>
+          <Text>There are times when our emotions can feel unmanagable.</Text>
 
 <Text>For example, we may be feeling intensely anxious about a date we have planned for that night, or we may even be feeling trapped and under the pressure to perform well at school or in our jobs.</Text>
 
@@ -2791,7 +2827,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>All situations where we collapse because we decide to give into our emotions and take them personally.</h3>
+<Text style={h3}>All situations where we collapse because we decide to give into our emotions and take them personally.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2810,7 +2846,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>It's where many of us are stuck mentally, and that's why I'm here to help.</h3>
+<Text style={h3}>It's where many of us are stuck mentally, and that's why I'm here to help.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2829,7 +2865,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>So what typically happens when we feel uncomfortable with our emotions, is that we try to assume control over them.</h3>
+<Text style={h3}>So what typically happens when we feel uncomfortable with our emotions, is that we try to assume control over them.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2862,7 +2898,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Instead, we're going to refrain entirely.</h3>
+<Text style={h3}>Instead, we're going to refrain entirely.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2887,7 +2923,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Because going and watching a calming YouTube video is actually a form of reaction.</h3>
+<Text style={h3}>Because going and watching a calming YouTube video is actually a form of reaction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2908,7 +2944,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>"Yes, these feelings are valid and now I am going to address them and respond to them".</h3>
+<Text style={h3}>"Yes, these feelings are valid and now I am going to address them and respond to them".</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2929,7 +2965,8 @@ import { content__title } from '../styles/contentStyles';
 
 <Text>As well as remain calm in the face of emotional uncertainty.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -2937,14 +2974,15 @@ import { content__title } from '../styles/contentStyles';
  class WhatItFeelsLikeNotToBeAddictedToPorn extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>What It Feels Like Not To Be Addicted To Porn</Text>
-        <Text>One thing which people often ask me is:</Text>
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>What It Feels Like Not To Be Addicted To Porn</Text>
+          <Text>One thing which people often ask me is:</Text>
 
 <View style={hr3}/>
 
-<h3>What does it feel like not to be addicted to porn?</h3>
+<Text style={h3}>What does it feel like not to be addicted to porn?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2963,7 +3001,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Well, that memory kind of sums up how I also feel about my previous porn addiction.</h3>
+<Text style={h3}>Well, that memory kind of sums up how I also feel about my previous porn addiction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2978,7 +3016,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>From a process point of view, it's actually quite astounding to understand why it's all a distant memory to me.</h3>
+<Text style={h3}>From a process point of view, it's actually quite astounding to understand why it's all a distant memory to me.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -2997,7 +3035,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>At it's worst, it was completely controlling my behaviour to a point of absolute obsession.</h3>
+<Text style={h3}>At it's worst, it was completely controlling my behaviour to a point of absolute obsession.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -3012,7 +3050,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Certainly, the biggest thing that's changed is my mental state.</h3>
+<Text style={h3}>Certainly, the biggest thing that's changed is my mental state.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -3029,7 +3067,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>I distinctly remember that feeling of calm I felt when I first started meditating.</h3>
+<Text style={h3}>I distinctly remember that feeling of calm I felt when I first started meditating.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -3044,7 +3082,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Like, not obsessive happy or manic happy, but just genuinely happy.</h3>
+<Text style={h3}>Like, not obsessive happy or manic happy, but just genuinely happy.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -3063,7 +3101,8 @@ import { content__title } from '../styles/contentStyles';
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -3071,10 +3110,11 @@ import { content__title } from '../styles/contentStyles';
  class WhatIsNeverFap extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>What Is NeverFap?</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>What Is NeverFap?</Text>
+          
 
 <Text>NeverFap is a comprehensive method of overcoming porn addiction.</Text>
 
@@ -3082,7 +3122,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>I would describe NeverFap as a system which is designed to give you self-control.</h3>
+<Text style={h3}>I would describe NeverFap as a system which is designed to give you self-control.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -3099,7 +3139,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>Well, chances are that you've been doing it wrong this whole time.</h2>
+<Text style={h2}>Well, chances are that you've been doing it wrong this whole time.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -3117,7 +3157,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>The thing to understand about self-control is that it's completely counter-intuitive.</h3>
+<Text style={h3}>The thing to understand about self-control is that it's completely counter-intuitive.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -3132,7 +3172,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>So there's a few steps we must take in order to address this.</h3>
+<Text style={h3}>So there's a few steps we must take in order to address this.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -3151,7 +3191,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>So what hope is there?</h3>
+<Text style={h3}>So what hope is there?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -3168,7 +3208,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>Instead, the problem is that you're spending so much time fighting these goals and expectations.</h2>
+<Text style={h2}>Instead, the problem is that you're spending so much time fighting these goals and expectations.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -3200,7 +3240,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Meditation is easiest and most effective way that I know how to develop self-control.</h3>
+<Text style={h3}>Meditation is easiest and most effective way that I know how to develop self-control.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -3219,7 +3259,8 @@ import { content__title } from '../styles/contentStyles';
 
 <Text>From there you can learn more about the various ways in which teach you self-control through meditation and various perspective exercises.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

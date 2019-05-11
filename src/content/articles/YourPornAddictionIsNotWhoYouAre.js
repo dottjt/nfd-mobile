@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class YourPornAddictionIsNotWhoYouAre extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Your Porn Addiction Is Not Who You Are</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Your Porn Addiction Is Not Who You Are</Text>
+          
 
 
 
@@ -23,7 +25,7 @@ export default class YourPornAddictionIsNotWhoYouAre extends Component {
 
 <View style={hr3}/>
 
-<h3>Otherwise known as attraction.</h3>
+<Text style={h3}>Otherwise known as attraction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -40,7 +42,7 @@ export default class YourPornAddictionIsNotWhoYouAre extends Component {
 
 <View style={hr2}/>
 
-<h2>I am here to tell you that this is purely your addiction trying to convince you otherwise.</h2>
+<Text style={h2}>I am here to tell you that this is purely your addiction trying to convince you otherwise.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -62,7 +64,7 @@ export default class YourPornAddictionIsNotWhoYouAre extends Component {
 
 <View style={hr3}/>
 
-<h3>Instead, what we're going to do is focus on developing this ability.</h3>
+<Text style={h3}>Instead, what we're going to do is focus on developing this ability.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -77,7 +79,7 @@ export default class YourPornAddictionIsNotWhoYouAre extends Component {
 
 <View style={hr2}/>
 
-<h2>You simply won't need to.</h2>
+<Text style={h2}>You simply won't need to.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -99,7 +101,7 @@ export default class YourPornAddictionIsNotWhoYouAre extends Component {
 
 <View style={hr3}/>
 
-<h3>There is only your ability and your commitment towards developing it.</h3>
+<Text style={h3}>There is only your ability and your commitment towards developing it.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -114,7 +116,7 @@ export default class YourPornAddictionIsNotWhoYouAre extends Component {
 
 <View style={hr4}/>
 
-<h4>Sure, you can claim that you're a porn addict due to x, y and z.</h4>
+<Text style={h4}>Sure, you can claim that you're a porn addict due to x, y and z.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -123,7 +125,8 @@ export default class YourPornAddictionIsNotWhoYouAre extends Component {
 
 <Text>Because porn addiction is a process, not a retrospective idea based in any number of infinite possibilities.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

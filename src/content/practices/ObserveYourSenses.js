@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class ObserveYourSenses extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Observe Your Senses</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Observe Your Senses</Text>
+          
 
 
 
@@ -21,7 +23,7 @@ export default class ObserveYourSenses extends Component {
 
 <View style={hr4}/>
 
-<h4>Your ability to remain aware of your senses in the present moment.</h4>
+<Text style={h4}>Your ability to remain aware of your senses in the present moment.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -36,7 +38,7 @@ export default class ObserveYourSenses extends Component {
 
 <View style={hr3}/>
 
-<h3>For starters, we severely overcomplicate what it is, thinking it must be so much more than simply paying attention to what we're feeling.</h3>
+<Text style={h3}>For starters, we severely overcomplicate what it is, thinking it must be so much more than simply paying attention to what we're feeling.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -53,7 +55,7 @@ export default class ObserveYourSenses extends Component {
 
 <View style={hr3}/>
 
-<h3>Observation is nothing more than paying attention to your senses.</h3>
+<Text style={h3}>Observation is nothing more than paying attention to your senses.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -76,7 +78,7 @@ export default class ObserveYourSenses extends Component {
 
 <View style={hr4}/>
 
-<h4>Where I personally feel a lot of people explaining observation go wrong, is that they focus on this whole "really try to empty your thoughts" or "attempt to refrain from judgement" mindset.</h4>
+<Text style={h4}>Where I personally feel a lot of people explaining observation go wrong, is that they focus on this whole "really try to empty your thoughts" or "attempt to refrain from judgement" mindset.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -95,7 +97,7 @@ export default class ObserveYourSenses extends Component {
 
 <View style={hr4}/>
 
-<h4>Another important thing to keep in mind is that we're not necessarily attempting to 'achieve' anything with observation.</h4>
+<Text style={h4}>Another important thing to keep in mind is that we're not necessarily attempting to 'achieve' anything with observation.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -108,7 +110,7 @@ export default class ObserveYourSenses extends Component {
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -128,7 +130,7 @@ export default class ObserveYourSenses extends Component {
 
 <View style={hr4}/>
 
-<h4>Observe all the various interactions that are taking place in your mind.</h4>
+<Text style={h4}>Observe all the various interactions that are taking place in your mind.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -151,7 +153,8 @@ export default class ObserveYourSenses extends Component {
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

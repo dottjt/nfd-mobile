@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class TheEasiestWayToNotTakeOurEmotionsPersonally extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>The Easiest Way To Not Take Our Emotions Personally</Text>
-        <Text>There are times when our emotions can feel unmanagable.</Text>
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>The Easiest Way To Not Take Our Emotions Personally</Text>
+          <Text>There are times when our emotions can feel unmanagable.</Text>
 
 <Text>For example, we may be feeling intensely anxious about a date we have planned for that night, or we may even be feeling trapped and under the pressure to perform well at school or in our jobs.</Text>
 
@@ -23,7 +25,7 @@ export default class TheEasiestWayToNotTakeOurEmotionsPersonally extends Compone
 
 <View style={hr3}/>
 
-<h3>All situations where we collapse because we decide to give into our emotions and take them personally.</h3>
+<Text style={h3}>All situations where we collapse because we decide to give into our emotions and take them personally.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -42,7 +44,7 @@ export default class TheEasiestWayToNotTakeOurEmotionsPersonally extends Compone
 
 <View style={hr3}/>
 
-<h3>It's where many of us are stuck mentally, and that's why I'm here to help.</h3>
+<Text style={h3}>It's where many of us are stuck mentally, and that's why I'm here to help.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -61,7 +63,7 @@ export default class TheEasiestWayToNotTakeOurEmotionsPersonally extends Compone
 
 <View style={hr3}/>
 
-<h3>So what typically happens when we feel uncomfortable with our emotions, is that we try to assume control over them.</h3>
+<Text style={h3}>So what typically happens when we feel uncomfortable with our emotions, is that we try to assume control over them.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -94,7 +96,7 @@ export default class TheEasiestWayToNotTakeOurEmotionsPersonally extends Compone
 
 <View style={hr3}/>
 
-<h3>Instead, we're going to refrain entirely.</h3>
+<Text style={h3}>Instead, we're going to refrain entirely.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -119,7 +121,7 @@ export default class TheEasiestWayToNotTakeOurEmotionsPersonally extends Compone
 
 <View style={hr3}/>
 
-<h3>Because going and watching a calming YouTube video is actually a form of reaction.</h3>
+<Text style={h3}>Because going and watching a calming YouTube video is actually a form of reaction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -140,7 +142,7 @@ export default class TheEasiestWayToNotTakeOurEmotionsPersonally extends Compone
 
 <View style={hr3}/>
 
-<h3>"Yes, these feelings are valid and now I am going to address them and respond to them".</h3>
+<Text style={h3}>"Yes, these feelings are valid and now I am going to address them and respond to them".</Text>
 
 <View style={hr3__bottom}/>
 
@@ -161,7 +163,8 @@ export default class TheEasiestWayToNotTakeOurEmotionsPersonally extends Compone
 
 <Text>As well as remain calm in the face of emotional uncertainty.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

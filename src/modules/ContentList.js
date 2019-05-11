@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, Text } from 'react-native';
+import { SafeAreaView } from 'react-native-navigation';
+
 import { Container } from '../emotion/components';
 
-import StatusBarMain from './StatusBarMain';
+import TopBarMain from './TopBarMain';
 import ContentListItem from './ContentListItem';
 
 import articlesJSON from '../content/api/articles';
@@ -19,23 +21,26 @@ export default class ContentList extends Component {
       case 'other': return otherJSON;
       // case 'podcasts': return podcastsJSON;
       // case 'meditations': return meditationsJSON;
-      default: throw new Error('incorrect type - selectJSON');
+      default: return articlesJSON;
     }
   };
 
   render() {
     const { contentType } = this.props;
+    console.log(contentType, "contentType");
     return (
-      <Container>
-        <StatusBarMain />
-        <FlatList
-          data={this.selectJSON(contentType)}
-          renderItem={(item) => (
-            <ContentListItem item={item} contentType={contentType} />
-          )}
-          keyExtractor={(item, index) => item.title + index}
-        />
-      </Container>
+      <SafeAreaView>
+        <Container>
+          <TopBarMain />
+          <FlatList
+            data={this.selectJSON(contentType)}
+            renderItem={(item) => (
+              <ContentListItem item={item} contentType={contentType} />
+            )}
+            keyExtractor={(item, index) => item.title + index}
+          />
+        </Container>
+      </SafeAreaView>
     );
   }
 }

@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class MyPersonalPornRecoveryJourney extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>My Personal Porn Recovery Journey</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>My Personal Porn Recovery Journey</Text>
+          
 
 <Text>I came across porn at a very young age.</Text>
 
@@ -41,7 +43,7 @@ export default class MyPersonalPornRecoveryJourney extends Component {
 
 <View style={hr3}/>
 
-<h3>Age 25. October 20th 2018.</h3>
+<Text style={h3}>Age 25. October 20th 2018.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -64,15 +66,15 @@ export default class MyPersonalPornRecoveryJourney extends Component {
 
 <View style={hrul}/>
 
-<ul>
-<li>Done the whole Paleo diet thing</li>
-<li>Studied various books and perspective course on mental health</li>
-<li>Took cold showers everyday before bed</li>
-<li>Ate only one meal a day (via intermittent fasting)</li>
-<li>Was doing Leangains and lifting weights three times a week</li>
-<li>Was in an amazing, supportive relationship</li>
-<li>Worked obscenely hard to get a job as a programmer</li>
-</ul>
+<View style={ul}>
+<Text style={li}>Done the whole Paleo diet thing</Text>
+<Text style={li}>Studied various books and perspective course on mental health</Text>
+<Text style={li}>Took cold showers everyday before bed</Text>
+<Text style={li}>Ate only one meal a day (via intermittent fasting)</Text>
+<Text style={li}>Was doing Leangains and lifting weights three times a week</Text>
+<Text style={li}>Was in an amazing, supportive relationship</Text>
+<Text style={li}>Worked obscenely hard to get a job as a programmer</Text>
+</View>
 
 <View style={hrul__bottom}/>
 
@@ -88,7 +90,7 @@ export default class MyPersonalPornRecoveryJourney extends Component {
 
 <View style={hr3}/>
 
-<h3>For starters I had a breakdown.</h3>
+<Text style={h3}>For starters I had a breakdown.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -101,7 +103,7 @@ export default class MyPersonalPornRecoveryJourney extends Component {
 
 <View style={hr3}/>
 
-<h3>It's impossible to do it alone.</h3>
+<Text style={h3}>It's impossible to do it alone.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -118,7 +120,7 @@ export default class MyPersonalPornRecoveryJourney extends Component {
 
 <View style={hr3}/>
 
-<h3>Which as a result, gave me this surreal confidence to actually address my porn addiction.</h3>
+<Text style={h3}>Which as a result, gave me this surreal confidence to actually address my porn addiction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -135,7 +137,7 @@ export default class MyPersonalPornRecoveryJourney extends Component {
 
 <View style={hr3}/>
 
-<h3>I finally felt free to just move on with my life.</h3>
+<Text style={h3}>I finally felt free to just move on with my life.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -146,7 +148,7 @@ export default class MyPersonalPornRecoveryJourney extends Component {
 
 <View style={hr3}/>
 
-<h3>Essentially, I'd discovered this thing called meditation.</h3>
+<Text style={h3}>Essentially, I'd discovered this thing called meditation.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -165,7 +167,7 @@ export default class MyPersonalPornRecoveryJourney extends Component {
 
 <View style={hr3}/>
 
-<h3>I can happily say that within two weeks of meditating I'd learnt more about how to manage my porn addiction than in absolutely everything I've done in the past five years to try and curb my addiction.</h3>
+<Text style={h3}>I can happily say that within two weeks of meditating I'd learnt more about how to manage my porn addiction than in absolutely everything I've done in the past five years to try and curb my addiction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -182,7 +184,7 @@ export default class MyPersonalPornRecoveryJourney extends Component {
 
 <View style={hr3}/>
 
-<h3>If I had one piece of advice to anyone wanting to seriously overcome their porn addiction, it would be to start meditating today.</h3>
+<Text style={h3}>If I had one piece of advice to anyone wanting to seriously overcome their porn addiction, it would be to start meditating today.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -195,7 +197,7 @@ export default class MyPersonalPornRecoveryJourney extends Component {
 
 <View style={hr2}/>
 
-<h2>The next steps in my journey</h2>
+<Text style={h2}>The next steps in my journey</Text>
 
 <View style={hr2__bottom}/>
 
@@ -215,7 +217,8 @@ export default class MyPersonalPornRecoveryJourney extends Component {
 
 <Text>Get started today.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

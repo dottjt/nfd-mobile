@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class IdentifyPointsOfAwarenessThroughoutYourDay extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Identify Points Of Awareness Throughout Your Day</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Identify Points Of Awareness Throughout Your Day</Text>
+          
 
 <Text>This exercise is designed to help you keep on top of your awareness throughout the day.</Text>
 
@@ -23,14 +25,14 @@ export default class IdentifyPointsOfAwarenessThroughoutYourDay extends Componen
 
 <View style={hrul}/>
 
-<ul>
-<li><Text style={{fontWeight: "bold"}}>When we wake up.</Text></li>
-<li><Text style={{fontWeight: "bold"}}>When we shower.</Text></li>
-<li><Text style={{fontWeight: "bold"}}>When we travel to work.</Text></li>
-<li><Text style={{fontWeight: "bold"}}>During our lunch break.</Text></li>
-<li><Text style={{fontWeight: "bold"}}>At dinner.</Text></li>
-<li><Text style={{fontWeight: "bold"}}>Before bed.</Text></li>
-</ul>
+<View style={ul}>
+<Text style={li}><Text style={{fontWeight: "bold"}}>When we wake up.</Text></Text>
+<Text style={li}><Text style={{fontWeight: "bold"}}>When we shower.</Text></Text>
+<Text style={li}><Text style={{fontWeight: "bold"}}>When we travel to work.</Text></Text>
+<Text style={li}><Text style={{fontWeight: "bold"}}>During our lunch break.</Text></Text>
+<Text style={li}><Text style={{fontWeight: "bold"}}>At dinner.</Text></Text>
+<Text style={li}><Text style={{fontWeight: "bold"}}>Before bed.</Text></Text>
+</View>
 
 <View style={hrul__bottom}/>
 
@@ -46,7 +48,7 @@ export default class IdentifyPointsOfAwarenessThroughoutYourDay extends Componen
 
 <View style={hr3}/>
 
-<h3>For this exercise, we want to do is start engaging our brain so that we can have those thoughts at these key moments throughout the day.</h3>
+<Text style={h3}>For this exercise, we want to do is start engaging our brain so that we can have those thoughts at these key moments throughout the day.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -63,7 +65,7 @@ export default class IdentifyPointsOfAwarenessThroughoutYourDay extends Componen
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -103,7 +105,8 @@ export default class IdentifyPointsOfAwarenessThroughoutYourDay extends Componen
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

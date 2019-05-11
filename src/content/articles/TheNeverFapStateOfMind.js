@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class TheNeverFapStateOfMind extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>The NeverFap State Of Mind</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>The NeverFap State Of Mind</Text>
+          
 
 <Text>This article aims to explore the idea of what it means to have the mindset of someone who does NeverFap.</Text>
 
@@ -33,7 +35,7 @@ export default class TheNeverFapStateOfMind extends Component {
 
 <View style={hr3}/>
 
-<h3>Calm.</h3>
+<Text style={h3}>Calm.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -52,7 +54,7 @@ export default class TheNeverFapStateOfMind extends Component {
 
 <View style={hr4}/>
 
-<h4>Because you know that you have a strategy in place, and you know exactly what to expect from your ability to address your addiction.</h4>
+<Text style={h4}>Because you know that you have a strategy in place, and you know exactly what to expect from your ability to address your addiction.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -65,7 +67,7 @@ export default class TheNeverFapStateOfMind extends Component {
 
 <View style={hr3}/>
 
-<h3>Because remaining calm doesn't require any effort.</h3>
+<Text style={h3}>Because remaining calm doesn't require any effort.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -84,7 +86,7 @@ export default class TheNeverFapStateOfMind extends Component {
 
 <View style={hr3}/>
 
-<h3>It's simply a matter of following your daily routine of NeverFap Deluxe Practices.</h3>
+<Text style={h3}>It's simply a matter of following your daily routine of NeverFap Deluxe Practices.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -101,7 +103,8 @@ export default class TheNeverFapStateOfMind extends Component {
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

@@ -1,25 +1,27 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class YouAlwaysHaveTimeForYourMentalHealth extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>You Always Have Time For Your Mental Health</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>You Always Have Time For Your Mental Health</Text>
+          
 
 <Text>There&rsquo;s one excuse that I often see porn addicts come up with in regards to their addiction.</Text>
 
 <View style={hr3}/>
 
-<h3>I don't have enough time.</h3>
+<Text style={h3}>I don't have enough time.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -34,7 +36,7 @@ export default class YouAlwaysHaveTimeForYourMentalHealth extends Component {
 
 <View style={hr3}/>
 
-<h3>Because if you did have enough time to spend towards addressing your porn addiction, you simply wouldn't be a porn addict.</h3>
+<Text style={h3}>Because if you did have enough time to spend towards addressing your porn addiction, you simply wouldn't be a porn addict.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -57,7 +59,7 @@ export default class YouAlwaysHaveTimeForYourMentalHealth extends Component {
 
 <View style={hr2}/>
 
-<h2>If you believe that you do not have enough time for your mental health then you have a mental disorder.</h2>
+<Text style={h2}>If you believe that you do not have enough time for your mental health then you have a mental disorder.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -79,7 +81,7 @@ export default class YouAlwaysHaveTimeForYourMentalHealth extends Component {
 
 <View style={hr3}/>
 
-<h3>Again, ask yourself how this mentality isn't a sign of having a disorder.</h3>
+<Text style={h3}>Again, ask yourself how this mentality isn't a sign of having a disorder.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -100,7 +102,7 @@ export default class YouAlwaysHaveTimeForYourMentalHealth extends Component {
 
 <View style={hr4}/>
 
-<h4>Of course, there's a reason why poor mental health is often described as a self-repeating cycle.</h4>
+<Text style={h4}>Of course, there's a reason why poor mental health is often described as a self-repeating cycle.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -115,7 +117,7 @@ export default class YouAlwaysHaveTimeForYourMentalHealth extends Component {
 
 <View style={hr2}/>
 
-<h2>And to be honest, it's a bit shit.</h2>
+<Text style={h2}>And to be honest, it's a bit shit.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -137,7 +139,7 @@ export default class YouAlwaysHaveTimeForYourMentalHealth extends Component {
 
 <View style={hr4}/>
 
-<h4>But let me say that there's never a bad time to commit to your mental health.</h4>
+<Text style={h4}>But let me say that there's never a bad time to commit to your mental health.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -156,7 +158,7 @@ export default class YouAlwaysHaveTimeForYourMentalHealth extends Component {
 
 <View style={hr3}/>
 
-<h3>Honestly, spending ten minutes at night before bed meditating is all most people need.</h3>
+<Text style={h3}>Honestly, spending ten minutes at night before bed meditating is all most people need.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -175,7 +177,7 @@ export default class YouAlwaysHaveTimeForYourMentalHealth extends Component {
 
 <View style={hr2}/>
 
-<h2>From this point of view, you have nothing to gain from neglecting your mental health.</h2>
+<Text style={h2}>From this point of view, you have nothing to gain from neglecting your mental health.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -193,7 +195,8 @@ export default class YouAlwaysHaveTimeForYourMentalHealth extends Component {
 
 <Text>Moving forward, I recommend checking out our list of NeverFap Deluxe Practices for a list of exercises you can do to develop awareness in your life.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

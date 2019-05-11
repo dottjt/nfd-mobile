@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text, FlatList } from 'react-native';
-import { Container } from '../emotion/components';
+import { ScrollView, Text } from 'react-native';
+import { Container, LatestContent } from '../emotion/components';
 import { PageTitle, PageSubTitle } from '../emotion/text';
 
-import StatusBarMain from './StatusBarMain';
+import TopBarMain from './TopBarMain';
 import ContentListItem from './ContentListItem';
+import LoadingPage from './LoadingPage';
 
 import { ApolloProvider } from 'react-apollo';
 import { Query } from 'react-apollo';
@@ -19,53 +20,55 @@ import podcastsLatestJSON from '../content/api/podcastsLatest';
 
 export default class HomePage extends Component {
   render() {
-    // return (
-    //   <ApolloProvider client={client}>
-    //     <Query
-    //       query={HOMEPAGE}
-    //       >
-    //     {({ loading, error, data, client }) => {
-    //       if (loading) return 'loading';
-    //       if (error) return `Error! ${error.message}`;
-
-    //       const {
-    //         getDbUsersStats,
-    //         getAccountabilityMessagesStats,
-    //         getAccountabilityReactsStats,
-    //       } = data;
-
     return (
-      <Container>
-        <StatusBarMain />
-        <PageTitle>NeverFap Deluxe</PageTitle>
-        <Text>Daddy Reade is here to help, baby.</Text>
+      <ApolloProvider client={client}>
+        <Query
+          query={HOMEPAGE}
+          >
+        {({ loading, error, data, client }) => {
+          if (loading) return <LoadingPage/>;
+          if (error) return <Text>Error! ${error.message}</Text>;
 
-        <PageSubTitle>Latest Articles</PageSubTitle>
-        <View>
-          {articlesLatestJSON.map(item => (
-            <ContentListItem key={item.title} item={item} contentType={'articles'} />
-          ))}
-        </View>
+          const {
+            getDbUsersStats,
+            getAccountabilityMessagesStats,
+            getAccountabilityReactsStats,
+          } = data;
 
-        <PageSubTitle>Latest Practices</PageSubTitle>
-        <View>
-          {practicesLatestJSON.map(item => (
-            <ContentListItem key={item.title} item={item} contentType={'articles'} />
-          ))}
-        </View>
+          return (
+            <ScrollView>
+              <Container>
+                <TopBarMain />
+                <PageTitle>NeverFap Deluxe</PageTitle>
+                <Text style={css`font-size: 16px; margin-top: 6px; margin-bottom: 6px;`}>Daddy Reade is here to help, baby.</Text>
 
-        <PageSubTitle>Latest Podcast</PageSubTitle>
-        <View>
-          {podcastsLatestJSON.map(item => (
-            <ContentListItem key={item.title} item={item} contentType={'articles'} />
-          ))}
-        </View>
-      </Container>
+                <PageSubTitle>Latest Articles</PageSubTitle>
+                <LatestContent>
+                  {articlesLatestJSON.map(item => (
+                    <ContentListItem key={item.title} item={item} contentType='articles' />
+                  ))}
+                </LatestContent>
+
+                <PageSubTitle>Latest Practices</PageSubTitle>
+                <LatestContent>
+                  {practicesLatestJSON.map(item => (
+                    <ContentListItem key={item.title} item={item} contentType='articles' />
+                  ))}
+                </LatestContent>
+
+                <PageSubTitle>Latest Podcast</PageSubTitle>
+                <LatestContent>
+                  {podcastsLatestJSON.map(item => (
+                    <ContentListItem key={item.title} item={item} contentType='articles' />
+                  ))}
+                </LatestContent>
+              </Container>
+            </ScrollView>
+          )
+        }}
+        </Query>
+      </ApolloProvider>
     );
-    //     }};
-    //     </Query>
-    //   </ApolloProvider>
-    // );
   }
 }
 

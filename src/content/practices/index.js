@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
 
  class FocusYourAttention extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Focus Your Attention</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Focus Your Attention</Text>
+          
 
 <Text>Learning to focus our attention is an important skill.</Text>
 
@@ -27,7 +29,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>What is focus?</h2>
+<Text style={h2}>What is focus?</Text>
 
 <View style={hr2__bottom}/>
 
@@ -45,7 +47,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Instead, effective focus comes from being calm and relaxed with a clear intention in mind.</h3>
+<Text style={h3}>Instead, effective focus comes from being calm and relaxed with a clear intention in mind.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -62,7 +64,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>I would say that it's nothing more than awareness with a clear intention.</h3>
+<Text style={h3}>I would say that it's nothing more than awareness with a clear intention.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -81,7 +83,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -107,7 +109,8 @@ import { content__title } from '../styles/contentStyles';
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -115,10 +118,11 @@ import { content__title } from '../styles/contentStyles';
  class SeparateYourSeeingFromYourFeeling extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Separate Your Seeing From Your Feeling</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Separate Your Seeing From Your Feeling</Text>
+          
 
 <Text>This is an exercise which porn addicts benefit from greatly, due to the way it changes your visual perception of reality.</Text>
 
@@ -132,7 +136,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr4}/>
 
-<h4>You see, what you "understand" is part of the reason why you're addicted to porn.</h4>
+<Text style={h4}>You see, what you "understand" is part of the reason why you're addicted to porn.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -155,7 +159,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr4}/>
 
-<h4>As human beings, we tend to attach meaning and value to that which we can physically see.</h4>
+<Text style={h4}>As human beings, we tend to attach meaning and value to that which we can physically see.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -198,7 +202,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -230,7 +234,8 @@ import { content__title } from '../styles/contentStyles';
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -238,16 +243,17 @@ import { content__title } from '../styles/contentStyles';
  class SlowDownTime extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Slow Down Time</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Slow Down Time</Text>
+          
 
 <Text>This exercise is one of the easiest ways to start building your awareness.</Text>
 
 <View style={hr3}/>
 
-<h3>Essentially, it involves slowing down your mind so that you can open yourself to the opportunity of being aware.</h3>
+<Text style={h3}>Essentially, it involves slowing down your mind so that you can open yourself to the opportunity of being aware.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -264,7 +270,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>Certainly, for most people, porn addiction is merely a subconscious response.</h2>
+<Text style={h2}>Certainly, for most people, porn addiction is merely a subconscious response.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -282,7 +288,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr3}/>
 
-<h3>Because when we're in control of our mind, it's almost as if everything is moving in slow motion.</h3>
+<Text style={h3}>Because when we're in control of our mind, it's almost as if everything is moving in slow motion.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -297,7 +303,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr4}/>
 
-<h4>Which is why people inevitably relapse.</h4>
+<Text style={h4}>Which is why people inevitably relapse.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -312,7 +318,7 @@ import { content__title } from '../styles/contentStyles';
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -339,7 +345,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -347,10 +354,11 @@ Mental and physical.</Text>
  class StopAbsolutelyEverythingYoureDoing extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Stop Absolutely Everything You're Doing</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Stop Absolutely Everything You're Doing</Text>
+          
 
 
 
@@ -372,7 +380,7 @@ Mental and physical.</Text>
 
 <View style={hr4}/>
 
-<h4>What this exercise attempts to do is help you better disassociate yourself from this persona.</h4>
+<Text style={h4}>What this exercise attempts to do is help you better disassociate yourself from this persona.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -389,7 +397,7 @@ Mental and physical.</Text>
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -427,7 +435,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -435,10 +444,11 @@ Mental and physical.</Text>
  class ObserveYourSenses extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Observe Your Senses</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Observe Your Senses</Text>
+          
 
 
 
@@ -446,7 +456,7 @@ Mental and physical.</Text>
 
 <View style={hr4}/>
 
-<h4>Your ability to remain aware of your senses in the present moment.</h4>
+<Text style={h4}>Your ability to remain aware of your senses in the present moment.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -461,7 +471,7 @@ Mental and physical.</Text>
 
 <View style={hr3}/>
 
-<h3>For starters, we severely overcomplicate what it is, thinking it must be so much more than simply paying attention to what we're feeling.</h3>
+<Text style={h3}>For starters, we severely overcomplicate what it is, thinking it must be so much more than simply paying attention to what we're feeling.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -478,7 +488,7 @@ Mental and physical.</Text>
 
 <View style={hr3}/>
 
-<h3>Observation is nothing more than paying attention to your senses.</h3>
+<Text style={h3}>Observation is nothing more than paying attention to your senses.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -501,7 +511,7 @@ Mental and physical.</Text>
 
 <View style={hr4}/>
 
-<h4>Where I personally feel a lot of people explaining observation go wrong, is that they focus on this whole "really try to empty your thoughts" or "attempt to refrain from judgement" mindset.</h4>
+<Text style={h4}>Where I personally feel a lot of people explaining observation go wrong, is that they focus on this whole "really try to empty your thoughts" or "attempt to refrain from judgement" mindset.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -520,7 +530,7 @@ Mental and physical.</Text>
 
 <View style={hr4}/>
 
-<h4>Another important thing to keep in mind is that we're not necessarily attempting to 'achieve' anything with observation.</h4>
+<Text style={h4}>Another important thing to keep in mind is that we're not necessarily attempting to 'achieve' anything with observation.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -533,7 +543,7 @@ Mental and physical.</Text>
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -553,7 +563,7 @@ Mental and physical.</Text>
 
 <View style={hr4}/>
 
-<h4>Observe all the various interactions that are taking place in your mind.</h4>
+<Text style={h4}>Observe all the various interactions that are taking place in your mind.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -576,7 +586,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -584,16 +595,17 @@ Mental and physical.</Text>
  class DissolveYourVisualField extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Dissolve Your Visual Field</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Dissolve Your Visual Field</Text>
+          
 
 <Text>This exercise is designed to help dissolve your ego.</Text>
 
 <View style={hr3}/>
 
-<h3>In particular, by getting you actively reinterpret your visual field.</h3>
+<Text style={h3}>In particular, by getting you actively reinterpret your visual field.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -610,7 +622,7 @@ Mental and physical.</Text>
 
 <View style={hr3}/>
 
-<h3>Numbers, for example, are not real. They're just mathematical descriptions.</h3>
+<Text style={h3}>Numbers, for example, are not real. They're just mathematical descriptions.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -623,7 +635,7 @@ Mental and physical.</Text>
 
 <View style={hr3}/>
 
-<h3>We're all still merely people, after all.</h3>
+<Text style={h3}>We're all still merely people, after all.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -638,7 +650,7 @@ Mental and physical.</Text>
 
 <View style={hr3}/>
 
-<h3>I mean, is that arrangement of light and colour on your computer screen really that special enough for you to be completely dependent upon it?</h3>
+<Text style={h3}>I mean, is that arrangement of light and colour on your computer screen really that special enough for you to be completely dependent upon it?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -653,7 +665,7 @@ Mental and physical.</Text>
 
 <View style={hr3}/>
 
-<h3>What information do we lose with all this additional mental processing?</h3>
+<Text style={h3}>What information do we lose with all this additional mental processing?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -670,7 +682,7 @@ Mental and physical.</Text>
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -696,7 +708,8 @@ Mental and physical.</Text>
 
 <Text>While you can do this anywhere, I personally find it works best when I have a few minutes alone, where you can really explore this idea uninterupted.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -704,10 +717,11 @@ Mental and physical.</Text>
  class RelaxEverything extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Relax Everything</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Relax Everything</Text>
+          
 
 
 
@@ -741,7 +755,7 @@ Mental and physical.</Text>
 
 <View style={hr4}/>
 
-<h4>If you skip this step, then you'll gain very little from these exercises because you won't be actively engaging your brain.</h4>
+<Text style={h4}>If you skip this step, then you'll gain very little from these exercises because you won't be actively engaging your brain.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -760,7 +774,7 @@ Mental and physical.</Text>
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -798,7 +812,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -806,10 +821,11 @@ Mental and physical.</Text>
  class CatchingTheOddJudgeOut extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Catching The Odd Judge Out</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Catching The Odd Judge Out</Text>
+          
 
 <Text>A lot of people find this exercise super useful, because it can help us identify our biases much easier than trying to identify those biases directly.</Text>
 
@@ -833,7 +849,7 @@ Mental and physical.</Text>
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -869,7 +885,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -877,10 +894,11 @@ Mental and physical.</Text>
  class IdentifyPointsOfAwarenessThroughoutYourDay extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Identify Points Of Awareness Throughout Your Day</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Identify Points Of Awareness Throughout Your Day</Text>
+          
 
 <Text>This exercise is designed to help you keep on top of your awareness throughout the day.</Text>
 
@@ -890,14 +908,14 @@ Mental and physical.</Text>
 
 <View style={hrul}/>
 
-<ul>
-<li><Text style={{fontWeight: "bold"}}>When we wake up.</Text></li>
-<li><Text style={{fontWeight: "bold"}}>When we shower.</Text></li>
-<li><Text style={{fontWeight: "bold"}}>When we travel to work.</Text></li>
-<li><Text style={{fontWeight: "bold"}}>During our lunch break.</Text></li>
-<li><Text style={{fontWeight: "bold"}}>At dinner.</Text></li>
-<li><Text style={{fontWeight: "bold"}}>Before bed.</Text></li>
-</ul>
+<View style={ul}>
+<Text style={li}><Text style={{fontWeight: "bold"}}>When we wake up.</Text></Text>
+<Text style={li}><Text style={{fontWeight: "bold"}}>When we shower.</Text></Text>
+<Text style={li}><Text style={{fontWeight: "bold"}}>When we travel to work.</Text></Text>
+<Text style={li}><Text style={{fontWeight: "bold"}}>During our lunch break.</Text></Text>
+<Text style={li}><Text style={{fontWeight: "bold"}}>At dinner.</Text></Text>
+<Text style={li}><Text style={{fontWeight: "bold"}}>Before bed.</Text></Text>
+</View>
 
 <View style={hrul__bottom}/>
 
@@ -913,7 +931,7 @@ Mental and physical.</Text>
 
 <View style={hr3}/>
 
-<h3>For this exercise, we want to do is start engaging our brain so that we can have those thoughts at these key moments throughout the day.</h3>
+<Text style={h3}>For this exercise, we want to do is start engaging our brain so that we can have those thoughts at these key moments throughout the day.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -930,7 +948,7 @@ Mental and physical.</Text>
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -970,7 +988,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -978,10 +997,11 @@ Mental and physical.</Text>
  class PutYourselfInOtherPeoplesShoes extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Put Yourself In Other People's Shoes</Text>
-        <Text>This exercise can be inherently difficult.</Text>
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Put Yourself In Other People's Shoes</Text>
+          <Text>This exercise can be inherently difficult.</Text>
 
 <Text>In large part because it demands you to think consciously beyond which you may feel comfortable.</Text>
 
@@ -1017,7 +1037,7 @@ Mental and physical.</Text>
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1057,7 +1077,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -1065,10 +1086,11 @@ Mental and physical.</Text>
  class UseYourOppositeHand extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Use Your Opposite Hand</Text>
-        <Text>This exercise is a great way to force yourself out of your comfort zone.</Text>
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Use Your Opposite Hand</Text>
+          <Text>This exercise is a great way to force yourself out of your comfort zone.</Text>
 
 <Text>Essentially, the idea behind this exercise is to force limitation upon ourselves and gauge not only how we respond, but how we can better react inspite of our circumstances.</Text>
 
@@ -1096,7 +1118,7 @@ Mental and physical.</Text>
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1134,7 +1156,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -1142,10 +1165,11 @@ Mental and physical.</Text>
  class WhereDoYouTouch extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Where Do You Touch?</Text>
-        <Text><b>Where Do You Touch?</b> is another classic awareness exercise which is designed to help you develop focus and attention.</Text>
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Where Do You Touch?</Text>
+          <Text><b>Where Do You Touch?</b> is another classic awareness exercise which is designed to help you develop focus and attention.</Text>
 
 <Text>By &ldquo;classic&rdquo; I mean it&rsquo;s another variation of the tried-and-true &ldquo;pay attention to X thing throughout the day&rdquo; that I&rsquo;m sure you&rsquo;ve seen in abundance on this website.</Text>
 
@@ -1153,7 +1177,7 @@ Mental and physical.</Text>
 
 <View style={hr3}/>
 
-<h3>In essence, because this is what you should be doing with your attention anyway.</h3>
+<Text style={h3}>In essence, because this is what you should be doing with your attention anyway.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1172,7 +1196,7 @@ Mental and physical.</Text>
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1206,7 +1230,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -1214,10 +1239,11 @@ Mental and physical.</Text>
  class BlindAttention extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Blind Attention</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Blind Attention</Text>
+          
 
 <Text>This is a great exercise in terms of being able to understand what it means to truly focus our minds and train our attention.</Text>
 
@@ -1229,7 +1255,7 @@ Mental and physical.</Text>
 
 <View style={hr3}/>
 
-<h3>In actual fact, focus and attention are largely conceptual ideas which have no rigid implementation.</h3>
+<Text style={h3}>In actual fact, focus and attention are largely conceptual ideas which have no rigid implementation.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1248,7 +1274,7 @@ Mental and physical.</Text>
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1272,7 +1298,7 @@ Mental and physical.</Text>
 
 <View style={hr3}/>
 
-<h3>Now, with your attention remained on this object, I want you to close your eyes.</h3>
+<Text style={h3}>Now, with your attention remained on this object, I want you to close your eyes.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1287,7 +1313,7 @@ Mental and physical.</Text>
 
 <View style={hr3}/>
 
-<h3>Use your imagination and see what you can do with this object.</h3>
+<Text style={h3}>Use your imagination and see what you can do with this object.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1308,7 +1334,7 @@ Mental and physical.</Text>
 
 <View style={hr3}/>
 
-<h3>It really is as simple as practicing these exercises on a consistent basis, in order to develop the skill of focus.</h3>
+<Text style={h3}>It really is as simple as practicing these exercises on a consistent basis, in order to develop the skill of focus.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1331,7 +1357,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -1339,10 +1366,11 @@ Mental and physical.</Text>
  class CanYouLookThroughWalls extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Can You Look Through Walls?</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Can You Look Through Walls?</Text>
+          
 
 
 
@@ -1362,7 +1390,7 @@ Mental and physical.</Text>
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1394,7 +1422,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -1402,10 +1431,11 @@ Mental and physical.</Text>
  class Every30Minutes extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Every 30 Minutes</Text>
-        <Text>The idea behind this exercise is to help you develop awareness throughout your day on an interval basis.</Text>
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Every 30 Minutes</Text>
+          <Text>The idea behind this exercise is to help you develop awareness throughout your day on an interval basis.</Text>
 
 <Text>Essentially, the intention behind <Text style={{fontWeight: "bold"}}>Every 30 Minutes</Text> is to help keep a constant gauge of what you&rsquo;re doing.</Text>
 
@@ -1417,7 +1447,7 @@ Mental and physical.</Text>
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1459,7 +1489,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -1467,10 +1498,11 @@ Mental and physical.</Text>
  class FocusYourAttentionOnTheRightSideOfYourVision extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Focus Your Attention On The Right Side Of Your Vision</Text>
-        <Text>This is another classic awareness exercise which is short and straight-to-the-point.</Text>
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Focus Your Attention On The Right Side Of Your Vision</Text>
+          <Text>This is another classic awareness exercise which is short and straight-to-the-point.</Text>
 
 <Text>It&rsquo;s designed to help you think about something which you ordinarily wouldn&rsquo;t think about, which can help you expand your conscious awareness.</Text>
 
@@ -1486,7 +1518,7 @@ Mental and physical.</Text>
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1520,7 +1552,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -1528,10 +1561,11 @@ Mental and physical.</Text>
  class WhatCanYourHandDo extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>What Can Your Hand Do?</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>What Can Your Hand Do?</Text>
+          
 
 <Text>This exercise is designed to help you think outside of the box.</Text>
 
@@ -1543,7 +1577,7 @@ Mental and physical.</Text>
 
 <View style={hr3}/>
 
-<h3>In this exercise what we'll be doing is coming up with a variety of different ways we can use our hands.</h3>
+<Text style={h3}>In this exercise what we'll be doing is coming up with a variety of different ways we can use our hands.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -1562,7 +1596,7 @@ Mental and physical.</Text>
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1596,7 +1630,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
@@ -1604,10 +1639,11 @@ Mental and physical.</Text>
  class FocusOnYourFingerAndYourBackground extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Focus On Your Finger And Your Background</Text>
-        <Text>This is a simple exercise most people can benefit from straight-away without too much effort.</Text>
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Focus On Your Finger And Your Background</Text>
+          <Text>This is a simple exercise most people can benefit from straight-away without too much effort.</Text>
 
 <Text>Certainly, it was one of the first awareness exercises I learnt when I was starting out with my own mental health journey, and it&rsquo;s one that has stuck with me since.</Text>
 
@@ -1627,7 +1663,7 @@ Mental and physical.</Text>
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -1675,7 +1711,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

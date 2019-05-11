@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class CreatingYourFirstNeverFapSchedule extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Creating Your First NeverFap Schedule</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Creating Your First NeverFap Schedule</Text>
+          
 
 <Text>Everything in life revolves around practice.</Text>
 
@@ -21,7 +23,7 @@ export default class CreatingYourFirstNeverFapSchedule extends Component {
 
 <View style={hr3}/>
 
-<h3>Practice is what will allow us to overcome porn addiction.</h3>
+<Text style={h3}>Practice is what will allow us to overcome porn addiction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -38,7 +40,7 @@ export default class CreatingYourFirstNeverFapSchedule extends Component {
 
 <View style={hr3}/>
 
-<h3>To start out, I recommend spending approximately 10 minutes per day practicing observation.</h3>
+<Text style={h3}>To start out, I recommend spending approximately 10 minutes per day practicing observation.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -53,7 +55,7 @@ export default class CreatingYourFirstNeverFapSchedule extends Component {
 
 <View style={hr2}/>
 
-<h2>It's more-or-less the only exercise I personally do.</h2>
+<Text style={h2}>It's more-or-less the only exercise I personally do.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -73,7 +75,7 @@ export default class CreatingYourFirstNeverFapSchedule extends Component {
 
 <View style={hr3}/>
 
-<h3>Personally speaking, I don't recommend doing more than one additional exercise at a time.</h3>
+<Text style={h3}>Personally speaking, I don't recommend doing more than one additional exercise at a time.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -88,7 +90,7 @@ export default class CreatingYourFirstNeverFapSchedule extends Component {
 
 <View style={hr2}/>
 
-<h2>My Personal NeverFap Routine</h2>
+<Text style={h2}>My Personal NeverFap Routine</Text>
 
 <View style={hr2__bottom}/>
 
@@ -108,11 +110,11 @@ export default class CreatingYourFirstNeverFapSchedule extends Component {
 
 <View style={hrul}/>
 
-<ul>
-<li><b>15 minutes of meditation as I walk to the train station in the morning for work.</b></li>
-<li><b>15 minutes of meditation as I walk to the train station in the morning for work.</b></li>
-<li><b>10 minutes of meditation while sitting down in a room, around 15 minutes before bed.</b></li>
-</ul>
+<View style={ul}>
+<Text style={li}><b>15 minutes of meditation as I walk to the train station in the morning for work.</b></Text>
+<Text style={li}><b>15 minutes of meditation as I walk to the train station in the morning for work.</b></Text>
+<Text style={li}><b>10 minutes of meditation while sitting down in a room, around 15 minutes before bed.</b></Text>
+</View>
 
 <View style={hrul__bottom}/>
 
@@ -128,7 +130,7 @@ export default class CreatingYourFirstNeverFapSchedule extends Component {
 
 <View style={hr3}/>
 
-<h3>Regardless, I keep it super simple and that's why it works.</h3>
+<Text style={h3}>Regardless, I keep it super simple and that's why it works.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -145,17 +147,17 @@ export default class CreatingYourFirstNeverFapSchedule extends Component {
 
 <View style={hrul}/>
 
-<ul>
-<li>I eat paleo.</li>
-<li>I do cardio and lift weights three times a week.</li>
-<li>I have a consistent sleep routine.</li>
-<li>I work on my hobbies and ambitions in my spare time.</li>
-<li>I play video games and watch TV to relax.</li>
-<li>I meditate approximately three times a day.</li>
-<li>I work a typical nine-to-five job.</li>
-<li>I brush my teeth in the morning and at night.</li>
-<li>I have a cold shower every night.</li>
-</ul>
+<View style={ul}>
+<Text style={li}>I eat paleo.</Text>
+<Text style={li}>I do cardio and lift weights three times a week.</Text>
+<Text style={li}>I have a consistent sleep routine.</Text>
+<Text style={li}>I work on my hobbies and ambitions in my spare time.</Text>
+<Text style={li}>I play video games and watch TV to relax.</Text>
+<Text style={li}>I meditate approximately three times a day.</Text>
+<Text style={li}>I work a typical nine-to-five job.</Text>
+<Text style={li}>I brush my teeth in the morning and at night.</Text>
+<Text style={li}>I have a cold shower every night.</Text>
+</View>
 
 <View style={hrul__bottom}/>
 
@@ -177,7 +179,8 @@ export default class CreatingYourFirstNeverFapSchedule extends Component {
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

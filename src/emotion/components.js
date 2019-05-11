@@ -1,26 +1,21 @@
-import { Dimensions } from 'react-native';
+import { Platform, Dimensions, StatusBar } from 'react-native';
 import styled, { css } from '@emotion/native';
 
-export const Container = styled.View`
+export const Container = styled.ScrollView`
   display: flex;
-  justify-content: center;
-  align-items: center;
-
+  background: white;
   width: ${Dimensions.get('window').width};
-
+  height: ${Dimensions.get('window').height};
+  padding: 10px;
+  padding-top: ${Platform.OS === 'ios' ? 0 : StatusBar.currentHeight};
   margin: 10px;
   border: 4px solid black;
 `;
 
 export const Item = styled.View`
-  flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   width: ${Dimensions.get('window').width};
-  height: 80px;
 
   padding: 8px;
   border: 4px solid rgba(255, 46, 182, 1);
@@ -28,22 +23,26 @@ export const Item = styled.View`
   shadow-color: cyan;
   color: black;
   transition: shadow-offset 0.2s, border-bottom 0.1s;
-  margin-bottom: 20px;
+
+  margin-bottom: 16px;
 `;
 
 export const ItemTitle = styled.Text`
-  font-size: 12px;
-  line-height: 16px;
+  width: ${Dimensions.get('window').width * 0.7};
+  font-size: 20px;
+  line-height: 24px;
   color: black;
 `;
 
 export const ItemDate = styled.Text`
-  font-size: 12px;
-  line-height: 16px;
+  width: ${Dimensions.get('window').width * 0.3};
+  
+  font-size: 14px;
+  line-height: 22px;
   color: black;
 `;
 
-export const StatusBar = styled.View`
+export const TopBar = styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -58,5 +57,12 @@ export const SettingContainer = styled.View`
   display: flex;
   flex-direction: column;
   height: ${Dimensions.get('window').height * 0.5};
+  width: ${Dimensions.get('window').width};
+`;
+
+export const LatestContent = styled.View`
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
   width: ${Dimensions.get('window').width};
 `;

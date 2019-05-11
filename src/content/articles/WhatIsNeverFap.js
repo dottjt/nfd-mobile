@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class WhatIsNeverFap extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>What Is NeverFap?</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>What Is NeverFap?</Text>
+          
 
 <Text>NeverFap is a comprehensive method of overcoming porn addiction.</Text>
 
@@ -21,7 +23,7 @@ export default class WhatIsNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>I would describe NeverFap as a system which is designed to give you self-control.</h3>
+<Text style={h3}>I would describe NeverFap as a system which is designed to give you self-control.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -38,7 +40,7 @@ export default class WhatIsNeverFap extends Component {
 
 <View style={hr2}/>
 
-<h2>Well, chances are that you've been doing it wrong this whole time.</h2>
+<Text style={h2}>Well, chances are that you've been doing it wrong this whole time.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -56,7 +58,7 @@ export default class WhatIsNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>The thing to understand about self-control is that it's completely counter-intuitive.</h3>
+<Text style={h3}>The thing to understand about self-control is that it's completely counter-intuitive.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -71,7 +73,7 @@ export default class WhatIsNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>So there's a few steps we must take in order to address this.</h3>
+<Text style={h3}>So there's a few steps we must take in order to address this.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -90,7 +92,7 @@ export default class WhatIsNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>So what hope is there?</h3>
+<Text style={h3}>So what hope is there?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -107,7 +109,7 @@ export default class WhatIsNeverFap extends Component {
 
 <View style={hr2}/>
 
-<h2>Instead, the problem is that you're spending so much time fighting these goals and expectations.</h2>
+<Text style={h2}>Instead, the problem is that you're spending so much time fighting these goals and expectations.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -139,7 +141,7 @@ export default class WhatIsNeverFap extends Component {
 
 <View style={hr3}/>
 
-<h3>Meditation is easiest and most effective way that I know how to develop self-control.</h3>
+<Text style={h3}>Meditation is easiest and most effective way that I know how to develop self-control.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -158,7 +160,8 @@ export default class WhatIsNeverFap extends Component {
 
 <Text>From there you can learn more about the various ways in which teach you self-control through meditation and various perspective exercises.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class FocusYourAttentionOnTheRightSideOfYourVision extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Focus Your Attention On The Right Side Of Your Vision</Text>
-        <Text>This is another classic awareness exercise which is short and straight-to-the-point.</Text>
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Focus Your Attention On The Right Side Of Your Vision</Text>
+          <Text>This is another classic awareness exercise which is short and straight-to-the-point.</Text>
 
 <Text>It&rsquo;s designed to help you think about something which you ordinarily wouldn&rsquo;t think about, which can help you expand your conscious awareness.</Text>
 
@@ -29,7 +31,7 @@ export default class FocusYourAttentionOnTheRightSideOfYourVision extends Compon
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -63,7 +65,8 @@ export default class FocusYourAttentionOnTheRightSideOfYourVision extends Compon
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

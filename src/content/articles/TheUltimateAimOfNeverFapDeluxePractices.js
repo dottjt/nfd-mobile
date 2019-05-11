@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class TheUltimateAimOfNeverFapDeluxePractices extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>The Ultimate Aim Of NeverFap Deluxe Practices</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>The Ultimate Aim Of NeverFap Deluxe Practices</Text>
+          
 
 <Text>NeverFap Deluxe consists of a range of exercises which are designed to help you develop the skills in order to help you overcome porn addiction.</Text>
 
@@ -21,7 +23,7 @@ export default class TheUltimateAimOfNeverFapDeluxePractices extends Component {
 
 <View style={hr3}/>
 
-<h3>To help you develop healthy coping mechanisms in order to help you deal with your porn addiction.</h3>
+<Text style={h3}>To help you develop healthy coping mechanisms in order to help you deal with your porn addiction.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -36,7 +38,7 @@ export default class TheUltimateAimOfNeverFapDeluxePractices extends Component {
 
 <View style={hr3}/>
 
-<h3>Essentially, what this means is developing a new set of understandings and behaviours so you don't need to watch porn anymore to cope with these difficult situations.</h3>
+<Text style={h3}>Essentially, what this means is developing a new set of understandings and behaviours so you don't need to watch porn anymore to cope with these difficult situations.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -47,7 +49,7 @@ export default class TheUltimateAimOfNeverFapDeluxePractices extends Component {
 
 <View style={hr2}/>
 
-<h2>Encouraging self-discovery</h2>
+<Text style={h2}>Encouraging self-discovery</Text>
 
 <View style={hr2__bottom}/>
 
@@ -69,7 +71,7 @@ export default class TheUltimateAimOfNeverFapDeluxePractices extends Component {
 
 <View style={hr3}/>
 
-<h3>Helping ourselves</h3>
+<Text style={h3}>Helping ourselves</Text>
 
 <View style={hr3__bottom}/>
 
@@ -82,7 +84,8 @@ export default class TheUltimateAimOfNeverFapDeluxePractices extends Component {
 
 <Text>The aim is to overcome our porn addiction, and there&rsquo;s no better way I know how than through calmness and awareness.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

@@ -22,9 +22,24 @@ const generateContentReplacement = (content) => (
     .replace(/(?=<!--)([\s\S]*?)-->/g, '') // <!-- -->
     .replace(/<u>/g, '<Text style={{textDecoration: "underline"}}>') // </u>
     .replace(/<strong>/g, '<Text style={{fontWeight: "bold"}}>') // </ a tag references>
-    .replace(/<\/u>/g, '</Text>') // </ a tag references>
+    .replace(/<\/u>/g, '</Text>') // </ u tag references>
     .replace(/<\/strong>/g, '</Text>') // </ a tag references>
     .replace(/<\/?a[^>]*>/g, '') // </ a tag references>
+    .replace(/<\/h1>/g, '</Text>') // 
+    .replace(/<\/h2>/g, '</Text>') // 
+    .replace(/<\/h3>/g, '</Text>') // 
+    .replace(/<\/h4>/g, '</Text>') // 
+    .replace(/<\/h5>/g, '</Text>') // 
+    .replace(/<h1>/g, '<Text style={h1}>') // 
+    .replace(/<h2>/g, '<Text style={h2}>') // 
+    .replace(/<h3>/g, '<Text style={h3}>') // 
+    .replace(/<h4>/g, '<Text style={h4}>') // 
+    .replace(/<h5>/g, '<Text style={h5}>') // 
+    .replace(/<ul>/g, '<View style={ul}>') // 
+    .replace(/<\/ul>/g, '</View>') // 
+    .replace(/<li>/g, '<Text style={li}>') // 
+    .replace(/<\/li>/g, '</Text>') // 
+
 );
 
 const generateFinalExportStatement = (allContentNamesExport) => (
@@ -34,10 +49,11 @@ const generateFinalExportStatement = (allContentNamesExport) => (
 const generateContentHeader = () => (
 `
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 `
 );
@@ -47,16 +63,19 @@ const generateContent = (item, properTitle, type) => (
 ${type === 'all' ? '' : 'export default'} class ${properTitle} extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        ${generateTitle(item.title)}
-        ${generateContentReplacement(item.content)}
-      </Container>
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          ${generateTitle(item.title)}
+          ${generateContentReplacement(item.content)}
+        </Container>
+      </ScrollView>
     );
   }
 }
 `
 );
+
 
 const generateFiles = (items, type) => {
   for (const item of items) {
@@ -87,7 +106,7 @@ const generatePodcastContentHeader = () => (
 `
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import { TopBarStack } from '../../modules/TopBarStack';
 import { content__title } from '../styles/contentStyles';
 
 import TrackPlayer from 'react-native-track-player';
@@ -156,7 +175,7 @@ ${type === 'all' ? '' : 'export default'} class ${properTitle} extends Component
     render() {
       return (
         <Container>
-          <StatusBarStack/>
+          <TopBarStack/>
           ${generateTitle(item.title)}
           ${generateDate(item.date)}
 

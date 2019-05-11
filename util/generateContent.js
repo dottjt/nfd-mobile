@@ -5,12 +5,12 @@ const { ARTICLES_URL, PRACTICES_URL, PODCASTS_URL, MEDITATIONS_URL } = require('
 const {
   generateFilesAll,
   generateFiles,
-} = require('./util/generateContentTextUtil');
+} = require('./util/generateTextContentUtil');
 
 const {
   generatePodcastFilesAll,
   generatePodcastFiles,
-} = require('./util/generateContentAudioUtil');
+} = require('./util/generateAudioContentUtil');
 
 
 const generateArticlesContent = async () => {
@@ -63,5 +63,5 @@ const generatePracticesContent = async () => {
 
 generateArticlesContent();
 generatePracticesContent();
-generatePodcastsContent();
+// generatePodcastsContent();
 // generateMeditationsContent();

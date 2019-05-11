@@ -1,25 +1,27 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class SlowDownTime extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Slow Down Time</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Slow Down Time</Text>
+          
 
 <Text>This exercise is one of the easiest ways to start building your awareness.</Text>
 
 <View style={hr3}/>
 
-<h3>Essentially, it involves slowing down your mind so that you can open yourself to the opportunity of being aware.</h3>
+<Text style={h3}>Essentially, it involves slowing down your mind so that you can open yourself to the opportunity of being aware.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -36,7 +38,7 @@ export default class SlowDownTime extends Component {
 
 <View style={hr2}/>
 
-<h2>Certainly, for most people, porn addiction is merely a subconscious response.</h2>
+<Text style={h2}>Certainly, for most people, porn addiction is merely a subconscious response.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -54,7 +56,7 @@ export default class SlowDownTime extends Component {
 
 <View style={hr3}/>
 
-<h3>Because when we're in control of our mind, it's almost as if everything is moving in slow motion.</h3>
+<Text style={h3}>Because when we're in control of our mind, it's almost as if everything is moving in slow motion.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -69,7 +71,7 @@ export default class SlowDownTime extends Component {
 
 <View style={hr4}/>
 
-<h4>Which is why people inevitably relapse.</h4>
+<Text style={h4}>Which is why people inevitably relapse.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -84,7 +86,7 @@ export default class SlowDownTime extends Component {
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -111,7 +113,8 @@ Mental and physical.</Text>
 
 
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

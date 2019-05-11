@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class EverythingIsAChoice extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Everything Is A Choice</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Everything Is A Choice</Text>
+          
 
 <Text>I want to talk about choice.</Text>
 
@@ -23,7 +25,7 @@ export default class EverythingIsAChoice extends Component {
 
 <View style={hr3}/>
 
-<h3>Choice over mind relates to this idea that we have full control over how we react in life.</h3>
+<Text style={h3}>Choice over mind relates to this idea that we have full control over how we react in life.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -40,7 +42,7 @@ export default class EverythingIsAChoice extends Component {
 
 <View style={hr2}/>
 
-<h2>What is choice?</h2>
+<Text style={h2}>What is choice?</Text>
 
 <View style={hr2__bottom}/>
 
@@ -64,7 +66,7 @@ export default class EverythingIsAChoice extends Component {
 
 <View style={hr3}/>
 
-<h3>Because I'm here to tell you that none of this matters.</h3>
+<Text style={h3}>Because I'm here to tell you that none of this matters.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -77,7 +79,7 @@ export default class EverythingIsAChoice extends Component {
 
 <View style={hr2}/>
 
-<h2>You get to choose how you want to respond.</h2>
+<Text style={h2}>You get to choose how you want to respond.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -103,7 +105,7 @@ export default class EverythingIsAChoice extends Component {
 
 <View style={hr3}/>
 
-<h3>Put simply, your ability to respond is the most powerful choice you have, because it is the only choice you as an individual can actually make.</h3>
+<Text style={h3}>Put simply, your ability to respond is the most powerful choice you have, because it is the only choice you as an individual can actually make.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -118,7 +120,7 @@ export default class EverythingIsAChoice extends Component {
 
 <View style={hr4}/>
 
-<h4>Which really is to say that you have full control over who you want to become.</h4>
+<Text style={h4}>Which really is to say that you have full control over who you want to become.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -135,7 +137,7 @@ export default class EverythingIsAChoice extends Component {
 
 <View style={hr3}/>
 
-<h3>The only difference between you and me is in the actions that we've taken over time.</h3>
+<Text style={h3}>The only difference between you and me is in the actions that we've taken over time.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -144,7 +146,7 @@ export default class EverythingIsAChoice extends Component {
 
 <View style={hr2}/>
 
-<h2>Success and your actions</h2>
+<Text style={h2}>Success and your actions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -172,7 +174,7 @@ export default class EverythingIsAChoice extends Component {
 
 <View style={hr4}/>
 
-<h4>The only difference between someone who has successfully overcome porn addiction and someone who continually fails, is that the person who overcame porn addiction took the right actions to get there.</h4>
+<Text style={h4}>The only difference between someone who has successfully overcome porn addiction and someone who continually fails, is that the person who overcame porn addiction took the right actions to get there.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -187,14 +189,15 @@ export default class EverythingIsAChoice extends Component {
 
 <View style={hr3}/>
 
-<h3>However, what I am suggesting is that with the right guidance and practice, you can develop the ability to be able to.</h3>
+<Text style={h3}>However, what I am suggesting is that with the right guidance and practice, you can develop the ability to be able to.</Text>
 
 <View style={hr3__bottom}/>
 
 
 <Text>Moving forward, I recommend checking out our list of NeverFap Deluxe Practices for a list of exercises you can do to develop awareness in your life.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

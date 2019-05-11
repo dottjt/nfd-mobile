@@ -1,25 +1,27 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class DissolveYourVisualField extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>Dissolve Your Visual Field</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>Dissolve Your Visual Field</Text>
+          
 
 <Text>This exercise is designed to help dissolve your ego.</Text>
 
 <View style={hr3}/>
 
-<h3>In particular, by getting you actively reinterpret your visual field.</h3>
+<Text style={h3}>In particular, by getting you actively reinterpret your visual field.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -36,7 +38,7 @@ export default class DissolveYourVisualField extends Component {
 
 <View style={hr3}/>
 
-<h3>Numbers, for example, are not real. They're just mathematical descriptions.</h3>
+<Text style={h3}>Numbers, for example, are not real. They're just mathematical descriptions.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -49,7 +51,7 @@ export default class DissolveYourVisualField extends Component {
 
 <View style={hr3}/>
 
-<h3>We're all still merely people, after all.</h3>
+<Text style={h3}>We're all still merely people, after all.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -64,7 +66,7 @@ export default class DissolveYourVisualField extends Component {
 
 <View style={hr3}/>
 
-<h3>I mean, is that arrangement of light and colour on your computer screen really that special enough for you to be completely dependent upon it?</h3>
+<Text style={h3}>I mean, is that arrangement of light and colour on your computer screen really that special enough for you to be completely dependent upon it?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -79,7 +81,7 @@ export default class DissolveYourVisualField extends Component {
 
 <View style={hr3}/>
 
-<h3>What information do we lose with all this additional mental processing?</h3>
+<Text style={h3}>What information do we lose with all this additional mental processing?</Text>
 
 <View style={hr3__bottom}/>
 
@@ -96,7 +98,7 @@ export default class DissolveYourVisualField extends Component {
 
 <View style={hr2}/>
 
-<h2>Instructions</h2>
+<Text style={h2}>Instructions</Text>
 
 <View style={hr2__bottom}/>
 
@@ -122,7 +124,8 @@ export default class DissolveYourVisualField extends Component {
 
 <Text>While you can do this anywhere, I personally find it works best when I have a few minutes alone, where you can really explore this idea uninterupted.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

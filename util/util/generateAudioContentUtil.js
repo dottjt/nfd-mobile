@@ -36,7 +36,7 @@ const generateContentHeader = () => (
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import { TopBarStack } from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
 import { content__title } from '../styles/contentStyles';
 `
@@ -48,7 +48,7 @@ ${type === 'all' ? '' : 'export default'} class ${properTitle} extends Component
   render() {
     return (
       <Container>
-        <StatusBarStack/>
+        <TopBarStack/>
         ${generateTitle(item.title)}
         ${generateContentReplacement(item.content)}
       </Container>
@@ -87,7 +87,7 @@ const generatePodcastContentHeader = () => (
 `
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import { TopBarStack } from '../../modules/TopBarStack';
 import { content__title } from '../styles/contentStyles';
 
 import TrackPlayer from 'react-native-track-player';
@@ -158,7 +158,7 @@ ${type === 'all' ? '' : 'export default'} class ${properTitle} extends Component
     render() {
       return (
         <Container>
-          <StatusBarStack/>
+          <TopBarStack/>
           ${generateTitle(item.title)}
           ${generateDate(item.date)}
 

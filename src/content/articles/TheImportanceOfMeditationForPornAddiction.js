@@ -1,25 +1,27 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class TheImportanceOfMeditationForPornAddiction extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>The Importance Of Meditation For Porn Addiction</Text>
-        
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>The Importance Of Meditation For Porn Addiction</Text>
+          
 
 <Text>Meditation is the single most important thing you can do for your porn addiction.</Text>
 
 <View style={hr4}/>
 
-<h4>In fact, ten minutes of meditation each day is probably enough for most porn addicts to overcome their addiction.</h4>
+<Text style={h4}>In fact, ten minutes of meditation each day is probably enough for most porn addicts to overcome their addiction.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -36,7 +38,7 @@ export default class TheImportanceOfMeditationForPornAddiction extends Component
 
 <View style={hr2}/>
 
-<h2>Why meditation?</h2>
+<Text style={h2}>Why meditation?</Text>
 
 <View style={hr2__bottom}/>
 
@@ -60,7 +62,7 @@ export default class TheImportanceOfMeditationForPornAddiction extends Component
 
 <View style={hr3}/>
 
-<h3>What meditation allows you to do is develop the ability to maintain control over your mind.</h3>
+<Text style={h3}>What meditation allows you to do is develop the ability to maintain control over your mind.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -75,7 +77,7 @@ export default class TheImportanceOfMeditationForPornAddiction extends Component
 
 <View style={hr2}/>
 
-<h2>Meditation and Porn addiction</h2>
+<Text style={h2}>Meditation and Porn addiction</Text>
 
 <View style={hr2__bottom}/>
 
@@ -95,7 +97,7 @@ export default class TheImportanceOfMeditationForPornAddiction extends Component
 
 <View style={hr4}/>
 
-<h4>If you can manage those two things, you'll more-or-less be 90% of the way there to overcoming your porn addiction.</h4>
+<Text style={h4}>If you can manage those two things, you'll more-or-less be 90% of the way there to overcoming your porn addiction.</Text>
 
 <View style={hr4__bottom}/>
 
@@ -112,7 +114,7 @@ export default class TheImportanceOfMeditationForPornAddiction extends Component
 
 <View style={hr3}/>
 
-<h3>When you have control over your emotions, it makes situations where you don't necessarily feel in control manageable.</h3>
+<Text style={h3}>When you have control over your emotions, it makes situations where you don't necessarily feel in control manageable.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -131,7 +133,7 @@ export default class TheImportanceOfMeditationForPornAddiction extends Component
 
 <View style={hr2}/>
 
-<h2>Observation is perhaps the most fundamental skill you can learn in regards to developing your awareness.</h2>
+<Text style={h2}>Observation is perhaps the most fundamental skill you can learn in regards to developing your awareness.</Text>
 
 <View style={hr2__bottom}/>
 
@@ -155,7 +157,8 @@ export default class TheImportanceOfMeditationForPornAddiction extends Component
 
 <Text>I recommend checking out our list of NeverFap Deluxe Practices for a list of exercises you can do to develop awareness in your life.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }

@@ -1,19 +1,21 @@
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
-import { StatusBarStack } from '../../modules/StatusBarStack';
+import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
+import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
 import { content__title } from '../styles/contentStyles';
 
  
 export default class TheEasiestWayToIdentifyAJudgement extends Component {
   render() {
     return (
-      <Container>
-        <StatusBarStack/>
-        <Text style={content__title}>The Easiest Way To Identify A Judgement</Text>
-        <Text>Some people have a hard time identifying the judgements they make on a daily basis.</Text>
+      <ScrollView>
+        <Container>
+          <TopBarStack/>
+          <Text style={content__title}>The Easiest Way To Identify A Judgement</Text>
+          <Text>Some people have a hard time identifying the judgements they make on a daily basis.</Text>
 
 <Text>It could be because they judge out of habit and therefore are doing it subsciously without realising it, or perhaps because they&rsquo;re simply unable to recognise a judgement once they&rsquo;ve made one.</Text>
 
@@ -27,7 +29,7 @@ export default class TheEasiestWayToIdentifyAJudgement extends Component {
 
 <View style={hr3}/>
 
-<h3>The technique is to pay attention to your emotional reactions.</h3>
+<Text style={h3}>The technique is to pay attention to your emotional reactions.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -42,7 +44,7 @@ export default class TheEasiestWayToIdentifyAJudgement extends Component {
 
 <View style={hr3}/>
 
-<h3>You see, judgements are much more than mere thoughts.</h3>
+<Text style={h3}>You see, judgements are much more than mere thoughts.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -61,7 +63,7 @@ export default class TheEasiestWayToIdentifyAJudgement extends Component {
 
 <View style={hr3}/>
 
-<h3>And when we make these judgements, we dictate how we're going to react on an emotional level.</h3>
+<Text style={h3}>And when we make these judgements, we dictate how we're going to react on an emotional level.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -84,7 +86,7 @@ export default class TheEasiestWayToIdentifyAJudgement extends Component {
 
 <View style={hr3}/>
 
-<h3>Yet from the perspective of our emotional reactions, they are never hidden.</h3>
+<Text style={h3}>Yet from the perspective of our emotional reactions, they are never hidden.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -107,7 +109,7 @@ export default class TheEasiestWayToIdentifyAJudgement extends Component {
 
 <View style={hr3}/>
 
-<h3>Well, the great thing is that we don't need to go any further than simple acknowledgement.</h3>
+<Text style={h3}>Well, the great thing is that we don't need to go any further than simple acknowledgement.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -122,7 +124,7 @@ export default class TheEasiestWayToIdentifyAJudgement extends Component {
 
 <View style={hr3}/>
 
-<h3>This in part signifies the extent to which a lot of the judgements are simply subconscious habit.</h3>
+<Text style={h3}>This in part signifies the extent to which a lot of the judgements are simply subconscious habit.</Text>
 
 <View style={hr3__bottom}/>
 
@@ -141,7 +143,8 @@ export default class TheEasiestWayToIdentifyAJudgement extends Component {
 
 <Text>And by using healthy coping mechanisms such as meditation and awareness exercises, we can go a long way towards developing control over our judgements and emotions.</Text>
 
-      </Container>
+        </Container>
+      </ScrollView>
     );
   }
 }
