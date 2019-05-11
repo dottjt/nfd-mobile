@@ -17,6 +17,9 @@ import Every30Minutes from '../content/practices/Every30Minutes';
 import FocusYourAttentionOnTheRightSideOfYourVision from '../content/practices/FocusYourAttentionOnTheRightSideOfYourVision';
 import WhatCanYourHandDo from '../content/practices/WhatCanYourHandDo';
 import FocusOnYourFingerAndYourBackground from '../content/practices/FocusOnYourFingerAndYourBackground';
+import CatchOutYourJudgements from '../content/practices/CatchOutYourJudgements';
+import WhoIsLooking from '../content/practices/WhoIsLooking';
+import LookingStraightAhead from '../content/practices/LookingStraightAhead';
 
   const PracticesScreens = new Map();
 
@@ -38,6 +41,9 @@ export const EVERY30MINUTES_SCREEN = 'navigation.Every30MinutesScreen';
 export const FOCUSYOURATTENTIONONTHERIGHTSIDEOFYOURVISION_SCREEN = 'navigation.FocusYourAttentionOnTheRightSideOfYourVisionScreen';
 export const WHATCANYOURHANDDO_SCREEN = 'navigation.WhatCanYourHandDoScreen';
 export const FOCUSONYOURFINGERANDYOURBACKGROUND_SCREEN = 'navigation.FocusOnYourFingerAndYourBackgroundScreen';
+export const CATCHOUTYOURJUDGEMENTS_SCREEN = 'navigation.CatchOutYourJudgementsScreen';
+export const WHOISLOOKING_SCREEN = 'navigation.WhoIsLookingScreen';
+export const LOOKINGSTRAIGHTAHEAD_SCREEN = 'navigation.LookingStraightAheadScreen';
 
   PracticesScreens.set(FOCUSYOURATTENTION_SCREEN, FocusYourAttention);
 PracticesScreens.set(SEPARATEYOURSEEINGFROMYOURFEELING_SCREEN, SeparateYourSeeingFromYourFeeling);
@@ -57,6 +63,9 @@ PracticesScreens.set(EVERY30MINUTES_SCREEN, Every30Minutes);
 PracticesScreens.set(FOCUSYOURATTENTIONONTHERIGHTSIDEOFYOURVISION_SCREEN, FocusYourAttentionOnTheRightSideOfYourVision);
 PracticesScreens.set(WHATCANYOURHANDDO_SCREEN, WhatCanYourHandDo);
 PracticesScreens.set(FOCUSONYOURFINGERANDYOURBACKGROUND_SCREEN, FocusOnYourFingerAndYourBackground);
+PracticesScreens.set(CATCHOUTYOURJUDGEMENTS_SCREEN, CatchOutYourJudgements);
+PracticesScreens.set(WHOISLOOKING_SCREEN, WhoIsLooking);
+PracticesScreens.set(LOOKINGSTRAIGHTAHEAD_SCREEN, LookingStraightAhead);
 
   export default PracticesScreens;
 

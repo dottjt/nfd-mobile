@@ -11,8 +11,8 @@ Navigation.events().registerAppLaunchedListener(() => {
   navigationMain();
 });
 
-StatusBar.setBarStyle('dark-content', true); // light-content
-StatusBar.setTranslucent(false);
+// StatusBar.setBarStyle('dark-content', true); // light-content
+// StatusBar.setTranslucent(false);
 StatusBar.setHidden(true, 'slide');
 
 

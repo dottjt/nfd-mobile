@@ -8,14 +8,14 @@ import ContentListItem from './ContentListItem';
 
 import Articles from '../content/articles';
 import Practices from '../content/practices';
-import Podcasts from '../content/podcasts';
+// import Podcasts from '../content/podcasts';
 
 export default class ContentPage extends Component {
   selectContent = (contentType, contentTitle) => {
     switch (contentType) {
       case 'articles': return Articles[contentTitle];
       case 'practices': return Practices[contentTitle];
-      case 'podcasts': return Podcasts[contentTitle];
+      // case 'podcasts': return Podcasts[contentTitle];
       // case 'meditations': return meditationsJSON[contentTitle];
       case 'other': return otherJSON[contentTitle];
       default: <Text>cake</Text>;

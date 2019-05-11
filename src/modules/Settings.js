@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { SettingContainer } from '../emotion/components';
+import { Container } from '../emotion/components';
 import { PageTitle, PageText } from '../emotion/text';
 
 export default class Settings extends Component {
   render() {
     return (
-      <SettingContainer>
+      <Container>
         <PageTitle>About</PageTitle>
-      </SettingContainer>
+      </Container>
     );
   }
 }

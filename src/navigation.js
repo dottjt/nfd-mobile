@@ -25,11 +25,27 @@ export const navigationMain = () =>
                 bottomTab: {
                   fontSize: 12,
                   text: 'Home',
-                  // icon: require('./signin.png')
+                  // icon: require('./icons/solid/home.svg'),
                 },
               },
             },
           },
+          // {
+          //   component: {
+          //     name: ARTICLES_SCREEN,
+          //     passProps: {
+          //       contentType: 'articles',
+          //     },
+          //     options: {
+          //       bottomTab: {
+          //         fontSize: 12,
+          //         text: 'Articles',
+          //         // icon: require('./signin.png')
+          //       }
+          //     }
+          //   },
+          // },
+          
           // {
           //   stack: {
           //     children: [
@@ -59,6 +75,23 @@ export const navigationMain = () =>
           //     ]
           //   },
           // },
+
+          // {
+          //   component: {
+          //     name: PRACTICES_SCREEN,
+          //     passProps: {
+          //       contentType: 'practices',
+          //     },
+          //     options: {
+          //       bottomTab: {
+          //         fontSize: 12,
+          //         text: 'Practices',
+          //         // icon: require('./signin.png')
+          //       }
+          //     }
+          //   },
+          // },
+
           // {
           //   stack: {
           //     children: [

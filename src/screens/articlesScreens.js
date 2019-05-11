@@ -19,6 +19,7 @@ import WhyYouShouldNeverDependOnYourEmotions from '../content/articles/WhyYouSho
 import TheEasiestWayToNotTakeOurEmotionsPersonally from '../content/articles/TheEasiestWayToNotTakeOurEmotionsPersonally';
 import WhatItFeelsLikeNotToBeAddictedToPorn from '../content/articles/WhatItFeelsLikeNotToBeAddictedToPorn';
 import WhatIsNeverFap from '../content/articles/WhatIsNeverFap';
+import IsItOkayToOrgasmIfYouHaveAPornAddiction from '../content/articles/IsItOkayToOrgasmIfYouHaveAPornAddiction';
 
   const ArticlesScreens = new Map();
 
@@ -42,6 +43,7 @@ export const WHYYOUSHOULDNEVERDEPENDONYOUREMOTIONS_SCREEN = 'navigation.WhyYouSh
 export const THEEASIESTWAYTONOTTAKEOUREMOTIONSPERSONALLY_SCREEN = 'navigation.TheEasiestWayToNotTakeOurEmotionsPersonallyScreen';
 export const WHATITFEELSLIKENOTTOBEADDICTEDTOPORN_SCREEN = 'navigation.WhatItFeelsLikeNotToBeAddictedToPornScreen';
 export const WHATISNEVERFAP_SCREEN = 'navigation.WhatIsNeverFapScreen';
+export const ISITOKAYTOORGASMIFYOUHAVEAPORNADDICTION_SCREEN = 'navigation.IsItOkayToOrgasmIfYouHaveAPornAddictionScreen';
 
   ArticlesScreens.set(INTRODUCTIONTOTHENEVERFAPDELUXEGUIDE_SCREEN, IntroductionToTheNeverFapDeluxeGuide);
 ArticlesScreens.set(MYPERSONALPORNRECOVERYJOURNEY_SCREEN, MyPersonalPornRecoveryJourney);
@@ -63,6 +65,7 @@ ArticlesScreens.set(WHYYOUSHOULDNEVERDEPENDONYOUREMOTIONS_SCREEN, WhyYouShouldNe
 ArticlesScreens.set(THEEASIESTWAYTONOTTAKEOUREMOTIONSPERSONALLY_SCREEN, TheEasiestWayToNotTakeOurEmotionsPersonally);
 ArticlesScreens.set(WHATITFEELSLIKENOTTOBEADDICTEDTOPORN_SCREEN, WhatItFeelsLikeNotToBeAddictedToPorn);
 ArticlesScreens.set(WHATISNEVERFAP_SCREEN, WhatIsNeverFap);
+ArticlesScreens.set(ISITOKAYTOORGASMIFYOUHAVEAPORNADDICTION_SCREEN, IsItOkayToOrgasmIfYouHaveAPornAddiction);
 
   export default ArticlesScreens;
 

@@ -18,9 +18,9 @@ export const Item = styled.View`
   width: ${Dimensions.get('window').width};
 
   padding: 8px;
+  background: white;
   border: 4px solid rgba(255, 46, 182, 1);
-  shadow-offset: -5px 5px;
-  shadow-color: cyan;
+  box-shadow: -5px 5px 0px rgba(0, 255, 255, 1);
   color: black;
   transition: shadow-offset 0.2s, border-bottom 0.1s;
 
@@ -51,13 +51,6 @@ export const TopBar = styled.View`
   width: ${Dimensions.get('window').width};
 
   border-bottom: 4px solid black;
-`;
-
-export const SettingContainer = styled.View`
-  display: flex;
-  flex-direction: column;
-  height: ${Dimensions.get('window').height * 0.5};
-  width: ${Dimensions.get('window').width};
 `;
 
 export const LatestContent = styled.View`

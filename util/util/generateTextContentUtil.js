@@ -2,11 +2,11 @@ const fse = require("fs-extra");
 const { generateProperTitle } = require('./generateUtil');
 
 const generateTitle = (title) => (
-  `<Text style={content__title}>${title}</Text>`
+  `<Text style={h1}>${title}</Text>`
 );
 
 const generateDate = (date) => (
-  `<Text style={content__title}>${date}</Text>`
+  `<Text style={h3}>${date}</Text>`
 );
 
 const generateClassReplacement = (content) => (
@@ -17,7 +17,7 @@ const generateClassReplacement = (content) => (
 
 const generateContentReplacement = (content) => (
   generateClassReplacement(content)
-    .replace(/\u003cp\u003e/g, '<Text>') // <p>
+    .replace(/\u003cp\u003e/g, '<Text style={p}>') // <p>
     .replace(/\u003c\/p\u003e/g, '</Text>') // </p>
     .replace(/(?=<!--)([\s\S]*?)-->/g, '') // <!-- -->
     .replace(/<u>/g, '<Text style={{textDecoration: "underline"}}>') // </u>
@@ -25,11 +25,7 @@ const generateContentReplacement = (content) => (
     .replace(/<\/u>/g, '</Text>') // </ u tag references>
     .replace(/<\/strong>/g, '</Text>') // </ a tag references>
     .replace(/<\/?a[^>]*>/g, '') // </ a tag references>
-    .replace(/<\/h1>/g, '</Text>') // 
-    .replace(/<\/h2>/g, '</Text>') // 
-    .replace(/<\/h3>/g, '</Text>') // 
-    .replace(/<\/h4>/g, '</Text>') // 
-    .replace(/<\/h5>/g, '</Text>') // 
+    .replace(/<\/h[123456]>/g, '</Text>') // 
     .replace(/<h1>/g, '<Text style={h1}>') // 
     .replace(/<h2>/g, '<Text style={h2}>') // 
     .replace(/<h3>/g, '<Text style={h3}>') // 
@@ -39,7 +35,10 @@ const generateContentReplacement = (content) => (
     .replace(/<\/ul>/g, '</View>') // 
     .replace(/<li>/g, '<Text style={li}>') // 
     .replace(/<\/li>/g, '</Text>') // 
-
+    .replace(/<div style="margin-top: 3rem;" class="five__principles__list__page">/g, '') // 
+    .replace(/<\/div><\/span>/g, '</Text>') // 
+    .replace(/<span><div class="five__principles__item__page">/g, '<Text style={h2}>') // 
+    .replace(/<\/div>/g, '') //
 );
 
 const generateFinalExportStatement = (allContentNamesExport) => (
@@ -53,8 +52,7 @@ import { Text, View, ScrollView } from 'react-native';
 import { Container } from '../../emotion/components';
 import TopBarStack from '../../modules/TopBarStack';
 import { hr, hr2, hr2__bottom, hr3, hr3__bottom, hr4, hr4__bottom, hrul, hrul__bottom } from '../styles/hrStyles';
-import { h1, h2, h3, h4, h5, ul, li } from '../styles/textStyles';
-import { content__title } from '../styles/contentStyles';
+import { h1, h2, h3, h4, h5, p, ul, li } from '../styles/textStyles';
 `
 );
 
@@ -107,7 +105,6 @@ const generatePodcastContentHeader = () => (
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import { TopBarStack } from '../../modules/TopBarStack';
-import { content__title } from '../styles/contentStyles';
 
 import TrackPlayer from 'react-native-track-player';
 `
