@@ -83,19 +83,19 @@ const generateFiles = (items, type) => {
   }
 };
 
-const generateFilesAll = (items, type) => {
-  let allContent = '';
-  let allContentNamesExport = '';
+// const generateFilesAll = (items, type) => {
+//   let allContent = '';
+//   let allContentNamesExport = '';
 
-  for (const item of items) {
-    const properTitle = generateProperTitle(item.title);
-    allContentNamesExport += `${properTitle},`
-    allContent += generateContent(item, properTitle, 'all');
-  }
+//   for (const item of items) {
+//     const properTitle = generateProperTitle(item.title);
+//     allContentNamesExport += `${properTitle},`
+//     allContent += generateContent(item, properTitle, 'all');
+//   }
 
-  const template = `${generateContentHeader()}\n${allContent}\n${generateFinalExportStatement(allContentNamesExport)}\n`;
-  fse.outputFileSync(`src/content/${type}/index.js`, template, [{}]);
-};
+//   const template = `${generateContentHeader()}\n${allContent}\n${generateFinalExportStatement(allContentNamesExport)}\n`;
+//   fse.outputFileSync(`src/content/${type}/index.js`, template, [{}]);
+// };
 
 
 // GENERATE PODCAST TEMPLATE
@@ -192,24 +192,24 @@ const generatePodcastFiles = (items, type) => {
   }
 };
 
-const generatePodcastFilesAll = (items, type) => {
-  let allContent = '';
-  let allContentNamesExport = '';
+// const generatePodcastFilesAll = (items, type) => {
+//   let allContent = '';
+//   let allContentNamesExport = '';
 
-  for (const item of items) {
-    const properTitle = generateProperTitle(item.title);
-    allContentNamesExport += `${properTitle},`
-    allContent += generateContent(item, properTitle, 'all');
-  }
+//   for (const item of items) {
+//     const properTitle = generateProperTitle(item.title);
+//     allContentNamesExport += `${properTitle},`
+//     allContent += generateContent(item, properTitle, 'all');
+//   }
 
-  const template = `${generatePodcastContentHeader()}\n${allContent}\n${generateFinalExportStatement(allContentNamesExport)}\n`;
-  fse.outputFileSync(`src/content/${type}/index.js`, template, [{}]);
-};
+//   const template = `${generatePodcastContentHeader()}\n${allContent}\n${generateFinalExportStatement(allContentNamesExport)}\n`;
+//   fse.outputFileSync(`src/content/${type}/index.js`, template, [{}]);
+// };
 
 
 module.exports = {
-  generateFilesAll,
+  // generateFilesAll,
   generateFiles,
-  generatePodcastFilesAll,
+  // generatePodcastFilesAll,
   generatePodcastFiles,
 }

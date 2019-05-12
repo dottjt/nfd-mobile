@@ -63,7 +63,7 @@ export default class HomePage extends Component {
           return (
             <ScrollView>
               <Container>
-                <TopBarMain />
+                <TopBarMain/>
                 <PageTitle>NeverFap Deluxe</PageTitle>
                 {/* <Text style={css`font-size: 24px; margin-top: 6px; margin-bottom: 6px;`}>Daddy Reade is here to help, baby.</Text> */}
 
@@ -84,6 +84,8 @@ export default class HomePage extends Component {
                     </View>
                   </View>
                 </LatestContent>
+
+                <Text>Join #accountabilty program</Text>
 
                 <PageSubTitle>Latest Articles</PageSubTitle>
                 <LatestContent>

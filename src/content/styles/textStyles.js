@@ -9,8 +9,8 @@ export const h1 = css`
 export const h2 = css`
   font-size: 24px;
   line-height: 32px;
-  margin-top: 14px;
-  margin-bottom: 14px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 `;
 
 export const h3 = css`

@@ -9,7 +9,7 @@ const capitalize = (s) => {
 
 const saveList = (items, type, number) => {
   const finalItems = number ? _.take(items, number) : items;
-  const itemsComplete = `const items = ${JSON.stringify(finalItems)}\nexport default items`;
+  const itemsComplete = `const items = ${JSON.stringify(_.reverse(finalItems))}\nexport default items`;
 
   if (number) {
     fse.outputFileSync(`src/content/api/${type}Latest.js`, itemsComplete, [{}]);

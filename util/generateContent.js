@@ -3,14 +3,14 @@ const lodash = require('lodash');
 
 const { ARTICLES_URL, PRACTICES_URL, PODCASTS_URL, MEDITATIONS_URL } = require('./const');
 const {
-  generateFilesAll,
+  // generateFilesAll,
   generateFiles,
 } = require('./util/generateTextContentUtil');
 
-const {
-  generatePodcastFilesAll,
-  generatePodcastFiles,
-} = require('./util/generateAudioContentUtil');
+// const {
+//   generatePodcastFilesAll,
+//   generatePodcastFiles,
+// } = require('./util/generateAudioContentUtil');
 
 
 const generateArticlesContent = async () => {
@@ -18,7 +18,7 @@ const generateArticlesContent = async () => {
     const response = await axios.get(ARTICLES_URL);
     const items = response.data.data.articles;
 
-    generateFilesAll(items, 'articles');
+    // generateFilesAll(items, 'articles');
     generateFiles(items, 'articles');
   } catch (error) {
     throw new Error(`generateArticlesContent - ${error}`);
@@ -30,7 +30,7 @@ const generatePracticesContent = async () => {
     const response = await axios.get(PRACTICES_URL);
     const items = response.data.data.practices;
 
-    generateFilesAll(items, 'practices');
+    // generateFilesAll(items, 'practices');
     generateFiles(items, 'practices');
   } catch (error) {
     throw new Error(`generatePracticesContent - ${error}`);

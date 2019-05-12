@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { FlatList, Text } from 'react-native';
-import { SafeAreaView } from 'react-native-navigation';
+import { ScrollView, FlatList, Text } from 'react-native';
 
 import { Container } from '../emotion/components';
+import { PageTitle } from '../emotion/text';
 
 import TopBarMain from './TopBarMain';
 import ContentListItem from './ContentListItem';
@@ -14,6 +14,17 @@ import practicesJSON from '../content/api/practices';
 import otherJSON from '../content/api/other';
 
 export default class ContentList extends Component {
+  selectTitle = (type) => {
+    switch (type) {
+      case 'articles': return 'Articles';
+      case 'practices': return 'Practices';
+      case 'other': return 'Other';
+      // case 'podcasts': return podcastsJSON;
+      // case 'meditations': return meditationsJSON;
+      default: return 'Articles';
+    }
+  };
+
   selectJSON = (type) => {
     switch (type) {
       case 'articles': return articlesJSON;
@@ -27,20 +38,21 @@ export default class ContentList extends Component {
 
   render() {
     const { contentType } = this.props;
-    console.log(contentType, "contentType");
+
     return (
-      <SafeAreaView>
+      <ScrollView>
         <Container>
-          <TopBarMain />
+          <TopBarMain/>
+          <PageTitle>{this.selectTitle(contentType)}</PageTitle>
           <FlatList
             data={this.selectJSON(contentType)}
-            renderItem={(item) => (
-              <ContentListItem item={item} contentType={contentType} />
-            )}
+            renderItem={({item}) => {
+              return <ContentListItem key={item.title} item={item} contentType={contentType || 'articles'} />
+            }}
             keyExtractor={(item, index) => item.title + index}
           />
         </Container>
-      </SafeAreaView>
+      </ScrollView>
     );
   }
 }

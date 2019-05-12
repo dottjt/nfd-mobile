@@ -9,7 +9,7 @@ import {
   INITIALISATION_SCREEN,
   SETTINGS_SCREEN,
   OTHER_SCREEN,
-  CONTENT_SCREEN,
+  // CONTENT_SCREEN,
 } from './screens/pageScreens';
 
 export const navigationMain = () =>
@@ -25,26 +25,26 @@ export const navigationMain = () =>
                 bottomTab: {
                   fontSize: 12,
                   text: 'Home',
-                  // icon: require('./icons/solid/home.svg'),
+                  icon: require('./icons/24/home.png'),
                 },
               },
             },
           },
-          // {
-          //   component: {
-          //     name: ARTICLES_SCREEN,
-          //     passProps: {
-          //       contentType: 'articles',
-          //     },
-          //     options: {
-          //       bottomTab: {
-          //         fontSize: 12,
-          //         text: 'Articles',
-          //         // icon: require('./signin.png')
-          //       }
-          //     }
-          //   },
-          // },
+          {
+            component: {
+              name: ARTICLES_SCREEN,
+              passProps: {
+                contentType: 'articles',
+              },
+              options: {
+                bottomTab: {
+                  fontSize: 12,
+                  text: 'Articles',
+                  icon: require('./icons/24/newspaper-o.png'),
+                }
+              }
+            },
+          },
           
           // {
           //   stack: {
@@ -76,21 +76,21 @@ export const navigationMain = () =>
           //   },
           // },
 
-          // {
-          //   component: {
-          //     name: PRACTICES_SCREEN,
-          //     passProps: {
-          //       contentType: 'practices',
-          //     },
-          //     options: {
-          //       bottomTab: {
-          //         fontSize: 12,
-          //         text: 'Practices',
-          //         // icon: require('./signin.png')
-          //       }
-          //     }
-          //   },
-          // },
+          {
+            component: {
+              name: PRACTICES_SCREEN,
+              passProps: {
+                contentType: 'practices',
+              },
+              options: {
+                bottomTab: {
+                  fontSize: 12,
+                  text: 'Practices',
+                  icon: require('./icons/24/medkit.png'), // stethoscope 
+                }
+              }
+            },
+          },
 
           // {
           //   stack: {
@@ -167,21 +167,21 @@ export const navigationMain = () =>
           //     }
           //   },
           // },
-          // {
-          //   component: {
-          //     name: OTHER_SCREEN,
-          //     passProps: {
-          //       contentType: 'other',
-          //     },
-          //     options: {
-          //       bottomTab: {
-          //         fontSize: 12,
-          //         text: 'More',
-          //         // icon: require('./signin.png')
-          //       },
-          //     },
-          //   },
-          // },
+          {
+            component: {
+              name: OTHER_SCREEN,
+              passProps: {
+                contentType: 'other',
+              },
+              options: {
+                bottomTab: {
+                  fontSize: 12,
+                  text: 'More',
+                  icon: require('./icons/24/ellipsis-h.png'),
+                },
+              },
+            },
+          },
         ],
       },
     },

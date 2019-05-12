@@ -16,18 +16,25 @@ const ContentListItemText = ({ item, properTitle, contentType }) => (
   </TouchableOpacity>
 );
 
+const ContentListItemOther = ({ item }) => (
+  <TouchableOpacity /* onPress={() => setRoot(`navigation.${properTitle}Screen`)} */> 
+    <Item>
+      <ItemTitle>{item.title}</ItemTitle>
+    </Item>
+  </TouchableOpacity>
+);
+
 export default class ContentListItem extends Component {
   render() {
     const { item, contentType } = this.props;
     const properTitle = generateProperTitle(item.title);
 
-    // return <Text>Hi</Text>
-
-    // console.log('ContentListItem', item, contentType)
     switch (contentType) {
       case 'articles':
       case 'practices':
-      case 'other': return <ContentListItemText item={item} properTitle={properTitle} contentType={contentType}/>;
+        return <ContentListItemText item={item} properTitle={properTitle} contentType={contentType}/>;
+      case 'other': 
+        return <ContentListItemOther item={item}/>;
       case 'meditations':
       case 'podcasts':
       default:

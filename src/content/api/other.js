@@ -30,7 +30,7 @@ const items = [
     url: "https://patreon.com/neverfapdeluxe",
   },
   {
-    title: "Personal Website",
+    title: "Website",
     description: "About",
     content: "Learn",
     url: "https://juliusreade.com/",
