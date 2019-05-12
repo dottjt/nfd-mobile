@@ -3,24 +3,24 @@ const items = [
     title: "About",
     description: "About NeverFap Deluxe",
     content: "Learn",
-    url: "",
+    url: null,
   },
   {
     title: "Twitter",
     description: "Follow NeverFap Deluxe on Twitter!",
-    content: "Learn",
+    content: null,
     url: "https://twitter.com/neverfapdeluxe",
   },
-  // {
-  //   title: "Facebook",
-  //   description: "About",
-  //   content: "Learn",
-  //   url: "",
-  // },
   {
     title: "Reddit",
     description: "Join our Subreddit!",
-    content: "Join our Subreddit!",
+    content: null,
+    url: "https://reddit.com/r/NeverFapDeluxe/",
+  },
+  {
+    title: "Discord",
+    description: "Join our Discord!",
+    content: null,
     url: "https://reddit.com/r/NeverFapDeluxe/",
   },
   {
@@ -31,7 +31,7 @@ const items = [
   },
   {
     title: "Website",
-    description: "About",
+    description: "NeverFap Deluxe Website",
     content: "Learn",
     url: "https://juliusreade.com/",
   },

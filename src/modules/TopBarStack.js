@@ -13,7 +13,7 @@ export default class TopBarStack extends Component {
         <TouchableOpacity onPress={this.toMain}>
           <Image source={require('../icons/24/chevron-left.png')} />
         </TouchableOpacity>
-        <Text onPress={this.toMain}>About</Text>
+        {/* <Text onPress={this.toMain}>About</Text> */}
       </TopBar>
     );
   }
