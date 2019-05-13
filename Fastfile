@@ -15,7 +15,6 @@
 # end
 
 
-# https://carloscuesta.me/blog/shipping-react-native-fastlane-travis/
 
 lane :deployment do |version: version|
   bump_version_number(version: version)
@@ -38,6 +37,5 @@ lane :deployment do |version: version|
 end
 
 
-# https://www.gravitywell.co.uk/latest/android/posts/automating-react-native-deployments-with-fastlane/
 
 # todo

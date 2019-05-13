@@ -1,3 +1,18 @@
+App generation
+https://github.com/ueno-llc/react-native-starter
+// create-ueno-app native NfdMob
+
+
+Icon Generation
+
+https://stackoverflow.com/questions/34329715/how-to-add-icons-to-react-native-app
+https://blog.bam.tech/developper-news/change-your-react-native-app-icons-in-a-single-command-line
+https://github.com/bamlab/generator-rn-toolbox
+https://makeappicon.com/
+
+Fastlane
+# https://carloscuesta.me/blog/shipping-react-native-fastlane-travis/
+# https://www.gravitywell.co.uk/latest/android/posts/automating-react-native-deployments-with-fastlane/
 
 
 Setup Navigation.
@@ -43,4 +58,4 @@ yarn add graphql-tag graphql
 
 yarn add react-native-linear-gradient
 https://github.com/react-native-community/react-native-linear-gradient
-// may have to do it manually, have tried linking first. 
+// may have to do it manually, have tried linking first.
